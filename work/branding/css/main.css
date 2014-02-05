@@ -1,5 +1,6 @@
 body
 {
+	font-family: sans-serif; /*base font*/
 	width: 75%;
 	margin: auto;
 }
@@ -7,7 +8,7 @@ body
 nav>a 
 {
 	font-family: Arial, sans-serif;
-	font-size: 1.5rem;
+	font-size: 1.5em;
 	width: 18%;
 	padding: 0.25em;
 	float: left;
@@ -16,4 +17,53 @@ nav>a
 	border-width: 0.1em;
 	border-color: #04B404;
 	background-color: #BCF5A9;
+}
+
+#filterSidebar
+{
+	width: 18%;
+	float: left;
+	display: block;
+	padding: 0.25em;
+	margin-top: 0.5em;
+	border-style: none;
+	background-color: #CCC;
+}
+
+#filterSidebar>ul
+{
+	list-style-type: none;
+	margin-left: -25px;
+	margin-top: 0px;
+}
+
+#filterSidebar>p
+{
+	font-weight: bold;	
+	margin-bottom: 1px;
+}
+
+.grayButton
+{
+	width: 50%;
+	font-size: 0.6em;
+	float: right;	
+	border-color: black;
+	border-style: solid;
+	border-width: 0.2em;
+	background: linear-gradient(#EEE, #CCC);
+	padding: 0em;
+	margin: 1em;
+	text-align: center;	
+}
+
+.grayButton:hover
+{
+	background: linear-gradient(#CCC, #EEE);
+	cursor: pointer;
+}
+
+.grayButton:active
+{
+	background: linear-gradient(#AAA, #CCC);
 }
