@@ -67,3 +67,58 @@ nav>a
 {
 	background: linear-gradient(#AAA, #CCC);
 }
+
+#addToCartSidebar
+{
+	width: 18%;
+	float: right;
+	display: block;
+	padding: 0.25em;
+	margin-top: 0.5em;
+	border-style: none;
+	background-color: #CCC;
+}
+
+#addToCartSidebar>ul
+{
+	list-style-type: none;
+	margin-left: -25px;
+	margin-top: 0px;
+}
+
+#addToCartSidebar>p
+{
+	font-weight: bold;	
+	margin-bottom: 1px;
+}
+
+.yellowButton
+{
+	width: 50%;
+	font-size: 0.6em;
+	float: right;	
+	border-color: black;
+	border-style: solid;
+	border-width: 0.2em;
+	background: linear-gradient(#FFF000, #FFC80F);
+	padding: 0em;
+	margin: 1em;
+	text-align: center;	
+}
+
+.yellowButton:hover
+{
+	background: linear-gradient(#FFC80F, #FFF000);
+	cursor: pointer;
+}
+
+.yellowButton:active
+{
+	background: linear-gradient(#FFC80F, #FFC80F);
+}
+
+
+
+
+
+
