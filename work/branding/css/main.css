@@ -81,29 +81,41 @@ a:hover
 	margin-bottom: 1px;
 }
 
-.grayButton
+.defaultButton
 {
-	width: 50%;
-	font-size: 0.6em;
-	float: right;	
+
+	float: right;
+	
+	font-size: 12px;
+	text-align: center;	
+		
+	border-radius: 0.25em;
 	border-color: black;
 	border-style: solid;
-	border-width: 0.2em;
+	border-width: 1px;
+	
 	background: linear-gradient(#EEE, #CCC);
-	padding: 0em;
-	margin: 1em;
-	text-align: center;	
+	padding: 0px 10px;
+	margin: 1rem;
+	
 }
 
-.grayButton:hover
+.defaultButton:hover
 {
 	background: linear-gradient(#CCC, #EEE);
 	cursor: pointer;
 }
 
-.grayButton:active
+.defaultButton:active
 {
 	background: linear-gradient(#AAA, #CCC);
+}
+
+.defaultButton>p
+{
+	padding: 0.2rem;
+	margin: 0px;
+	border-margin: 0px;
 }
 
 #addToCartSidebar
@@ -130,27 +142,31 @@ a:hover
 	margin-bottom: 1px;
 }
 
-.yellowButton
+.purchaseRelatedButton
 {
-	width: 50%;
-	font-size: 0.6em;
-	float: right;	
+	width: 80%;
+	font-size: 0.9em;
+	float: center;
+	
+	border-radius: 0.25em;	
 	border-color: black;
 	border-style: solid;
-	border-width: 0.2em;
+	border-width: 0.1em;
+	
 	background: linear-gradient(#FFF000, #FFC80F);
 	padding: 0em;
 	margin: 1em;
+	margin-bottom: 2.5em;
 	text-align: center;	
 }
 
-.yellowButton:hover
+.purchaseRelatedButton:hover
 {
 	background: linear-gradient(#FFC80F, #FFF000);
 	cursor: pointer;
 }
 
-.yellowButton:active
+.purchaseRelatedButton:active
 {
 	background: linear-gradient(#FFC80F, #FFC80F);
 }
