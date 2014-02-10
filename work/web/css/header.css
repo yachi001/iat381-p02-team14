@@ -4,24 +4,3 @@
 {
 	display: inline
 }
-
-[class*="col-"] 
-{
-	float: left;
-	padding: 0;
-	text-align: center;
-}
-
-/* Defining styles for 5 column grid */
-.col-1of5 
-{
-	width: 20%;
-}
-
-@media (max-width: 625px) 
-{
-	.col-1of5 
-	{
-		width: 100%;
-	}
-}
