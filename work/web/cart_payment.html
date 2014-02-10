@@ -1,11 +1,40 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Payment</title>
-		<meta charset="UTF-8">
-	</head>
+    <head>
+        <title>Payment</title>
+        <meta charset="UTF-8">
+    </head>
 
-	<body>
-		
-	</body>
+    <body>
+       <h1>Checkout</h1>
+
+
+       <form name="input" method="get">
+           <fieldset>
+               <legend>Contact Information</legend>
+               First Name: <input type="text" name="fname">
+               Last Name:  <input type="text" name="lname"><br />
+               Address:    <input type="text" name="addr"><br />
+               City:       <input type="text" name="city">
+               Province:   <input type="text" name="province"><br />
+               Country:    <input type="text" name="country"><br />
+               Postal Code:<input type="text"><br />
+               Phone #:    <input type="text">
+           </fieldset>
+           
+           <fieldset>
+               <legend>Payment Information</legend>
+               <input type="radio" name="pay-type" value="interac">Interac
+               <input type="radio" name="pay-type" value="ae">American Express
+               <input type="radio" name="pay-type" value="mastercard">Mastercard
+               <input type="radio" name="pay-type" value="visa">Visa<br>
+               
+               Card Number: <input type="text"><br />
+               Pin Code: <input type="text"><br />
+               Expiration Date: <input type="text"><br />
+           </fieldset>
+           
+           <input type="submit" value="Submit" onclick="alert('Formed Submitted')">
+       </form>
+    </body>
 </html>
