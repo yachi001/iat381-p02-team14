@@ -1,5 +1,10 @@
 /*header.css; defining grids for header*/
 
+#top>a
+{
+	display: inline
+}
+
 [class*="col-"] 
 {
 	float: left;
