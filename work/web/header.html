@@ -6,16 +6,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/header.css">
         <link rel="stylesheet" href="css/grid.css">
+		<link rel="stylesheet" href="css/main.css">
     </head>
     <body>
 	    <header id="top">
 	        <div class="account-bar">
-	            create an account or sign in | my account | check order status
+	            <a href="new_account.html">create an account</a>
+				or <a href="existing_account.html">sign in</a> | 
+				<a href="account_info.html">my account</a> | 
+				<a href="order_status.html">check order status</a>
 	        </div>
 	        
 	        <div>
 				<form method="post" action="#" id="search"> 
-	            <a href="home.html"><img src="img/broken_image.png" class="logo" width="224" height="81" alt="company-logo"></a>
+	            <a href="home.html"><img src="img/broken_image.png" class="logo" width="223" height="81" alt="company-logo"></a>
 	            <label form="form-name"></label>
 	            <input type="text" placeholder="Search.." name="fname">
 	            <input type="submit" value="Go">
@@ -23,7 +27,7 @@
 	            </form>
 	        </div>
 	
-	        <nav>
+	        <nav class="grid">
 	            <div class="col-1of5">
 	                <a href="products.html">Products</a>
 	            </div>

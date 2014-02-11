@@ -1,20 +1,7 @@
 /*header.css; defining grids for header*/
-body
-{
-	font-family: sans-serif; /*base font*/
-	width: 80%;
-	margin: auto;
-}
-
 #top>a
 {
 	display: inline;
-}
-
-img
-{
-	width: auto;
-	max-width: 100%;
 }
 
 nav a
