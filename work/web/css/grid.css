@@ -6,6 +6,18 @@
 	text-align: center;
 }
 
+.grid:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+*, *:after, *:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
 /* Defining styles for 5 column grid */
 .col-1of5 
 {
@@ -15,6 +27,20 @@
 @media (max-width: 625px) 
 {
 	.col-1of5 
+	{
+		width: 100%;
+	}
+}
+
+/* Defining styles for 3 column grid */
+.col-1of3
+{
+	width: 33.3333%;
+}
+
+@media (max-width: 625px) 
+{
+	.col-1of3 
 	{
 		width: 100%;
 	}
