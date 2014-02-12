@@ -3,6 +3,10 @@
             My Cart Page - cart.html
             
 ***********************************************/
+body
+{
+	padding: 1rem;
+}
 
 img
 {
@@ -45,6 +49,11 @@ textarea
 	resize: none;
 }
 
+a>img 
+{
+	float: none;
+	display: block;	
+}
 
 
 /**********************************************
@@ -54,7 +63,8 @@ textarea
 ***********************************************/
 .default-btn
 {
-	float: right;
+	max-width: 200px;
+	width: 100%;
 	
 	font-size: 0.9rem;
 	text-align: center;	
