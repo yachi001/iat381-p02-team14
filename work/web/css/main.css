@@ -1,6 +1,6 @@
 /***********************************************
 
-            Cart .html
+            My Cart Page - cart.html
             
 ***********************************************/
 
@@ -31,4 +31,147 @@ p
 h2 
 {
 	text-align: left;
+}
+
+
+
+
+
+/**********************************************
+	
+		Filter Sidebar
+
+***********************************************/
+#filter-sidebar
+{
+	width: 18%;
+	float: left;
+	display: block;
+	padding: 0.25em;
+	margin-top: 0.5em;
+	border-style: none;
+	background-color: #CCC;
+}
+
+#filter-sidebar>ul
+{
+	list-style-type: none;
+	margin-left: -25px;
+	margin-top: 0px;
+}
+
+#filter-sidebar>p
+{
+	font-weight: bold;	
+	margin-bottom: 1px;
+	margin-left: 0.25rem;
+}
+
+
+/**********************************************
+	
+		Filter Sidebar
+
+***********************************************/
+#cart-sidebar
+{
+	width: 18%;
+	float: right;
+	display: block;
+	padding: 0.25em;
+	margin-top: 0.5em;
+	margin-right: 1.5rem;
+	border-style: none;
+	background-color: #CCC;
+}
+
+#cart-sidebar>ul
+{
+	list-style-type: none;
+	margin-left: -25px;
+	margin-top: 0px;
+}
+
+#cart-sidebar>p
+{
+	font-weight: bold;
+	margin-bottom: 1px;
+	margin-left: 0.25rem;
+}
+
+
+/**********************************************
+	
+		Default gray button
+
+***********************************************/
+.default-btn
+{
+	float: right;
+	
+	font-size: 0.9rem;
+	text-align: center;	
+		
+	border-radius: 0.25em;
+	border-color: #000;
+	border-style: solid;
+	border-width: 1px;
+	
+	background: linear-gradient(#EEE, #CCC);
+	padding: 0px 10px;
+	margin: 1rem;
+	
+}
+
+.default-btn:hover
+{
+	background: linear-gradient(#CCC, #EEE);
+	cursor: pointer;
+}
+
+.default-btn:active
+{
+	background: linear-gradient(#AAA, #CCC);
+}
+
+.default-btn>p
+{
+	padding: 0.2rem;
+	margin: 0px;
+}
+
+
+
+
+/**********************************************
+	
+		Purchasing related buttons (yellow)
+
+***********************************************/
+.purchase-btn
+{
+	width: 80%;
+	font-size: 1.1rem;
+	
+	border-radius: 0.25em;	
+	border-color: #000;
+	border-style: solid;
+	border-width: 0.1em;
+	
+	background: linear-gradient(#FFF000, #FFC80F);
+	padding: 0em;
+	margin: 1em;
+	margin-bottom: 1.5em;
+	text-align: center;	
+}
+
+.purchase-btn:hover
+{
+	background: linear-gradient(#FFC80F, #FFF000);
+	cursor: pointer;
+}
+
+.purchase-btn:active
+{
+	background: linear-gradient(#FFC80F, #FFC80F);
 }
