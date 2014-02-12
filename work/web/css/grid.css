@@ -17,17 +17,32 @@
 	box-sizing: border-box;
 }
 
+/* Defining styles for header 5 column grid */
+.col-1of5head 
+{
+	width: 20%;
+}
+
+@media (max-width: 660px) 
+{
+	.col-1of5head 
+	{
+		width: 100%;
+	}
+}
+
 /* Defining styles for 5 column grid */
 .col-1of5 
 {
 	width: 20%;
 }
 
-@media (max-width: 625px) 
+@media (max-width: 660px) 
 {
 	.col-1of5 
 	{
 		width: 100%;
+		margin-bottom: 0.5rem;
 	}
 }
 
@@ -37,11 +52,12 @@
 	width: 33.3333%;
 }
 
-@media (max-width: 625px) 
+@media (max-width: 660px) 
 {
 	.col-1of3 
 	{
 		width: 100%;
+		margin-bottom: 0.5rem;
 	}
 }
 
@@ -57,10 +73,11 @@
 	width: 50%;
 }
 
-@media (max-width: 625px) 
+@media (max-width: 660px) 
 {
 	.col-1of2 
 	{
 		width: 100%;
+		margin-bottom: 0.5rem;
 	}
 }
