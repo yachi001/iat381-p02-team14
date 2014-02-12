@@ -59,13 +59,9 @@
 /***********************************************
 
        Uneven grid: left is the main
+       (this is for the product detail)
             
 ***********************************************/
-[class*='col-']
-{
-    float: left;
-    padding: 0;
-}
 
 .col-1of2-left-main 
 {
@@ -77,6 +73,13 @@
     width: 30%;
 }
 
+
+/***********************************************
+
+       Uneven grid: right is the main
+       (this is for product list)
+            
+***********************************************/
 .col-1of2-right-main 
 {
     width: 80%;
