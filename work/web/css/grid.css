@@ -1,9 +1,12 @@
+/***********************************************
 
+            Header Component
+            
+***********************************************/
 [class*="col-"] 
 {
 	float: left;
 	padding: 0;
-	text-align: center;
 }
 
 /* Defining styles for 5 column grid */
@@ -19,3 +22,110 @@
 		width: 100%;
 	}
 }
+
+@media (max-width: 1240px)
+{
+	.col-1of2-right-main>.col-1of5 
+	{
+		display: block;
+		width: 25%;
+	}
+}
+
+@media (max-width: 1000px)
+{
+	.col-1of2-right-main>.col-1of5 
+	{
+		width: 33.33%;
+	}
+}
+
+@media (max-width: 780px)
+{
+	.col-1of2-right-main>.col-1of5 
+	{
+		width: 50%;
+	}
+}
+
+@media (max-width: 665px)
+{
+	.col-1of2-right-main>.col-1of5 
+	{
+		width: 100%;
+	}
+}
+
+/***********************************************
+
+       Uneven grid: left is the main
+       (this is for the product detail)
+            
+***********************************************/
+
+.col-1of2-left-main 
+{
+    width: 70%;
+}
+
+.col-1of2-left-fill 
+{
+    width: 30%;
+}
+
+
+/***********************************************
+
+       Uneven grid: right is the main
+       (this is for product list)
+            
+***********************************************/
+.col-1of2-right-main 
+{
+    width: 80%;
+}
+
+.col-1of2-right-fill 
+{
+    width: 20%;
+}
+
+.grid:after 
+{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+*, *:after, *:before 
+{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@media (max-width: 700px)
+{
+    .col-1of2-left-main 
+    {
+       width: 100%
+    }
+    
+    .col-1of2-left-fill 
+    {
+    	width: 100%;
+	}
+	
+	.col-1of2-right-main 
+	{
+	    width: 100%;
+	}
+	
+	.col-1of2-right-fill 
+	{
+	    width: 100%;
+	}
+}
+
+
+	

@@ -1,0 +1,135 @@
+/***********************************************
+
+            My Cart Page - cart.html
+            
+***********************************************/
+body
+{
+	padding: 1rem;
+}
+
+img
+{
+	display: inline;
+	float: left;
+	padding-right: 1rem;
+}
+
+section
+{
+	display: block;
+	padding-left: 2rem;
+}
+
+.no-bullet
+{
+	text-align: left;
+	list-style-type: none;
+}
+
+p
+{
+	text-align: left;	
+}
+
+h2 
+{
+	text-align: left;
+}
+
+
+/***********************************************
+
+            Product Details
+            
+***********************************************/
+textarea
+{
+	width: 100%;
+	resize: none;
+}
+
+a>img 
+{
+	float: none;
+	display: block;	
+}
+
+
+/**********************************************
+	
+		Default gray button
+
+***********************************************/
+.default-btn
+{
+	max-width: 200px;
+	width: 100%;
+	
+	font-size: 0.9rem;
+	text-align: center;	
+		
+	border-radius: 0.25em;
+	border-color: #000;
+	border-style: solid;
+	border-width: 1px;
+	
+	background: linear-gradient(#EEE, #CCC);
+	padding: 0px 10px;
+	margin: 1rem;
+	
+}
+
+.default-btn:hover
+{
+	background: linear-gradient(#CCC, #EEE);
+	cursor: pointer;
+}
+
+.default-btn:active
+{
+	background: linear-gradient(#AAA, #CCC);
+}
+
+.default-btn>p
+{
+	padding: 0.2rem;
+	margin: 0px;
+}
+
+
+
+
+/**********************************************
+	
+		Purchasing related buttons (yellow)
+
+***********************************************/
+.purchase-btn
+{
+	max-width: 200px;
+	width: 80%;
+	font-size: 1.1rem;
+	
+	border-radius: 0.25em;	
+	border-color: #000;
+	border-style: solid;
+	border-width: 0.1em;
+	
+	background: linear-gradient(#FFF000, #FFC80F);
+	padding: 1em;
+	margin: 1em;
+	margin-bottom: 1.5em;
+	text-align: center;	
+}
+
+.purchase-btn:hover
+{
+	background: linear-gradient(#FFC80F, #FFF000);
+	cursor: pointer;
+}
+
+.purchase-btn:active
+{
+	background: linear-gradient(#FFC80F, #FFC80F);
+}
