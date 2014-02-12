@@ -1,11 +1,102 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Order Status</title>
-		<meta charset="UTF-8">
-	</head>
+    <head>
+        <title>Sign In</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/grid.css">
+		<link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+	    <header id="top">
+	        <div class="account-bar">
+	            <a href="new_account.html">create an account</a>
+				or <a href="existing_account.html">sign in</a> | 
+				<a href="account_info.html">my account</a> | 
+				<a href="order_status.html">check order status</a>
+	        </div>
+	        
+	        <div>
+				<form method="post" action="#" id="search"> 
+	            <a href="home.html"><img src="img/broken_image.png" class="logo" width="223" height="81" alt="company-logo"></a>
+	            <label form="form-name"></label>
+	            <input type="text" placeholder="Search.." name="fname">
+	            <input type="submit" value="Go">
+	            <img src="img/broken_image.png" width="50" height="40" alt="checkout">
+	            </form>
+	        </div>
+	
+	        <nav class="grid">
+	            <div class="col-1of5">
+	                <a href="products.html">Products</a>
+	            </div>
+	            
+	            <div class="col-1of5">
+	                <a href="deals.html">Deals</a>
+	            </div>
+	            
+	            <div class="col-1of5">
+	                <a href="services.html">Services</a>
+	            </div>
+	            
+	            <div class="col-1of5">
+	                <a href="about.html">About Us</a>
+	            </div>
+	            
+	            <div class="col-1of5">
+	                <a href="contact.html">Contact</a>
+	            </div>
+	        </nav>
+	    </header>
 
-	<body>
-		
-	</body>
+		<section>
+			<h3 class="sub-heading">
+				Sign In
+			</h3>
+			<div class="col-1of2">
+				<div class="position">
+				<form name="input" method="get">
+					<fieldset>
+						<legend>Sign In</legend>
+						<div>
+							E-mail Address:<br />
+							<input type="text" name="email">
+						</div>
+						<p>
+							Password:<br />
+							<input type="text" name="password">
+						</p>
+						<p>
+							<input type="submit" value="Sign In">
+						</p>
+					</fieldset>
+				</form>
+				</div>
+			</div>
+		</section>
+			
+		<section>
+			<div class="col-1of2">
+				<div class="position">
+				<form name="input" method="get">
+					<fieldset>
+						<legend>Check by Order Number</legend>
+						<div>
+							Order ID:<br />
+							<input type="text" name="ordernum">
+						</div>
+						<p>
+							Tracking ID:<br />
+							<input type="text" name="trackingid">
+						</p>
+						<p>
+							<input type="submit" value="Check Order Status">
+						</p>
+					</fieldset>
+				</form>
+				</div>
+			</div>
+		</section>
+    </body>
 </html>
