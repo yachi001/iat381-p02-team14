@@ -34,70 +34,17 @@ h2
 }
 
 
+/***********************************************
 
-
-
-/**********************************************
-	
-		Filter Sidebar
-
+            Product Details
+            
 ***********************************************/
-#filter-sidebar
+textarea
 {
-	width: 18%;
-	float: left;
-	display: block;
-	padding: 0.25em;
-	margin-top: 0.5em;
-	border-style: none;
-	background-color: #CCC;
+	width: 100%;
+	resize: none;
 }
 
-#filter-sidebar>ul
-{
-	list-style-type: none;
-	margin-left: -25px;
-	margin-top: 0px;
-}
-
-#filter-sidebar>p
-{
-	font-weight: bold;	
-	margin-bottom: 1px;
-	margin-left: 0.25rem;
-}
-
-
-/**********************************************
-	
-		Filter Sidebar
-
-***********************************************/
-#cart-sidebar
-{
-	width: 18%;
-	float: right;
-	display: block;
-	padding: 0.25em;
-	margin-top: 0.5em;
-	margin-right: 1.5rem;
-	border-style: none;
-	background-color: #CCC;
-}
-
-#cart-sidebar>ul
-{
-	list-style-type: none;
-	margin-left: -25px;
-	margin-top: 0px;
-}
-
-#cart-sidebar>p
-{
-	font-weight: bold;
-	margin-bottom: 1px;
-	margin-left: 0.25rem;
-}
 
 
 /**********************************************

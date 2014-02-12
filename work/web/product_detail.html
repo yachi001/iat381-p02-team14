@@ -12,9 +12,7 @@
 		<div class="grid">
 		
 			<div class="col-1of2-left-main">
-				
 				<img src="img/broken_image.png" alt="Product Preview" width="300" height="340" >
-				
 				<section>
 					<h1>Book Title</h1>
 					<h2>Author</h2>
@@ -32,6 +30,31 @@
 						bibendum.
 					</p>
 				</section>
+				
+				
+				<section>
+					<h2>Reviews</h2>
+					<p id="post"></p>
+
+					<form>
+						Display Name: <input type="text" id="username"/> <br>
+						Your Comment: <textarea name="comment"  rows="5"></textarea>
+						<button type="button" value="Submit" onclick="submitComment()">Submit </button>
+					</form>
+					
+					<script>
+						function submitComment() 
+						{
+							var userid = document.getElementById("username").value;
+							var comment = document.getElementsByName("comment")[0].value;
+						    var placeholder = document.getElementById("post");
+							placeholder.innerHTML = "Name: " + userid +
+													"<br>Comment: " + comment;
+						}
+					</script>
+				</section>
+
+						
 			</div>
 			
 			<div class="col-1of2-left-fill">
@@ -61,6 +84,9 @@
 				</div> 
 			
 			</div>
+			
+			
+			
 			
 		</div>
 	</body>
