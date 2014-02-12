@@ -97,6 +97,7 @@ textarea
 ***********************************************/
 .purchase-btn
 {
+	max-width: 200px;
 	width: 80%;
 	font-size: 1.1rem;
 	
@@ -106,7 +107,7 @@ textarea
 	border-width: 0.1em;
 	
 	background: linear-gradient(#FFF000, #FFC80F);
-	padding: 0em;
+	padding: 1em;
 	margin: 1em;
 	margin-bottom: 1.5em;
 	text-align: center;	
