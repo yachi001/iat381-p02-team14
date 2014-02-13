@@ -7,6 +7,33 @@
 {
 	float: left;
 	padding: 0;
+	text-align: center;
+}
+
+.grid:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+*, *:after, *:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* Defining styles for header 5 column grid */
+.col-1of5head 
+{
+	width: 20%;
+}
+
+@media (max-width: 660px) 
+{
+	.col-1of5head 
+	{
+		width: 100%;
+	}
 }
 
 /* Defining styles for 5 column grid */
@@ -15,17 +42,54 @@
 	width: 20%;
 }
 
-@media (max-width: 625px) 
+@media (max-width: 660px) 
 {
 	.col-1of5 
 	{
 		width: 100%;
+		margin-bottom: 0.5rem;
+	}
+}
+
+/* Defining styles for 3 column grid */
+.col-1of3
+{
+	width: 33.3333%;
+}
+
+@media (max-width: 660px) 
+{
+	.col-1of3 
+	{
+		width: 100%;
+		margin-bottom: 0.5rem;
+	}
+}
+
+/* Defining styles for sub 3 column grid */
+.col-1of3sub
+{
+	width: 33.3333%;
+}
+
+/* Defining styles for 2 column grid */
+.col-1of2
+{
+	width: 50%;
+}
+
+@media (max-width: 660px) 
+{
+	.col-1of2 
+	{
+		width: 100%;
+		margin-bottom: 0.5rem;
 	}
 }
 
 @media (max-width: 1240px)
 {
-	.col-1of2-right-main>.col-1of5 
+	.col-1of2-right-main
 	{
 		display: block;
 		width: 25%;
@@ -34,7 +98,7 @@
 
 @media (max-width: 1000px)
 {
-	.col-1of2-right-main>.col-1of5 
+	.col-1of2-right-main 
 	{
 		width: 33.33%;
 	}
@@ -42,7 +106,7 @@
 
 @media (max-width: 780px)
 {
-	.col-1of2-right-main>.col-1of5 
+	.col-1of2-right-main 
 	{
 		width: 50%;
 	}
@@ -50,7 +114,7 @@
 
 @media (max-width: 665px)
 {
-	.col-1of2-right-main>.col-1of5 
+	.col-1of2-right-main 
 	{
 		width: 100%;
 	}
@@ -62,7 +126,6 @@
        (this is for the product detail)
             
 ***********************************************/
-
 .col-1of2-left-main 
 {
     width: 70%;
@@ -72,7 +135,6 @@
 {
     width: 30%;
 }
-
 
 /***********************************************
 
@@ -126,6 +188,3 @@
 	    width: 100%;
 	}
 }
-
-
-	

@@ -1,21 +1,51 @@
+body
+{
+	font-family: sans-serif; /*base font*/
+	width: 80%;
+	margin: auto;
+	padding: 1rem;
+}
+
+section
+{
+	margin-top: 1rem;
+}
+
+.sub-heading
+{
+	font: Verdana, sans-serif;
+	font-size: 1.2rem;
+}
+
+.sub-button
+{
+	font-family: Verdana, sans-serif;
+	font-size: 0.9rem;
+	width: 50%;
+	float: left;
+}
+
+/*use this for <p> and <h2> instead*/
+.position
+{
+	text-align: left;
+}
+
 /***********************************************
 
             My Cart Page - cart.html
             
 ***********************************************/
-body
-{
-	padding: 1rem;
-}
 
-img
+/*<img> was messing up header*/
+.product-img
 {
 	display: inline;
 	float: left;
 	padding-right: 1rem;
 }
 
-section
+.items
 {
 	display: block;
 	padding-left: 2rem;
@@ -26,17 +56,6 @@ section
 	text-align: left;
 	list-style-type: none;
 }
-
-p
-{
-	text-align: left;	
-}
-
-h2 
-{
-	text-align: left;
-}
-
 
 /***********************************************
 
@@ -52,9 +71,9 @@ textarea
 a>img 
 {
 	float: none;
-	display: block;	
+	/*currently messing up header images*/
+	/*display: block;*/	
 }
-
 
 /**********************************************
 	
@@ -96,9 +115,6 @@ a>img
 	padding: 0.2rem;
 	margin: 0px;
 }
-
-
-
 
 /**********************************************
 	
