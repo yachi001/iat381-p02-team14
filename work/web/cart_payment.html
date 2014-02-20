@@ -3,7 +3,7 @@
     <head>
         <title>Payment</title>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="css/header.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="css/grid.css">
         <link rel="stylesheet" href="css/main.css">
     </head>
@@ -17,69 +17,81 @@
 				<a href="order_status.html">check order status</a>
 	        </div>
 	        
-	        <div>
-				<form method="post" action="#" id="search"> 
-	            <a href="home.html"><img src="img/broken_image.png" class="logo" width="223" height="81" alt="company-logo"></a>
-	            <label form="form-name"></label>
-	            <input type="text" placeholder="Search.." name="fname">
-	            <input type="submit" value="Go">
-	            <a href="cart.html"><img src="img/broken_image.png" width="50" height="40" alt="checkout"></a>
-	            </form>
+	        <div class="grid">
+				<div class="col-1of3home">
+					<a href="home.html"><img src="img/broken_image.png" class="logo" width="200" height="80" alt="company-logo"></a>
+				</div>
+				<div class="col-1of3search">
+					<form method="post" action="#" id="search"> 
+					<label form="form-name"></label>
+					<input type="text" placeholder="Search..." name="fname">
+					<input type="submit" value="Go">
+					</form>
+				</div>
+				<div class="col-1of3checkout">
+					<a href="cart.html"><img src="img/broken_image.png" width="50" height="40" alt="checkout"></a>
+				</div>
 	        </div>
 	
 	        <nav class="grid">
-	            <div class="col-1of5head">
+	            <div class="col-1of5nav">
 	                <a href="products.html">Products</a>
 	            </div>
 	            
-	            <div class="col-1of5head">
+	            <div class="col-1of5nav">
 	                <a href="deals.html">Deals</a>
 	            </div>
 	            
-	            <div class="col-1of5head">
+	            <div class="col-1of5nav">
 	                <a href="services.html">Services</a>
 	            </div>
 	            
-	            <div class="col-1of5head">
+	            <div class="col-1of5nav">
 	                <a href="about.html">About Us</a>
 	            </div>
 	            
-	            <div class="col-1of5head">
+	            <div class="col-1of5nav">
 	                <a href="contact.html">Contact</a>
 	            </div>
 	        </nav>
-	    </header>     
-	   
-	   
-	   <h3 class="sub-heading">Checkout</h3>
-
-
-       <form name="input" method="get">
-           <fieldset>
-               <legend>Contact Information</legend>
-               First Name: <input type="text" name="fname">
-               Last Name:  <input type="text" name="lname"><br />
-               Address:    <input type="text" name="addr"><br />
-               City:       <input type="text" name="city">
-               Province:   <input type="text" name="province"><br />
-               Country:    <input type="text" name="country"><br />
-               Postal Code:<input type="text"><br />
-               Phone #:    <input type="text">
-           </fieldset>
-           
-           <fieldset>
-               <legend>Payment Information</legend>
-               <input type="radio" name="pay-type" value="interac">Interac
-               <input type="radio" name="pay-type" value="ae">American Express
-               <input type="radio" name="pay-type" value="mastercard">Mastercard
-               <input type="radio" name="pay-type" value="visa">Visa<br>
-               
-               Card Number: <input type="text"><br />
-               Pin Code: <input type="text"><br />
-               Expiration Date: <input type="text"><br />
-           </fieldset>
-
-           <button onclick="window.location.href='cart_confirmation.html'" class="purchase-btn" type="button">Proceed</button>
-       </form>
-    </body>
+	    </header>  
+		
+		
+		
+		<section>
+			<h3 class="sub-heading">Checkout</h3>
+			<form name="input" method="get">
+				<fieldset>
+					<legend>Contact Information</legend>
+					First Name: <input type="text" name="fname"><br />
+					Last Name:  <input type="text" name="lname"><br />
+					Address:    <input type="text" name="addr"><br />
+					City:       <input type="text" name="city"><br />
+					Province:   <input type="text" name="province"><br />
+					Country:    <input type="text" name="country"><br />
+					Postal Code:<input type="text"><br />
+					Phone #:    <input type="text">
+				</fieldset>
+			</form>
+		</section>
+		
+		
+		<section>
+			<form name="input" method="get">
+			<fieldset>
+				<legend>Payment Information</legend>
+				<input type="radio" name="pay-type" value="interac">Interac
+				<input type="radio" name="pay-type" value="ae">American Express
+				<input type="radio" name="pay-type" value="mastercard">Mastercard
+				<input type="radio" name="pay-type" value="visa">Visa<br>
+				Card Number: <input type="text"><br />
+				Pin Code: <input type="text"><br />
+				Expiration Date: <input type="text"><br />
+				</fieldset>
+				<p class="purchase-btn">
+					<a href="cart_confirmation.html">Proceed</a>
+				</p>
+			</form>
+		</section>
+	</body>
 </html>

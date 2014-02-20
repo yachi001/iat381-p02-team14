@@ -3,7 +3,7 @@
     <head>
         <title>My Cart</title>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="css/header.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="css/grid.css">
         <link rel="stylesheet" href="css/main.css">
     </head>
@@ -17,34 +17,40 @@
 				<a href="order_status.html">check order status</a>
 	        </div>
 	        
-	        <div>
-				<form method="post" action="#" id="search"> 
-	            <a href="home.html"><img src="img/broken_image.png" class="logo" width="223" height="81" alt="company-logo"></a>
-	            <label form="form-name"></label>
-	            <input type="text" placeholder="Search.." name="fname">
-	            <input type="submit" value="Go">
-                <a href="cart.html"><img src="img/broken_image.png" width="50" height="40" alt="checkout"></a>
-	            </form>
+	        <div class="grid">
+				<div class="col-1of3home">
+					<a href="home.html"><img src="img/broken_image.png" class="logo" width="200" height="80" alt="company-logo"></a>
+				</div>
+				<div class="col-1of3search">
+					<form method="post" action="#" id="search"> 
+					<label form="form-name"></label>
+					<input type="text" placeholder="Search..." name="fname">
+					<input type="submit" value="Go">
+					</form>
+				</div>
+				<div class="col-1of3checkout">
+					<a href="cart.html"><img src="img/broken_image.png" width="50" height="40" alt="checkout"></a>
+				</div>
 	        </div>
 	
 	        <nav class="grid">
-	            <div class="col-1of5head">
+	            <div class="col-1of5nav">
 	                <a href="products.html">Products</a>
 	            </div>
 	            
-	            <div class="col-1of5head">
+	            <div class="col-1of5nav">
 	                <a href="deals.html">Deals</a>
 	            </div>
 	            
-	            <div class="col-1of5head">
+	            <div class="col-1of5nav">
 	                <a href="services.html">Services</a>
 	            </div>
 	            
-	            <div class="col-1of5head">
+	            <div class="col-1of5nav">
 	                <a href="about.html">About Us</a>
 	            </div>
 	            
-	            <div class="col-1of5head">
+	            <div class="col-1of5nav">
 	                <a href="contact.html">Contact</a>
 	            </div>
 	        </nav>
@@ -52,50 +58,47 @@
 		
 		
 		
-		<h3 class="sub-heading">Cart Items</h3>
-        <div class="grid">
-            <div class="col-1of2-left-main">
-            	<section class="items">
-	            	<div class="position">
-						<img src="img/broken_image.png" alt="Product Preview" width="150" height="170" class="product-img">
-						<h2 class="sub-heading">Temporary Product Title</h2>
-	                </div>
-					<ul class="no-bullet">
-		                <li>Author: John Smith</li>
-		                <li>Published Date: July 30, 20XX</li>
-		                <li>ISBN: XXXXXXXXXXX</li>
-		                <li>Type: Hardcover</li>
-		                <li>Status: In Stock</li>
-		                <li>Quantity: #</li>
-	                </ul>
-            	</section>
-                
-                <section class="items">
-					<div class="position">
-						<img src="img/broken_image.png" alt="Product Preview" width="150" height="170" class="product-img">
-						<h2 class="sub-heading">Temporary Product Title</h2>
+		<section>
+			<h3 class="sub-heading">Cart Items</h3>
+			<div class="grid">
+				<div class="col-1of2-left-main">
+						<div class="position">
+							<img src="img/broken_image.png" alt="Product Preview" width="150" height="170" class="product-img">
+							<h2 class="sub-heading">Temporary Product Title</h2>
+							<ul class="no-bullet">
+								<li>Author: John Smith</li>
+								<li>Published Date: July 30, 20XX</li>
+								<li>ISBN: XXXXXXXXXXX</li>
+								<li>Type: Hardcover</li>
+								<li>Status: In Stock</li>
+								<li>Quantity: #</li>
+							</ul><br />
+							<img src="img/broken_image.png" alt="Product Preview" width="150" height="170" class="product-img">
+							<h2 class="sub-heading">Temporary Product Title</h2>
+							<ul class="no-bullet">
+								<li>Author: John Smith</li>
+								<li>Published Date: July 30, 20XX</li>
+								<li>ISBN: XXXXXXXXXXX</li>
+								<li>Type: Hardcover</li>
+								<li>Status: In Stock</li>
+								<li>Quantity: #</li>
+							</ul>
+						</div>
+				</div>
+				
+				<div class="col-1of2-left-fill">
+					<h2 class="sub-heading">Order Details</h2>
+					<p class="position">Subtotal: #</p>
+					<p class="position">Tax: #</p>
+					<p class="position">Total: </p>
+					<div class="purchase-btn">
+						<a href="cart_payment.html">Checkout</a>
 					</div>
-	                <ul class="no-bullet">
-		                <li>Author: John Smith</li>
-		                <li>Published Date: July 30, 20XX</li>
-		                <li>ISBN: XXXXXXXXXXX</li>
-		                <li>Type: Hardcover</li>
-		                <li>Status: In Stock</li>
-		                <li>Quantity: #</li>
-	                </ul>
-                </section>
-                
-            </div>
-            
-            
-            <div class="col-1of2-left-fill">
-                <h2 class="sub-heading">Order Details</h2>
-				<p class="position">Subtotal: #</p>
-                <p class="position">Tax: #</p>
-                <p class="position">Total: </p>
-				<button onclick="window.location.href='cart_payment.html'" class="purchase-btn" type="button">Checkout</button>
-                <button type="button">Reserve in Store</button>
-            </div>
-        </div>
+					<div class="default-btn">
+						<p><a href="cart_payment.html">Reserve in Store</a></p>
+					</div>
+				</div>
+			</div>
+		</section>
     </body>
 </html>
