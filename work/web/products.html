@@ -3,139 +3,155 @@
 	<head>
 		<title>Products</title>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="css/grid.css">
         <link rel="stylesheet" href="css/main.css">
 	</head>
 
 	<body>
-		<h1>List of Products</h1>
+		<header id="top">
+	        <div class="account-bar">
+	            <a href="new_account.html">create an account</a>
+				or <a href="existing_account.html">sign in</a> | 
+				<a href="account_info.html">my account</a> | 
+				<a href="order_status.html">check order status</a>
+	        </div>
+	        
+	        <div class="grid">
+				<div class="col-1of3home">
+					<a href="home.html"><img src="img/broken_image.png" class="logo" width="200" height="80" alt="company-logo"></a>
+				</div>
+				<div class="col-1of3search">
+					<form method="post" action="#" id="search"> 
+					<label form="form-name"></label>
+					<input type="text" placeholder="Search..." name="fname">
+					<input type="submit" value="Go">
+					</form>
+				</div>
+				<div class="col-1of3checkout">
+					<a href="cart.html"><img src="img/broken_image.png" width="50" height="40" alt="checkout"></a>
+				</div>
+	        </div>
+	
+	        <nav class="grid">
+	            <div class="col-1of5nav">
+	                <a href="products.html">Products</a>
+	            </div>
+	            
+	            <div class="col-1of5nav">
+	                <a href="deals.html">Deals</a>
+	            </div>
+	            
+	            <div class="col-1of5nav">
+	                <a href="services.html">Services</a>
+	            </div>
+	            
+	            <div class="col-1of5nav">
+	                <a href="about.html">About Us</a>
+	            </div>
+	            
+	            <div class="col-1of5nav">
+	                <a href="contact.html">Contact</a>
+	            </div>
+	        </nav>
+	    </header>
 		
-		<div class="grid">
 		
-			
-			<div class="col-1of2-right-fill">
-				<div class="position">
-					<p>Filters</p>
-					<ul>
-						<li>&#9633; Paperback</li>
-						<li>&#9633; Hardcover</li>
-						<li>&#9633; E-book</li>
-					</ul>
-							
-					<p>Categories</p>
-					<ul>
-						<li>&#9633; Art</li>
-						<li>&#9633; Health</li>
-						<li>&#9633; History</li>
-						<li>&#9633; Sports</li>
-						<li>&#9633; Travel</li>
-					</ul>
+		
+		<section>
+			<h3 class="sub-heading">Products</h3>
+			<div class="grid">
+				<div class="col-1of2-right-fill">
+					<div class="position">
+						<p>Filters</p>
+						<ul>
+							<li>&#9633; Paperback</li>
+							<li>&#9633; Hardcover</li>
+							<li>&#9633; E-book</li>
+						</ul>
+								
+						<p>Categories</p>
+						<ul>
+							<li>&#9633; Art</li>
+							<li>&#9633; Health</li>
+							<li>&#9633; History</li>
+							<li>&#9633; Sports</li>
+							<li>&#9633; Travel</li>
+						</ul>
+						
+						<div class="default-btn">
+							<p>Redefine Search</p>
+						</div><br />
+					</div>
+				</div>
+				
+				<div class="col-1of2-right-main">	
+					<div class="col-1of5">
+						<div class="position">
+							<a href="product_detail.html"><img src="img/broken_image.png" width="150" height="200" alt="Product Preview"></a>
+							<div><a href="product_detail.html">Book Title</a></div>
+							<div>ISBN: XXXXXXXXXX</div><br />
+						</div>
+						<div class="position">
+							<a href="product_detail.html"><img src="img/broken_image.png" width="150" height="200" alt="Product Preview"></a>
+							<div><a href="product_detail.html">Book Title</a></div>
+							<div>ISBN: XXXXXXXXXX</div>
+						</div>
+					</div>
+				
+					<div class="col-1of5">
+						<div class="position">
+							<a href="product_detail.html"><img src="img/broken_image.png" width="150" height="200" alt="Product Preview"></a>
+							<div><a href="product_detail.html">Book Title</a></div>
+							<div>ISBN: XXXXXXXXXX</div><br />
+						</div>
+						<div class="position">
+							<a href="product_detail.html"><img src="img/broken_image.png" width="150" height="200" alt="Product Preview"></a>
+							<div><a href="product_detail.html">Book Title</a></div>
+							<div>ISBN: XXXXXXXXXX</div>
+						</div>
+					</div>
 					
-					<div class="default-btn">
-						<p>Redefine Search</p>	
+					<div class="col-1of5">
+						<div class="position">
+							<a href="product_detail.html"><img src="img/broken_image.png" width="150" height="200" alt="Product Preview"></a>
+							<div><a href="product_detail.html">Book Title</a></div>
+							<div>ISBN: XXXXXXXXXX</div><br />
+						</div>
+						<div class="position">
+							<a href="product_detail.html"><img src="img/broken_image.png" width="150" height="200" alt="Product Preview"></a>
+							<div><a href="product_detail.html">Book Title</a></div>
+							<div>ISBN: XXXXXXXXXX</div>
+						</div>
 					</div>
-				</div>
+					
+					<div class="col-1of5">
+						<div class="position">
+							<a href="product_detail.html"><img src="img/broken_image.png" width="150" height="200" alt="Product Preview"></a>
+							<div><a href="product_detail.html">Book Title</a></div>
+							<div>ISBN: XXXXXXXXXX</div><br />
+						</div>
+						<div class="position">
+							<a href="product_detail.html"><img src="img/broken_image.png" width="150" height="200" alt="Product Preview"></a>
+							<div><a href="product_detail.html">Book Title</a></div>
+							<div>ISBN: XXXXXXXXXX</div>
+						</div>
+					</div>
+					
+					<div class="col-1of5">
+						<div class="position">
+							<a href="product_detail.html"><img src="img/broken_image.png" width="150" height="200" alt="Product Preview"></a>
+							<div><a href="product_detail.html">Book Title</a></div>
+							<div>ISBN: XXXXXXXXXX</div><br />
+						</div>
+						<div class="position">
+							<a href="product_detail.html"><img src="img/broken_image.png" width="150" height="200" alt="Product Preview"></a>
+							<div><a href="product_detail.html">Book Title</a></div>
+							<div>ISBN: XXXXXXXXXX</div>
+						</div>
+					</div>
+				</div>	
 			</div>
-			<div class="col-1of2-right-main">
-				
-				<div class="col-1of5">
-					<div class="position">
-					<figure>
-						<p>
-							<a href="product_detail.html"><img src="img/broken_image.png" alt="Product Preview" width="150" height="170" ></a><br>
-							<a href="product_detail.html">Title: Some title of the book</a><br>
-							ISBN:
-						</p>
-					</figure>
-					<figure>
-						<p>
-							<a href="product_detail.html"><img src="img/broken_image.png" alt="Product Preview" width="150" height="170" ></a><br>
-							<a href="product_detail.html">Title: Some title of the book</a><br>
-							ISBN:
-						</p>
-					</figure>
-					</div>
-				</div>
-				<div class="col-1of5">
-					<div class="position">
-					<figure>
-						<p>
-							<a href="product_detail.html"><img src="img/broken_image.png" alt="Product Preview" width="150" height="170" ></a><br>
-							<a href="product_detail.html">Title: Some title of the book</a><br>
-							ISBN:
-						</p>
-					</figure>
-					<figure>
-						<p>
-							<a href="product_detail.html"><img src="img/broken_image.png" alt="Product Preview" width="150" height="170" ></a><br>
-							<a href="product_detail.html">Title: Some title of the book</a><br>
-							ISBN:
-						</p>
-					</figure>
-					</div>
-				</div>
-				
-				<div class="col-1of5">
-					<div class="position">
-					<figure>
-						<p>
-							<a href="product_detail.html"><img src="img/broken_image.png" alt="Product Preview" width="150" height="170" ></a><br>
-							<a href="product_detail.html">Title: Some title of the book</a><br>
-							ISBN:
-						</p>
-					</figure>
-					<figure>
-						<p>
-							<a href="product_detail.html"><img src="img/broken_image.png" alt="Product Preview" width="150" height="170" ></a><br>
-							<a href="product_detail.html">Title: Some title of the book</a><br>
-							ISBN:
-						</p>
-					</figure>
-					</div>
-				</div>
-				
-				<div class="col-1of5">
-					<div class="position">
-					<figure>
-						<p>
-							<a href="product_detail.html"><img src="img/broken_image.png" alt="Product Preview" width="150" height="170" ></a><br>
-							<a href="product_detail.html">Title: Some title of the book</a><br>
-							ISBN:
-						</p>
-					</figure>
-					<figure>
-						<p>
-							<a href="product_detail.html"><img src="img/broken_image.png" alt="Product Preview" width="150" height="170" ></a><br>
-							<a href="product_detail.html">Title: Some title of the book</a><br>
-							ISBN:
-						</p>
-					</figure>
-					</div>
-				</div>
-				
-				<div class="col-1of5">
-					<div class="position">
-					<figure>
-						<p>
-							<a href="product_detail.html"><img src="img/broken_image.png" alt="Product Preview" width="150" height="170" ></a><br>
-							<a href="product_detail.html">Title: Some title of the book</a><br>
-							ISBN:
-						</p>
-					</figure>
-					<figure>
-						<p>
-							<a href="product_detail.html"><img src="img/broken_image.png" alt="Product Preview" width="150" height="170" ></a><br>
-							<a href="product_detail.html">Title: Some title of the book</a><br>
-							ISBN:
-						</p>
-					</figure>
-					</div>
-				</div>
-
-
-			</div>
-			
-		</div>
-		
+		</section>
 	</body>
 </html>

@@ -4,11 +4,11 @@
         <title>Home</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/header.css">
         <link rel="stylesheet" href="css/grid.css">
 		<link rel="stylesheet" href="css/main.css">
     </head>
-    <body>
+    
+	<body>
 	    <header id="top">
 	        <div class="account-bar">
 	            <a href="new_account.html">create an account</a>
@@ -17,85 +17,95 @@
 				<a href="order_status.html">check order status</a>
 	        </div>
 	        
-	        <div>
-				<form method="post" action="#" id="search"> 
-	            <a href="home.html"><img src="img/broken_image.png" class="logo" width="223" height="81" alt="company-logo"></a>
-	            <label form="form-name"></label>
-	            <input type="text" placeholder="Search.." name="fname">
-	            <input type="submit" value="Go">
-	            <img src="img/broken_image.png" width="50" height="40" alt="checkout">
-	            </form>
+	        <div class="grid">
+				<div class="col-1of3home">
+					<a href="home.html"><img src="img/logo.png" class="logo" width="200" height="80" alt="company-logo"></a>
+				</div>
+				<div class="col-1of3search">
+					<form method="post" action="#" id="search"> 
+					<label form="form-name"></label>
+					<input type="text" placeholder="Search..." name="fname">
+					<input type="submit" value="Go">
+					</form>
+				</div>
+				<div class="col-1of3checkout">
+					<a href="cart.html"><img src="img/checkout.png" width="50" height="40" alt="checkout"></a>
+				</div>
 	        </div>
 	
 	        <nav class="grid">
-	            <div class="col-1of5head">
+	            <div class="col-1of5nav">
 	                <a href="products.html">Products</a>
 	            </div>
 	            
-	            <div class="col-1of5head">
+	            <div class="col-1of5nav">
 	                <a href="deals.html">Deals</a>
 	            </div>
 	            
-	            <div class="col-1of5head">
+	            <div class="col-1of5nav">
 	                <a href="services.html">Services</a>
 	            </div>
 	            
-	            <div class="col-1of5head">
+	            <div class="col-1of5nav">
 	                <a href="about.html">About Us</a>
 	            </div>
 	            
-	            <div class="col-1of5head">
+	            <div class="col-1of5nav">
 	                <a href="contact.html">Contact</a>
 	            </div>
 	        </nav>
 	    </header>
 
-		<!--news updates + featured books-->
+		
+		
+		
 		<section>
-			<p class="grid">
-				<img src="img/broken_image.png" width="1096" height="300" alt="ad">
-			</p>
+			<div class="grid">
+				<div class="ad">
+					<img src="img/ad.png" width="1000" height="350" alt="ad">
+				</div>
+			</div>
 			
 			<h3 class="sub-heading">
 				Featured books
 			</h3>
 			<div class="col-1of5">
 				<div class="position">
-					<img src="img/broken_image.png" width="150" height="200" alt="book1">
-					<div>Book Title</div>
-					<div>ISBN: XXXXXXXXXX</div>
+					<a href="product_detail.html"><img src="img/book.png" width="150" height="200" alt="Product Preview"></a>
+					<div><a href="product_detail.html">Book Title</a></div>
+					<div>ISBN: XXXXXXXXXX</div><br />
 				</div>
 			</div>
 				
 			<div class="col-1of5">
 				<div class="position">
-					<img src="img/broken_image.png" width="150" height="200" alt="book2">
-					<div>Book Title</div>
-					<div>ISBN: XXXXXXXXXX</div>
+					<a href="product_detail.html"><img src="img/book.png" width="150" height="200" alt="Product Preview"></a>
+					<div><a href="product_detail.html">Book Title</a></div>
+					<div>ISBN: XXXXXXXXXX</div><br />
 				</div>
 			</div>
 				
 			<div class="col-1of5">
 				<div class="position">
-					<img src="img/broken_image.png" width="150" height="200" alt="book3">
-					<div>Book Title</div>
-					<div>ISBN: XXXXXXXXXX</div>
+					<a href="product_detail.html"><img src="img/book.png" width="150" height="200" alt="Product Preview"></a>
+					<div><a href="product_detail.html">Book Title</a></div>
+					<div>ISBN: XXXXXXXXXX</div><br />
 				</div>
 			</div>
 				
 			<div class="col-1of5">
 				<div class="position">
-					<img src="img/broken_image.png" width="150" height="200" alt="book4">
-					<div>Book Title</div>
-					<div>ISBN: XXXXXXXXXX</div>
+					<a href="product_detail.html"><img src="img/book.png" width="150" height="200" alt="Product Preview"></a>
+					<div><a href="product_detail.html">Book Title</a></div>
+					<div>ISBN: XXXXXXXXXX</div><br />
 				</div>
 			</div>
 				
 			<div class="col-1of5">
 				<div class="position">
-					<img src="img/broken_image.png" width="150" height="200" alt="book5">
-					<div>Book Title</div>
-					<div>ISBN: XXXXXXXXXX</div>
+					<a href="product_detail.html"><img src="img/book.png" width="150" height="200" alt="Product Preview"></a>
+					<div><a href="product_detail.html">Book Title</a></div>
+					<div>ISBN: XXXXXXXXXX</div><br />
 				</div>
 			</div>
 		</section>

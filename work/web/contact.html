@@ -17,75 +17,84 @@
 				<a href="order_status.html">check order status</a>
 	        </div>
 	        
-	        <div>
-				<form method="post" action="#" id="search"> 
-	            <a href="home.html"><img src="img/broken_image.png" class="logo" width="223" height="81" alt="company-logo"></a>
-	            <label form="form-name"></label>
-	            <input type="text" placeholder="Search.." name="fname">
-	            <input type="submit" value="Go">
-	            <img src="img/broken_image.png" width="50" height="40" alt="checkout">
-	            </form>
+	        <div class="grid">
+				<div class="col-1of3home">
+					<a href="home.html"><img src="img/logo.png" class="logo" width="200" height="80" alt="company-logo"></a>
+				</div>
+				<div class="col-1of3search">
+					<form method="post" action="#" id="search"> 
+					<label form="form-name"></label>
+					<input type="text" placeholder="Search.." name="fname">
+					<input type="submit" value="Go">
+					</form>
+				</div>
+				<div class="col-1of3checkout">
+					<a href="cart.html"><img src="img/checkout.png" width="50" height="40" alt="checkout"></a>
+				</div>
 	        </div>
 	
 	        <nav class="grid">
-	            <div class="col-1of5head">
+	            <div class="col-1of5nav">
 	                <a href="products.html">Products</a>
 	            </div>
 	            
-	            <div class="col-1of5head">
+	            <div class="col-1of5nav">
 	                <a href="deals.html">Deals</a>
 	            </div>
 	            
-	            <div class="col-1of5head">
+	            <div class="col-1of5nav">
 	                <a href="services.html">Services</a>
 	            </div>
 	            
-	            <div class="col-1of5head">
+	            <div class="col-1of5nav">
 	                <a href="about.html">About Us</a>
 	            </div>
 	            
-	            <div class="col-1of5head">
+	            <div class="col-1of5nav">
 	                <a href="contact.html">Contact</a>
 	            </div>
 	        </nav>
 	    </header>
+
+		
 
 		<section>
 			<h3 class="sub-heading">
 				Contact + Store Hours
 			</h3>
 			
-			<div class="col-1of3">
+			<div class="col-1of3map">
 				<div class="position">
-					<img src="img/broken_image.png" width="300" height="200" alt="book1">
-					<div class="sub-button">
-						<a href="http://www.maps.google.com">Get Directions</a>
+					<img src="img/map.png" width="250" height="150" alt="book1"><br />
+					<div class="default-btn">
+						<p><a href="http://www.maps.google.com">Get Directions</a></p>
 					</div>
 				</div>
 			</div>
 			
 			<div class="col-1of3">
-				<p class="position">
+				<div class="position">
+					&nbsp;<br />
 					Address<br />
 					City, Province<br />
 					Postal Code, Country<br />
 					Phone: XXX-XXX-XXXX<br />
 					Fax: XXX-XXX-XXXX<br />
 					E-mail: XXX@XXXX.com<br />
-				</p>
+				</div>
 			</div>
 			
 			<div class="col-1of3">
-				<p class="position">
+				<div class="position">
+					&nbsp;<br />
 					Hours<br />
-					Monday - Tuesday: 10:00am - 6:00pm<br />
-					Wednesday - Friday: 10:00am - 9:00pm<br />
-					Saturday: 10:00am - 6:00pm<br />
-					Sunday: 11:00am - 6:00pm<br />
+					Mon - Tues: 10am - 6pm<br />
+					Wed - Fri: 10am - 9pm<br />
+					Sat: 10am - 6pm<br />
+					Sun: 11am - 6pm<br />
 					Closed during Holidays<br />
-				</p>
-			</div>
-			
+				</div>
+			</div>		
 		</section>
     </body>
 </html>

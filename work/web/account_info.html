@@ -4,11 +4,11 @@
         <title>Account Overview</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/header.css">
         <link rel="stylesheet" href="css/grid.css">
 		<link rel="stylesheet" href="css/main.css">
     </head>
-    <body>
+    
+	<body>
 	    <header id="top">
 	        <div class="account-bar">
 	            <a href="new_account.html">create an account</a>
@@ -17,43 +17,49 @@
 				<a href="order_status.html">check order status</a>
 	        </div>
 	        
-	        <div>
-				<form method="post" action="#" id="search"> 
-	            <a href="home.html"><img src="img/broken_image.png" class="logo" width="223" height="81" alt="company-logo"></a>
-	            <label form="form-name"></label>
-	            <input type="text" placeholder="Search.." name="fname">
-	            <input type="submit" value="Go">
-	            <img src="img/broken_image.png" width="50" height="40" alt="checkout">
-	            </form>
+	        <div class="grid">
+				<div class="col-1of3home">
+					<a href="home.html"><img src="img/logo.png" class="logo" width="200" height="80" alt="company-logo"></a>
+				</div>
+				<div class="col-1of3search">
+					<form method="post" action="#" id="search"> 
+					<label form="form-name"></label>
+					<input type="text" placeholder="Search..." name="fname">
+					<input type="submit" value="Go">
+					</form>
+				</div>
+				<div class="col-1of3checkout">
+					<a href="cart.html"><img src="img/checkout.png" width="50" height="40" alt="checkout"></a>
+				</div>
 	        </div>
 	
 	        <nav class="grid">
-	            <div class="col-1of5head">
+	            <div class="col-1of5nav">
 	                <a href="products.html">Products</a>
 	            </div>
 	            
-	            <div class="col-1of5head">
+	            <div class="col-1of5nav">
 	                <a href="deals.html">Deals</a>
 	            </div>
 	            
-	            <div class="col-1of5head">
+	            <div class="col-1of5nav">
 	                <a href="services.html">Services</a>
 	            </div>
 	            
-	            <div class="col-1of5head">
+	            <div class="col-1of5nav">
 	                <a href="about.html">About Us</a>
 	            </div>
 	            
-	            <div class="col-1of5head">
+	            <div class="col-1of5nav">
 	                <a href="contact.html">Contact</a>
 	            </div>
 	        </nav>
 	    </header>
 
+		
+		
 		<section class="grid">
-			<h3 class="sub-heading">
-				Account Overview
-			</h3>
+			<h3 class="sub-heading">Account Overview</h3>
 			<fieldset>
 				<legend>Order History</legend>
 				<div class="col-1of2">
@@ -77,15 +83,17 @@
 						<div class="col-1of3sub">
 							<p class="position">
 								Status<br /><br />
-								Shipped in Full<br />
-								Picked up<br />
-								Picked up<br />
+								Shipped<br />
+								Delivered<br />
+								Delivered<br />
 							</p>
 						</div>
 					</div>
 				</div>	
 			</fieldset>
 		</section>
+
+
 		
 		<section class="grid">
 			<fieldset>
@@ -102,25 +110,30 @@
 							Country: Canada<br />
 							Postal Code: V5N 2Z3
 						</p>
-						<p>
-							<a href="home.html">Edit Contact Information</a>
-						</p>
+						
+						<div class="default-btn">
+							<p><a>Edit Contact Information</a></p>
+						</div>
+						
 						<p>
 							Payment Information<br/>
-							Card: Visa<br />
-							Card Number: XXXX-XXXX-XXXX-XXXX<br />
-							Exp Date: XX/XX/XX					
+							Mastercard<br />
+							XXXX-XXXX-XXXX-5789<br />
+							06/16					
 						</p>
-						<p>
-							<a href="home.html">Edit Payment Information</a>
-						</p>
+						
+						<div class="default-btn">
+							<p><a>Edit Payment Information</a></p>
+						</div>
+						
 						<p>
 							Login Information<br/>
 							E-mail: XXX@XXXX.com				
 						</p>
-						<p>
-							<a href="home.html">Change Password</a>
-						</p>
+						
+						<div class="default-btn">
+							<p><a>Change Password</a></p>
+						</div>
 					</div>
 				</div>
 			</fieldset>

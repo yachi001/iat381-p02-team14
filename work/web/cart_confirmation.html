@@ -3,14 +3,70 @@
 	<head>
 		<title>Confirmation</title>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/grid.css">
+        <link rel="stylesheet" href="css/main.css">
 	</head>
 
 	<body>
-		<h1>Order Summary</h1>
-		<p>Thanks for shopping with us. </p>
-		<p>Item(s) Purchased</p>
-		<a href="products.html">
-       		<button class="default-btn" type="button">Keep Shopping</button>
-       	</a>
+		<header id="top">
+	        <div class="account-bar">
+	            <a href="new_account.html">create an account</a>
+				or <a href="existing_account.html">sign in</a> | 
+				<a href="account_info.html">my account</a> | 
+				<a href="order_status.html">check order status</a>
+	        </div>
+	        
+	        <div class="grid">
+				<div class="col-1of3home">
+					<a href="home.html"><img src="img/broken_image.png" class="logo" width="200" height="80" alt="company-logo"></a>
+				</div>
+				<div class="col-1of3search">
+					<form method="post" action="#" id="search"> 
+					<label form="form-name"></label>
+					<input type="text" placeholder="Search..." name="fname">
+					<input type="submit" value="Go">
+					</form>
+				</div>
+				<div class="col-1of3checkout">
+					<a href="cart.html"><img src="img/broken_image.png" width="50" height="40" alt="checkout"></a>
+				</div>
+	        </div>
+	
+	        <nav class="grid">
+	            <div class="col-1of5nav">
+	                <a href="products.html">Products</a>
+	            </div>
+	            
+	            <div class="col-1of5nav">
+	                <a href="deals.html">Deals</a>
+	            </div>
+	            
+	            <div class="col-1of5nav">
+	                <a href="services.html">Services</a>
+	            </div>
+	            
+	            <div class="col-1of5nav">
+	                <a href="about.html">About Us</a>
+	            </div>
+	            
+	            <div class="col-1of5nav">
+	                <a href="contact.html">Contact</a>
+	            </div>
+	        </nav>
+	    </header>     
+
+
+		<section>
+			<h3 class="sub-heading">Order Summary</h3>
+			<p>Thanks for shopping with us. </p>
+			<p>Item(s) Purchased</p>
+			<div class="default-btn">
+				<p><a href="home.html">Confirm</a></p>
+			</div><br />
+			<div class="default-btn">
+				<p><a href="products.html">Keep Shopping</a></p>
+			</div>
+		</section>
 	</body>
 </html>
