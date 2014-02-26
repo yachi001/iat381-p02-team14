@@ -225,7 +225,7 @@
     width: 20%;
 }
 
-@media (max-width: 700px)
+@media (max-width: 900px)
 {
     .col-1of2-left-main 
     {
