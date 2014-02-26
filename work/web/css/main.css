@@ -1,9 +1,15 @@
 body
 {
-	font-family: sans-serif; /*base font*/
+	font-family: sans-serif;
 	width: 80%;
 	margin: auto;
 	padding: 1rem;
+}
+
+img
+{
+	max-width: 100%;
+	height: auto;
 }
 
 section
@@ -25,30 +31,65 @@ section
 	float: left;
 }
 
-/*use this for <p> and <h2> instead*/
 .position
 {
 	text-align: left;
 }
 
+.ad
+{
+	text-align: center;
+}
+
+a:link
+{
+	text-decoration: none;
+}
+
+a:visited
+{
+	color: #000000;
+}
+
 /***********************************************
 
-            My Cart Page - cart.html
+        Header
             
 ***********************************************/
+nav a
+{
+	font-family: Arial, sans-serif;
+	font-size: 1.5rem;
+	text-decoration: none;
+	color: #000000;
+	width: 100%;
+	margin-top: 0.5rem;
+	float: left;
+	border-style: solid;
+	border-radius: 0.25rem;
+	border-width: 0.1rem;
+}
 
-/*<img> was messing up header*/
+#top>a
+{
+	display: inline;
+}
+
+.account-bar
+{
+	float: right;
+}
+
+/***********************************************
+
+        My Cart Page - cart.html
+            
+***********************************************/
 .product-img
 {
 	display: inline;
 	float: left;
 	padding-right: 1rem;
-}
-
-.items
-{
-	display: block;
-	padding-left: 2rem;
 }
 
 .no-bullet
@@ -59,7 +100,7 @@ section
 
 /***********************************************
 
-            Product Details
+        Product Details
             
 ***********************************************/
 textarea
@@ -70,33 +111,28 @@ textarea
 
 a>img 
 {
-	float: none;
-	/*currently messing up header images*/
-	/*display: block;*/	
+	float: none;	
 }
 
 /**********************************************
 	
-		Default gray button
+		Default Gray Button
 
 ***********************************************/
 .default-btn
 {
-	max-width: 200px;
+	max-width: 175px;
 	width: 100%;
 	
 	font-size: 0.9rem;
-	text-align: center;	
-		
+	text-align: center;
+	
 	border-radius: 0.25em;
 	border-color: #000;
 	border-style: solid;
 	border-width: 1px;
 	
 	background: linear-gradient(#EEE, #CCC);
-	padding: 0px 10px;
-	margin: 1rem;
-	
 }
 
 .default-btn:hover
@@ -118,12 +154,12 @@ a>img
 
 /**********************************************
 	
-		Purchasing related buttons (yellow)
+		Purchase Related Buttons (yellow)
 
 ***********************************************/
 .purchase-btn
 {
-	max-width: 200px;
+	max-width: 175px;
 	width: 80%;
 	font-size: 1.1rem;
 	
@@ -134,7 +170,6 @@ a>img
 	
 	background: linear-gradient(#FFF000, #FFC80F);
 	padding: 1em;
-	margin: 1em;
 	margin-bottom: 1.5em;
 	text-align: center;	
 }
