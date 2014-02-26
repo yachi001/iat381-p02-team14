@@ -208,6 +208,20 @@
     width: 30%;
 }
 
+@media (max-width: 700px)
+{
+    .col-1of2-left-main 
+    {
+       width: 100%
+    }
+    
+    .col-1of2-left-fill 
+    {
+        width: 100%;
+    }
+    
+    
+}
 /***********************************************
 
        Uneven grid: right is the main
@@ -224,19 +238,9 @@
     width: 20%;
 }
 
-@media (max-width: 700px)
+@media (max-width: 885px)
 {
-    .col-1of2-left-main 
-    {
-       width: 100%
-    }
-    
-    .col-1of2-left-fill 
-    {
-        width: 100%;
-    }
-    
-    .col-1of2-right-main 
+	.col-1of2-right-main 
     {
         width: 100%;
     }
@@ -246,3 +250,5 @@
         width: 100%;
     }
 }
+
+
