@@ -65,28 +65,49 @@
 					<legend>Contact Information</legend>
 					
 					<label class="payment" form="fname">First Name:</label>
-					<input class="payment" type="text" name="fname">
+					<input class="payment" type="text" name="fname" value="John">
 					
 					<label class="payment" form="lname">Last Name:</label>
-					<input class="payment" type="text" name="lname">
+					<input class="payment" type="text" name="lname" value="Doe">
 					
 					<label class="payment" form="addr">Address:</label>
-					<input class="payment" type="text" name="addr">
+					<input class="payment" type="text" name="addr" value="1234 Main Street">
 					
 					<label class="payment" form="city">City:</label>
-					<input class="payment" type="text" name="city">
+					<input class="payment" type="text" name="city" value="Vancouver">
 					
-					<label class="payment" form="province">Province:</label>
-					<input class="payment" type="text" name="province">
+					<label class="payment" form="province">Province:</label><br />
+					<form action="">
+						<select name="province">
+							<option value="bc">British Columbia</option>
+							<option value="ab">Alberta</option>
+							<option value="mb">Manitoba</option>
+							<option value="nb">New Brunswick</option>
+							<option value="nl">Newfoundland</option>
+							<option value="nt">Northwest Territories &nbsp;</option>
+							<option value="ns">Nova Scotia</option>
+							<option value="nv">Nunavut</option>
+							<option value="on">Ontario</option>
+							<option value="pei">Prince Edward Island</option>
+							<option value="qc">Quebec</option>
+							<option value="sk">Saskatchewan</option>
+							<option value="yt">Yukon</option>
+						</select>
+					</form><br />
 					
-					<label class="payment" form="country">Country</label>
-					<input class="payment" type="text" name="country">
+					<label class="payment" form="country">Country:</label><br />
+					<form action="">
+						<select name="country">
+							<option value="ca">Canada</option>
+							<option value="us">United States &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</option>
+						<select>
+					</form>
 					
 					<label class="payment" form="post">Postal Code:</label>
-					<input class="payment" type="text" name="post">
+					<input class="payment" type="text" name="post" value="V6A 2W8">
 					
 					<label class="payment" form="phone">Phone#:</label>
-					<input class="payment" type="text" name="phone">
+					<input class="payment" type="text" name="phone" value="604-123-4567">
 				</fieldset>
 			</form>
 		</section>
@@ -98,17 +119,17 @@
 				<legend>Payment Information</legend>
 				<input type="radio" name="pay-type" value="interac">Interac
 				<input type="radio" name="pay-type" value="ae">American Express
-				<input type="radio" name="pay-type" value="mastercard">Mastercard
+				<input type="radio" name="pay-type" value="mastercard" checked="on">Mastercard
 				<input type="radio" name="pay-type" value="visa">Visa<br>
 				
 				<label class="payment" form="phone">Card #:</label>
-				<input class="payment" type="text" name="card">
+				<input class="payment" type="text" name="card" value="1234-4321-9876-5789">
 				
 				<label class="payment" form="phone">Expiration Date:</label>
-				<input class="payment" type="text" name="exp">
+				<input class="payment" type="text" name="exp" value="06/16">
 				
 				<label class="payment" form="phone">Pin Code:</label>
-				<input class="payment" type="text" name="pin">
+				<input class="payment" type="text" name="pin" value="***">
 			</fieldset>
 				<p class="purchase-btn">
 					<a href="cart_confirmation.html">Proceed</a>
