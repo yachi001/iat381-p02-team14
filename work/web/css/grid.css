@@ -87,10 +87,12 @@
 /***********************************************
 
 		Product Lists Display
-            
+            780
 ***********************************************/
 .col-1of5 
 {
+	display: inline;
+	margin: 0rem;
     width: 20%;
 }
 
@@ -98,7 +100,6 @@
 {
     .col-1of5 
     {
-        display: block;
         width: 25%;
     }
 }
@@ -111,7 +112,7 @@
     }
 }
 
-@media (max-width: 780px)
+@media (max-width: 900px)
 {
     .col-1of5 
     {
