@@ -94,15 +94,6 @@
     width: 20%;
 }
 
-@media (max-width: 660px) 
-{
-    .col-1of5 
-    {
-        width: 100%;
-        margin-bottom: 0.5rem;
-    }
-}
-
 @media (max-width: 1240px)
 {
     .col-1of5 
