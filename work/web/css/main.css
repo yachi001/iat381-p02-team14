@@ -34,6 +34,7 @@ section
 .position
 {
 	text-align: left;
+	display: block;   
 }
 
 .position-filters
@@ -116,8 +117,7 @@ nav a:visited
 ***********************************************/
 .product-img
 {
-	display: inline;
-	float: left;
+	float: none;
 	padding-right: 1rem;
 }
 
@@ -125,6 +125,12 @@ nav a:visited
 {
 	text-align: left;
 	list-style-type: none;
+}
+
+.product-list-view
+{
+	display: inline;
+	width: 50%;
 }
 
 
@@ -167,6 +173,11 @@ nav a:visited
     display: block;
     width: 100%;
  }
+
+.input
+{
+	
+}
 
 
 /***********************************************
