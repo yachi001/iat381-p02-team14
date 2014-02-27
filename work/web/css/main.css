@@ -173,6 +173,30 @@ a>img
 	float: none;	
 }
 
+.cover
+{
+	margin: 1rem;
+    width: 40%;
+    display: inline;
+    float: left;
+}
+
+
+.book-description
+{
+	margin-top: 1rem;
+	width: 50%;
+	display: inline;
+	float: left;
+}
+
+
+.info-block
+{
+	float: left;
+	width: 100%;
+}
+
 /**********************************************
 	
 		Default Gray Button

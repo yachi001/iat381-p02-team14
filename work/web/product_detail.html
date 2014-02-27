@@ -62,35 +62,42 @@
 			<div class="grid">
 				<div class="col-1of2-left-main">
 					<div class="position">
-						<img src="img/book1_large.jpg" alt="Product Preview" width="260" height="346">
-						<h2 class="sub-heading">War and Peace</h2>
-						<h3 class="sub-heading">Author: Lev Nikolayevich Tolstoy</h3>
-						<h3 class="sub-heading">1869 | Hardcover</h3>
-						<h3 class="sub-heading">ISBN: 2588961135</h3>
+					    <div class="cover" >
+						  <img src="img/book1_large.jpg" alt="Product Preview" width="260" height="346">
+						</div>
 						
-						<h3 class="sub-heading">About</h3>
-						<p> 
-							War and Peace tells the story of Russian society during the Napoleonic Era. It offers a new kind of fiction, with a great many characters caught up in a plot that covered nothing less than the grand subjects indicated by the title, combined with the equally large topics of youth, marriage, age, and death.
-						</p>
+						<div class="book-description">
+							<h2 class="sub-heading">War and Peace</h2>
+							<h3 class="sub-heading">Author: Lev Nikolayevich Tolstoy</h3>
+							<h3 class="sub-heading">1869 | Hardcover</h3>
+							<h3 class="sub-heading">ISBN: 2588961135</h3>
+						</div>
 						
-						<h3 class="sub-heading">Reviews</h3>
-						<p id="post"></p>
-						<form>
-							<p>Display Name: <input type="text" id="username"/></p>
-							<div>Your Comment:</div><textarea name="comment"  rows="5"></textarea>
-							<button type="button" value="Submit" onclick="submitComment()">Submit </button>
-						</form>
+						<div class="info-block">
+							<h3 class="sub-heading">About</h3>
+							<p> 
+								War and Peace tells the story of Russian society during the Napoleonic Era. It offers a new kind of fiction, with a great many characters caught up in a plot that covered nothing less than the grand subjects indicated by the title, combined with the equally large topics of youth, marriage, age, and death.
+							</p>
 							
-						<script>
-							function submitComment() 
-							{
-								var userid = document.getElementById("username").value;
-								var comment = document.getElementsByName("comment")[0].value;
-								var placeholder = document.getElementById("post");
-								placeholder.innerHTML = "Name: " + userid +
-														"<br>Comment: " + comment;
-							}
-						</script>
+							<h3 class="sub-heading">Reviews</h3>
+							<p id="post"></p>
+							<form>
+								<p>Display Name: <input type="text" id="username"/></p>
+								<div>Your Comment:</div><textarea name="comment"  rows="5"></textarea>
+								<button type="button" value="Submit" onclick="submitComment()">Submit </button>
+							</form>
+								
+							<script>
+								function submitComment() 
+								{
+									var userid = document.getElementById("username").value;
+									var comment = document.getElementsByName("comment")[0].value;
+									var placeholder = document.getElementById("post");
+									placeholder.innerHTML = "Name: " + userid +
+															"<br>Comment: " + comment;
+								}
+							</script>
+						</div>
 					</div>			
 				</div>
 				
