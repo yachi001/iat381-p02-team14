@@ -148,6 +148,14 @@ nav a
  {
     display: block;
  }
+ 
+ .top-picks
+ {
+    float: left;
+    display: block;
+    width: 100%;
+ }
+
 
 /***********************************************
 
