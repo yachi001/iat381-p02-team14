@@ -86,7 +86,6 @@
 					
 					<label class="payment" for="phone">Phone#:</label>
 					<input class="payment" type="text" name="phone">
-				
 				</fieldset>
 			</form>
 		</section>
@@ -100,10 +99,16 @@
 				<input type="radio" name="pay-type" value="ae">American Express
 				<input type="radio" name="pay-type" value="mastercard">Mastercard
 				<input type="radio" name="pay-type" value="visa">Visa<br>
-				Card Number: <input type="text"><br />
-				Pin Code: <input type="text"><br />
-				Expiration Date: <input type="text"><br />
-				</fieldset>
+				
+				<label class="payment" for="phone">Card #:</label>
+				<input class="payment" type="text" name="card">
+				
+				<label class="payment" for="phone">Expiration Date:</label>
+				<input class="payment" type="text" name="exp">
+				
+				<label class="payment" for="phone">Pin Code:</label>
+				<input class="payment" type="text" name="pin">
+			</fieldset>
 				<p class="purchase-btn">
 					<a href="cart_confirmation.html">Proceed</a>
 				</p>
