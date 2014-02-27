@@ -36,10 +36,16 @@ section
 	text-align: left;
 }
 
-.position-box
+.position-filters
 {
 	text-align: left;
 	padding-left: 0.5rem;
+}
+
+.position-purchase
+{
+	text-align: left;
+	padding-left: 1.25rem;
 }
 
 .ad
@@ -275,8 +281,8 @@ a>img
 ***********************************************/
 .purchase-btn
 {
-	max-width: 175px;
-	width: 80%;
+	max-width: 150px;
+	width: 100%;
 	font-size: 1.1rem;
 	
 	border-radius: 0.25em;	

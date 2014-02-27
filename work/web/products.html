@@ -67,43 +67,38 @@
                     
                ****************************************** -->
 				<div class="col-1of2-right-fill">
-	                <section class="products">
-	                    <form name="filter" method="get">
+	                <div class="position-filters">
+						<p>Type</p>
+	                    <input class="products" type="checkbox" name="book-type" value="paperback">
+							<label class="products" form="paperback">Paperback</label>
+						</input>
+						<input class="products" type="checkbox" name="book-type" value="hardcover">
+							<label class="products" form="hardcover">Hardcover</label>
+						</input>
+						<input class="products" type="checkbox" name="book-type" value="ebook">
+							<label class="products" form="ebook">E-book</label>
+						</input>
 	                        
-	                        <fieldset >
-	                            <legend>Type</legend>
-	                            <input class="products" type="checkbox" name="book-type" value="paperback">
-                                <label class="products" form="paperback">Paperback</label>
-	                            <input class="products" type="checkbox" name="book-type" value="hardcover">
-                                <label class="products" form="hardcover">Hardcover</label>
-	                            <input class="products" type="checkbox" name="book-type" value="ebook">
-                                <label class="products" form="ebook">E-book</label>	                            
-	                        </fieldset>
-	                    </form>
-	                    
-	                    <form name="filter" method="get">
-                            <fieldset>
-                                <legend>Category</legend>
-                                <input class="products" type="checkbox" name="book-category" value="art">
-                                <label class="products" form="art">Art</label>
-
-                                <input class="products" type="checkbox" name="book-category" value="health">
-                                <label class="products" form="heatlh">Health</label>
-
-                                <input class="products" type="checkbox" name="book-category" value="history">
-                                <label class="products" form="history">History</label>
-                                
-                                <input class="products" type="checkbox" name="book-category" value="sports">
-                                <label class="products" form="sports">Sports</label>
-                                
-                                <input class="products" type="checkbox" name="book-category" value="travel">
-                                <label class="products" form="travel">Travel</label>
-                            </fieldset>    
-                        </form>
-	                </section>
-	                
-	                <form><input type="button" value="Redefine Search" onClick="window.location.reload()"></form> 
-
+						<p>Category</p>
+						<input class="products" type="checkbox" name="book-category" value="art">
+							<label class="products" form="art">Art</label>
+						</input>
+                        <input class="products" type="checkbox" name="book-category" value="health">
+							<label class="products" form="heatlh">Health</label>
+						</input>
+						<input class="products" type="checkbox" name="book-category" value="history">
+							<label class="products" form="history">History</label>
+                        </input>        
+						<input class="products" type="checkbox" name="book-category" value="sports">
+							<label class="products" form="sports">Sports</label>
+						</input>    
+						<input class="products" type="checkbox" name="book-category" value="travel">
+							<label class="products" form="travel">Travel</label>
+                        </input>
+	                </div>
+	                <p>
+						<form><input type="button" value="Redefine Search" onClick="window.location.reload()"></form> 
+					</p>
 				</div>
 				
 				
@@ -123,7 +118,6 @@
 							<div>$29.99</div>
 						</div>
 					</div>
-					
 					
 					<div class="col-1of5">
 						<div class="position-text">

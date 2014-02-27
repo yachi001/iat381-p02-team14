@@ -60,33 +60,73 @@
 		
 		<section>
 			<div class="grid">
-				<div class="col-1of2-left-main">
-					<div class="position">
-					    <div class="cover" >
-						  <img src="img/book1_large.jpg" alt="Product Preview" width="260" height="346">
+				<div class="col-1of2-left-main"><br />
+					<div class="col-1of2image">
+						<div class="position">
+							<img src="img/book1_large.jpg" alt="Product Preview" width="260" height="346">
 						</div>
-						
-						<div class="book-description">
+					</div>
+					<div class="col-1of2text">
+						<div class="position">
 							<h2 class="sub-heading">War and Peace</h2>
 							<h3 class="sub-heading">Author: Lev Nikolayevich Tolstoy</h3>
 							<h3 class="sub-heading">1869 | Hardcover</h3>
 							<h3 class="sub-heading">ISBN: 2588961135</h3>
-						</div>
-						
-						<div class="info-block">
 							<h3 class="sub-heading">About</h3>
 							<p> 
 								War and Peace tells the story of Russian society during the Napoleonic Era. It offers a new kind of fiction, with a great many characters caught up in a plot that covered nothing less than the grand subjects indicated by the title, combined with the equally large topics of youth, marriage, age, and death.
 							</p>
-							
-							<h3 class="sub-heading">Reviews</h3>
-							<p id="post"></p>
-							<form>
-								<p>Display Name: <input type="text" id="username"/></p>
-								<div>Your Comment:</div><textarea name="comment"  rows="5"></textarea>
-								<button type="button" value="Submit" onclick="submitComment()">Submit </button>
-							</form>
-								
+						</div>
+					</div>
+				</div><br />
+				
+				<div class="col-1of2-left-fill">
+					<div class="position-purchase">	
+						<p>IN STOCK</p>
+						<p>$29.99</p>
+					
+						<div class="purchase-btn" onclick="alert('Item Added!')">
+							<a>Add to Cart</a>
+						</div>
+						
+						<p>Compare Prices</p>
+	                    <input class="products" type="checkbox" name="book-type" value="paperback">
+							<label class="products" form="paperback">Paperback</label>
+						</input>
+						<input class="products" type="checkbox" name="book-type" value="hardcover">
+							<label class="products" form="hardcover">Hardcover</label>
+						</input>
+						<input class="products" type="checkbox" name="book-type" value="ebook">
+							<label class="products" form="ebook">E-book</label>
+						</input>
+	                        
+						<p>Stores</p>
+						<input class="products" type="checkbox" name="store" value="amazon">
+							<label class="products" form="art">Amazon</label>
+						</input>
+                        <input class="products" type="checkbox" name="store" value="book-giant">
+							<label class="products" form="heatlh">Book Giant</label>
+						</input>
+						<input class="products" type="checkbox" name="store" value="chapters">
+							<label class="products" form="history">Chapters</label>
+                        </input>
+						<p>
+							<div class="default-btn">
+								<p><a>Submit</a></p>
+							</div>
+						</p>
+					</div>
+				</div>	
+			
+				<div class="col-1of2-left-main">
+					<div class="position">
+						<h3 class="sub-heading">Reviews</h3>
+						<p id="post"></p>
+						<form>
+							<p>Display Name: <input type="text" id="username"/></p>
+							<div>Your Comment:</div><textarea name="comment"  rows="5"></textarea>
+							<button type="button" value="Submit" onclick="submitComment()">Submit </button>
+						</form>
 							<script>
 								function submitComment() 
 								{
@@ -100,35 +140,6 @@
 						</div>
 					</div>			
 				</div>
-				
-				<div class="col-1of2-left-fill">
-					<div class="position">	
-						<p>IN STOCK</p>
-						<p>$29.99</p>
-					
-						<div class="purchase-btn" onclick="alert('Item Added!')">
-							<a>Add to Cart</a>
-						</div>
-						
-						<p>Compare Prices</p>
-						<ul class="no-bullet">
-							<li>&#9633; Paperback</li>
-							<li>&#9633; Hardcover</li>
-							<li>&#9633; E-book</li>
-						</ul>
-								
-						<p>Stores</p>
-						<ul class="no-bullet">
-							<li>&#9633; Amazon</li>
-							<li>&#9633; Book Giant</li>
-							<li>&#9633; Chapters</li>
-						</ul>
-						
-						<div class="default-btn">
-							<p><a>Submit</a></p>
-						</div>
-					</div>
-				</div>	
 			</div>
 		</section>
 	</body>

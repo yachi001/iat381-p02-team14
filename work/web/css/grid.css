@@ -196,7 +196,36 @@
 
 .col-1of2-left-fill 
 {
-    width: 30%;
+    width: 20%;
+	float: right;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 0.25rem;
+	padding-left: 0.5rem;
+}
+
+/***********************************************
+
+		Uneven grid: inside product detail
+            
+***********************************************/
+.col-1of2image
+{
+    width: 50%;
+}
+
+.col-1of2text
+{
+    width: 50%;
+}
+
+
+@media (max-width: 1024px) 
+{
+    .col-1of2text 
+    {
+        width: 100%;
+    }
 }
 
 /***********************************************
@@ -208,12 +237,12 @@
 .col-1of2-right-main 
 {
     width: 80%;
-    padding-left: 2rem;
+    padding-left: 1rem;
 }
 
 .col-1of2-right-fill 
 {
-    width: 16%;
+    width: 18%;
 	border-style: solid;
 	border-width: 1px;
 	border-radius: 0.25rem;
