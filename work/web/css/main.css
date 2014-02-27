@@ -98,6 +98,32 @@ nav a
 	list-style-type: none;
 }
 
+/***********************************
+    
+            Product List
+    
+ ***********************************/
+ 
+ input
+ {
+    float: left;
+ }
+ 
+ label
+ {
+    display: block;
+    flaot: left;
+    text-align: left;
+ }
+ 
+ fieldset legend .subtitle 
+ { 
+    display: inline
+    font-size: 80%; 
+ }
+ 
+
+
 /***********************************************
 
         Product Details
@@ -184,3 +210,6 @@ a>img
 {
 	background: linear-gradient(#FFC80F, #FFC80F);
 }
+
+
+
