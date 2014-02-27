@@ -67,30 +67,43 @@
                     
                ****************************************** -->
 				<div class="col-1of2-right-fill">
-					<div class="position-box">
-						<p>
-						<form>
-							<p>Filters</p>
-							<div>
-								<input type="checkbox" name="filters" value="paperback">&nbsp; Paperback</input><br />
-								<input type="checkbox" name="filters" value="hardcover">&nbsp; Hardcover</input><br />
-								<input type="checkbox" name="filters" value="hardcover">&nbsp; E-Book</input>
-							</div>
-							
-							<p>Categories</p>
-							<div>
-								<input type="checkbox" name="categories" value="art">&nbsp; Art</input><br />
-								<input type="checkbox" name="categories" value="health">&nbsp; Health</input><br />
-								<input type="checkbox" name="categories" value="history">&nbsp; History</input><br />
-								<input type="checkbox" name="categories" value="sports">&nbsp; Sports</input><br />
-								<input type="checkbox" name="categories" value="travel">&nbsp; Travel</input>
-							</div><br />
-							
-							<div class="default-btn">
-								<p>Redefine Search</p>
-							</div><br />
-						</form>
-					</div>
+	                <section class="products">
+	                    <form name="filter" method="get">
+	                        
+	                        <fieldset >
+	                            <legend>Type</legend>
+	                            <input class="products" type="checkbox" name="book-type" value="paperback">
+                                <label class="products" for="paperback">Paperback</label>
+	                            <input class="products" type="checkbox" name="book-type" value="hardcover">
+                                <label class="products" for="hardcover">Hardcover</label>
+	                            <input class="products" type="checkbox" name="book-type" value="ebook">
+                                <label class="products" for="ebook">E-book</label>	                            
+	                        </fieldset>
+	                    </form>
+	                    
+	                    <form name="filter" method="get">
+                            <fieldset>
+                                <legend>Category</legend>
+                                <input class="products" type="checkbox" name="book-category" value="art">
+                                <label class="products" for="art">Art</label>
+
+                                <input class="products" type="checkbox" name="book-category" value="health">
+                                <label class="products" for="heatlh">Health</label>
+
+                                <input class="products" type="checkbox" name="book-category" value="history">
+                                <label class="products" for="history">History</label>
+                                
+                                <input class="products" type="checkbox" name="book-category" value="sports">
+                                <label class="products" for="sports">Sports</label>
+                                
+                                <input class="products" type="checkbox" name="book-category" value="travel">
+                                <label class="products" for="travel">Travel</label>
+                            </fieldset>    
+                        </form>
+	                </section>
+	                
+	                <form><input type="button" value="Redefine Search" onClick="window.location.reload()"></form> 
+
 				</div>
 				
 				

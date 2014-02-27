@@ -115,6 +115,40 @@ nav a
 	list-style-type: none;
 }
 
+
+/***********************************
+    
+            Forms
+    
+ ***********************************/
+ 
+ input.products
+ {
+    float: left;
+ }
+ 
+ label.products, form[name="filter"]
+  {
+    display: block;
+    text-align: left;
+ }
+ 
+ fieldset legend .subtitle 
+ { 
+    
+    font-size: 80%; 
+ }
+ 
+ form
+ {
+    padding-bottom: 1rem;	
+ }
+ 
+ input.payment
+ {
+    display: block;
+ }
+
 /***********************************************
 
         Product Details

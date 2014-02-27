@@ -61,16 +61,32 @@
 		<section>
 			<h3 class="sub-heading">Checkout</h3>
 			<form name="input" method="get">
-				<fieldset>
+				<fieldset class="payment">
 					<legend>Contact Information</legend>
-					First Name: <input type="text" name="fname"><br />
-					Last Name:  <input type="text" name="lname"><br />
-					Address:    <input type="text" name="addr"><br />
-					City:       <input type="text" name="city"><br />
-					Province:   <input type="text" name="province"><br />
-					Country:    <input type="text" name="country"><br />
-					Postal Code:<input type="text"><br />
-					Phone #:    <input type="text">
+					<label class="payment" for="fname">First Name:</label>
+					<input class="payment" type="text" name="fname">
+					
+					<label class="payment" for="lname">Last Name:</label>
+					<input class="payment" type="text" name="lname">
+					
+					<label class="payment" for="addr">Address:</label>
+					<input class="payment" type="text" name="addr">
+					
+					<label class="payment" for="city">City:</label>
+					<input class="payment" type="text" name="city">
+					
+					<label class="payment" for="province">Province:</label>
+					<input class="payment" type="text" name="province">
+					
+					<label class="payment" for="country">Country</label>
+					<input class="payment" type="text" name="country">
+					
+					<label class="payment" for="post">Postal Code:</label>
+					<input class="payment" type="text" name="post">
+					
+					<label class="payment" for="phone">Phone#:</label>
+					<input class="payment" type="text" name="phone">
+				
 				</fieldset>
 			</form>
 		</section>
@@ -78,7 +94,7 @@
 		
 		<section>
 			<form name="input" method="get">
-			<fieldset>
+			<fieldset class="payment">
 				<legend>Payment Information</legend>
 				<input type="radio" name="pay-type" value="interac">Interac
 				<input type="radio" name="pay-type" value="ae">American Express
