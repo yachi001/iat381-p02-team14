@@ -88,6 +88,17 @@ nav a
 
 /***********************************************
 
+        Product Grids
+            
+***********************************************/
+.position-text
+{
+	text-align: center;
+	float: left;
+}
+
+/***********************************************
+
         My Cart Page - cart.html
             
 ***********************************************/
@@ -103,32 +114,6 @@ nav a
 	text-align: left;
 	list-style-type: none;
 }
-
-/***********************************
-    
-            Product List
-    
- ***********************************/
- 
- input
- {
-    float: left;
- }
- 
- label
- {
-    display: block;
-    flaot: left;
-    text-align: left;
- }
- 
- fieldset legend .subtitle 
- { 
-    display: inline
-    font-size: 80%; 
- }
- 
-
 
 /***********************************************
 
