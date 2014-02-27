@@ -91,30 +91,27 @@
 						
 						<p>Compare Prices</p>
 	                    <input class="products" type="checkbox" name="book-type" value="paperback">
-							<label class="products" form="paperback">Paperback</label>
-						</input>
+						<label class="products" form="paperback">Paperback</label>
+						
 						<input class="products" type="checkbox" name="book-type" value="hardcover">
-							<label class="products" form="hardcover">Hardcover</label>
-						</input>
+						<label class="products" form="hardcover">Hardcover</label>
+						
 						<input class="products" type="checkbox" name="book-type" value="ebook">
-							<label class="products" form="ebook">E-book</label>
-						</input>
+						<label class="products" form="ebook">E-book</label>
 	                        
 						<p>Stores</p>
 						<input class="products" type="checkbox" name="store" value="amazon">
-							<label class="products" form="art">Amazon</label>
-						</input>
+						<label class="products" form="art">Amazon</label>
+						
                         <input class="products" type="checkbox" name="store" value="book-giant">
-							<label class="products" form="heatlh">Book Giant</label>
-						</input>
+						<label class="products" form="heatlh">Book Giant</label>
+						
 						<input class="products" type="checkbox" name="store" value="chapters">
-							<label class="products" form="history">Chapters</label>
-                        </input>
-						<p>
-							<div class="default-btn">
-								<p><a>Submit</a></p>
-							</div>
-						</p>
+						<label class="products" form="history">Chapters</label><br />
+                       
+						<div class="default-btn">
+							<p><a>Submit</a></p>
+						</div><br />
 					</div>
 				</div>	
 			
@@ -127,19 +124,18 @@
 							<div>Your Comment:</div><textarea name="comment"  rows="5"></textarea>
 							<button type="button" value="Submit" onclick="submitComment()">Submit </button>
 						</form>
-							<script>
-								function submitComment() 
-								{
-									var userid = document.getElementById("username").value;
-									var comment = document.getElementsByName("comment")[0].value;
-									var placeholder = document.getElementById("post");
-									placeholder.innerHTML = "Name: " + userid +
+						<script>
+							function submitComment() 
+							{
+								var userid = document.getElementById("username").value;
+								var comment = document.getElementsByName("comment")[0].value;
+								var placeholder = document.getElementById("post");
+								placeholder.innerHTML = "Name: " + userid +
 															"<br>Comment: " + comment;
-								}
-							</script>
-						</div>
-					</div>			
-				</div>
+							}
+						</script>
+					</div>
+				</div>			
 			</div>
 		</section>
 	</body>

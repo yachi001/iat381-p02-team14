@@ -246,7 +246,7 @@
 	border-style: solid;
 	border-width: 1px;
 	border-radius: 0.25rem;
-	padding-right: -0.5rem;
+	padding-right: 0.5rem;
 }
 
 @media (max-width: 900px)
