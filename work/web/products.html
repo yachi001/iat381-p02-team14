@@ -67,45 +67,29 @@
                     
                ****************************************** -->
 				<div class="col-1of2-right-fill">
-	                <section>
-	                    <h3 class="sub-heading">Filters</h3>
-	                    <form name="filter" method="get">
-	                        
-	                        <fieldset>
-	                            <legend>Type</legend>
-	                            <input type="checkbox" name="book-type" value="paperback">
-                                <label for="paperback">Paperback</label>
-	                            <input type="checkbox" name="book-type" value="hardcover">
-                                <label for="hardcover">Hardcover</label>
-	                            <input type="checkbox" name="book-type" value="ebook">
-                                <label for="ebook">E-book</label>	                            
-	                        </fieldset>
-	                    </form>
-	                    
-	                    <form name="category" method="get">
-                                
-                            <fieldset>
-                                <legend>Category</legend>
-                                <input type="checkbox" name="book-category" value="art">
-                                <label for="art">Art</label>
-
-                                <input type="checkbox" name="book-category" value="health">
-                                <label for="heatlh">Health</label>
-
-                                <input type="checkbox" name="book-category" value="history">
-                                <label for="history">History</label>
-                                
-                                <input type="checkbox" name="book-category" value="sports">
-                                <label for="sports">Sports</label>
-                                
-                                <input type="checkbox" name="book-category" value="travel">
-                                <label for="travel">Travel</label>
-                            </fieldset>    
-                        </form>
-	                </section>
-					<div class="default-btn">
-						<p>Redefine Search</p>
-					</div><br />
+					<div class="position-box">
+						<form>
+							<p>Filters</p>
+							<div>
+								<input type="checkbox" name="filters" value="paperback">&nbsp; Paperback</input><br />
+								<input type="checkbox" name="filters" value="hardcover">&nbsp; Hardcover</input><br />
+								<input type="checkbox" name="filters" value="hardcover">&nbsp; E-Book</input>
+							</div>
+							
+							<p>Categories</p>
+							<div>
+								<input type="checkbox" name="categories" value="art">&nbsp; Art</input><br />
+								<input type="checkbox" name="categories" value="health">&nbsp; Health</input><br />
+								<input type="checkbox" name="categories" value="history">&nbsp; History</input><br />
+								<input type="checkbox" name="categories" value="sports">&nbsp; Sports</input><br />
+								<input type="checkbox" name="categories" value="travel">&nbsp; Travel</input>
+							</div><br />
+							
+							<div class="default-btn">
+								<p>Redefine Search</p>
+							</div><br />
+						</form>
+					</div>
 				</div>
 				
 				

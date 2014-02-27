@@ -36,6 +36,12 @@ section
 	text-align: left;
 }
 
+.position-box
+{
+	text-align: left;
+	padding-left: 0.5rem;
+}
+
 .ad
 {
 	text-align: center;
@@ -147,7 +153,7 @@ a>img
 ***********************************************/
 .default-btn
 {
-	max-width: 175px;
+	max-width: 150px;
 	width: 100%;
 	
 	font-size: 0.9rem;
@@ -173,6 +179,39 @@ a>img
 }
 
 .default-btn>p
+{
+	padding: 0.2rem;
+	margin: 0px;
+}
+
+.default-btn-large
+{
+	max-width: 175px;
+	width: 100%;
+	
+	font-size: 0.9rem;
+	text-align: center;
+	
+	border-radius: 0.25em;
+	border-color: #000;
+	border-style: solid;
+	border-width: 1px;
+	
+	background: linear-gradient(#EEE, #CCC);
+}
+
+.default-btn-large:hover
+{
+	background: linear-gradient(#CCC, #EEE);
+	cursor: pointer;
+}
+
+.default-btn-large:active
+{
+	background: linear-gradient(#AAA, #CCC);
+}
+
+.default-btn-large>p
 {
 	padding: 0.2rem;
 	margin: 0px;
