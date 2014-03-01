@@ -82,7 +82,9 @@ nav a
 	border-radius: 0.25rem;
 	border-width: 0.1rem;
 	border-color: #449ec4;
+	padding: 0.3rem;
 }
+
 
 nav a:visited
 {
