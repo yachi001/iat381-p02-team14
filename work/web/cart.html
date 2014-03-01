@@ -88,19 +88,26 @@
 				
 				<div class="col-1of2-left-fill">
 					<div class="position-purchase">	
+					
+					    <!-- Ordering Summary panel -->
 						<h2 class="sub-heading">Order Details</h2>
 						<p class="position">Subtotal: $49.98</p>
 						<p class="position">Taxes: $2.49</p>
 						<p class="position">Total: $52.47</p>
-						<div class="purchase-btn">
-							<a href="cart_payment.html">Checkout</a>
-						</div>
-						<div class="default-btn">
-							<p><a href="cart_payment.html">Reserve in Store</a></p>
-						</div>
+						
+						<!-- purchase button -->
+						<form action="cart_payment.html" method="get">
+                                <button class="purchase-btn">Checkout</button>
+                        </form>
+						
+						<!-- Reserve in store button -->
+						<form action="cart_payment.html" method="get" onclick="alert('Reserved')">
+                                <button class="default-btn">Reserve in Store</button>
+                        </form>
 					</div>
 				</div>
-			</div>
+				
+			</div><!-- end of grid -->
 		</section>
     </body>
 </html>

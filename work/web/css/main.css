@@ -12,6 +12,8 @@ img
 	height: auto;
 }
 
+
+
 section
 {
 	margin-top: 1rem;
@@ -54,15 +56,8 @@ section
 	text-align: center;
 }
 
-a:link
-{
-	text-decoration: none;
-}
 
-a:visited
-{
-	color: #000000;
-}
+
 
 /***********************************************
 
@@ -72,7 +67,7 @@ a:visited
 nav a
 {
 	font-family: Arial, sans-serif;
-	font-size: 1.5rem;
+	font-size: 1.3rem;
 	text-decoration: none;
 	background-color: #ecf4f7;
 	width: 100%;
@@ -83,10 +78,11 @@ nav a
 	border-width: 0.1rem;
 	border-color: #449ec4;
 	padding: 0.3rem;
+	text-align: center;
 }
 
 
-nav a:visited
+nav a:visited, nav a:active
 {
 	color: #406ea1;
 }
@@ -127,6 +123,7 @@ nav a:visited
 {
 	text-align: left;
 	list-style-type: none;
+	margin-left: -2.5rem;
 }
 
 .product-list-view
@@ -222,6 +219,25 @@ a>img
 	width: 100%;
 }
 
+
+.btn-float-right
+{
+	width: 50%;
+}
+@media (max-width: 665px)
+{
+    .btn-float-right 
+    {
+        width: 100%;
+    }
+}
+
+
+#btn-submit
+{
+	width: 20%;
+}
+
 /**********************************************
 	
 		Default Gray Button
@@ -242,8 +258,8 @@ a>img
 	
 	background: linear-gradient(#EEE, #CCC);
 	
-	padding: 0.5rem;
-	margin-bottom: 1rem;
+	padding: 0.2rem;
+	margin: 1rem 0rem;
 	
 }
 
@@ -272,18 +288,19 @@ a>img
 ***********************************************/
 .purchase-btn
 {
-	max-width: 175px;
+	/*max-width: 175px;*/
 	width: 100%;
 	font-size: 1.1rem;
 	
+	
 	border-radius: 0.25em;	
 	border-color: #000;
-	border-style: solid;
 	border-width: 0.1em;
 	
 	background: linear-gradient(#FFF000, #FFC80F);
 	padding: 1em;
-	margin-bottom: 1.5em;
+	
+	margin-right: 20rem;
 	text-align: center;	
 }
 
