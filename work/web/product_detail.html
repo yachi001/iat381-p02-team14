@@ -85,9 +85,13 @@
 						<p>IN STOCK</p>
 						<p>$29.99</p>
 					
-						<div class="purchase-btn" onclick="alert('Item Added!')">
-							<a>Add to Cart</a>
-						</div>
+
+					    <!-- **************************************
+					    TODO: Insert a link for the add to cart page.
+					     -->
+						<form action="products" method="get">
+                            <button class="purchase-btn">Add to Cart</button>
+                        </form>
 						
 						<p>Compare Prices</p>
 	                    <input class="products" type="checkbox" name="book-type" value="paperback">
@@ -108,10 +112,10 @@
 						
 						<input class="products" type="checkbox" name="store" value="chapters">
 						<label class="products" form="history">Chapters</label><br />
-                       
-						<div class="default-btn">
-							<p><a>Submit</a></p>
-						</div><br />
+                        
+                        <form action="products.html" method="get">
+                                <button class="default-btn">Submit</button>
+                        </form>
 					</div>
 				</div>	
 			
@@ -122,8 +126,11 @@
 						<form>
 							<p>Display Name: <input type="text" id="username"/></p>
 							<div>Your Comment:</div><textarea name="comment"  rows="5"></textarea>
-							<button type="button" value="Submit" onclick="submitComment()">Submit </button>
 						</form>
+						
+						<form action="products" method="get">
+                             <button class="default-btn">Submit</button>
+                        </form>
 						<script>
 							function submitComment() 
 							{

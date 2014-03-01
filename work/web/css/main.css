@@ -229,10 +229,10 @@ a>img
 ***********************************************/
 .default-btn
 {
-	max-width: 150px;
+	/*max-width: 175px;*/
 	width: 100%;
 	
-	font-size: 0.9rem;
+	font-size: 1rem;
 	text-align: center;
 	
 	border-radius: 0.25em;
@@ -241,6 +241,10 @@ a>img
 	border-width: 1px;
 	
 	background: linear-gradient(#EEE, #CCC);
+	
+	padding: 0.5rem;
+	margin-bottom: 1rem;
+	
 }
 
 .default-btn:hover
@@ -260,38 +264,6 @@ a>img
 	margin: 0px;
 }
 
-.default-btn-large
-{
-	max-width: 175px;
-	width: 100%;
-	
-	font-size: 0.9rem;
-	text-align: center;
-	
-	border-radius: 0.25em;
-	border-color: #000;
-	border-style: solid;
-	border-width: 1px;
-	
-	background: linear-gradient(#EEE, #CCC);
-}
-
-.default-btn-large:hover
-{
-	background: linear-gradient(#CCC, #EEE);
-	cursor: pointer;
-}
-
-.default-btn-large:active
-{
-	background: linear-gradient(#AAA, #CCC);
-}
-
-.default-btn-large>p
-{
-	padding: 0.2rem;
-	margin: 0px;
-}
 
 /**********************************************
 	
@@ -300,7 +272,7 @@ a>img
 ***********************************************/
 .purchase-btn
 {
-	max-width: 150px;
+	max-width: 175px;
 	width: 100%;
 	font-size: 1.1rem;
 	
