@@ -228,14 +228,14 @@
 ***********************************************/
 .col-1of2image
 {
-    width: 50%;
+    width: 40%;
+    padding-right: 1rem;
 }
 
 .col-1of2text
 {
     width: 50%;
 }
-
 
 @media (max-width: 1024px) 
 {
@@ -244,6 +244,27 @@
         width: 100%;
     }
 }
+
+
+.col-1of2image-cart
+{
+    width: 31%;
+    float: left;
+}
+
+.col-1of2text-cart
+{
+    width: 76%;
+}
+
+@media (max-width:00px) 
+{
+    .col-1of2text-cart
+    {
+        width: 100%;
+    }
+}
+
 
 /***********************************************
 
