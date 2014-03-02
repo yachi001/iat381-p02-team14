@@ -94,8 +94,11 @@ nav a:visited, nav a:active
 
 .account-bar
 {
+	width: 100%;
 	float: right;
+	text-align: right;
 }
+
 
 /***********************************************
 
