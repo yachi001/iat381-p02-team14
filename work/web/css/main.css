@@ -130,12 +130,12 @@ nav a:visited, nav a:active
 {
 	display: block;
 	width: 100%;
-	padding-bottom: 1rem;
+	padding-bottom: 10%;
 }
 
 .product-list-view > img
 {
-	width: 15%;
+	width: 30%;
 	float: left;
 }
 
@@ -151,12 +151,13 @@ nav a:visited, nav a:active
 	margin-bottom: 1rem;
 }
 
-.col-1of2text > .sub-heading
+.col-1of2text > .sub-heading, .col-1of2text-cart > .sub-heading
 {
 	text-align: left;
 	margin-top: 0rem;
 	margin-left: 0rem;
 }
+
 
 /***********************************
     

@@ -42,6 +42,13 @@
 	width: 60%;
 	margin-top: 2.25rem;
 	text-align: right;
+	float: right;
+}
+
+.col-1of3search > a, .col-1of3search>img
+{
+	display: inline;
+	float: left;
 }
 
 @media (max-width: 820px) 
@@ -246,23 +253,31 @@
 }
 
 
+
+#searchbar, #searchbar-btn 
+{
+    font-size: 1rem;
+}
+
+/* Need testing on this (uncomment if GO button goes off)
+@media (max-width: 410px) 
+{
+    #searchbar, #searchbar-btn 
+    {
+        font-size: 12px;
+    }
+}
+*/
+
 .col-1of2image-cart
 {
-    width: 31%;
+    width: 30%;
     float: left;
 }
 
 .col-1of2text-cart
 {
-    width: 76%;
-}
-
-@media (max-width:00px) 
-{
-    .col-1of2text-cart
-    {
-        width: 100%;
-    }
+    width: 70%;
 }
 
 

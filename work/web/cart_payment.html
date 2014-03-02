@@ -117,10 +117,13 @@
 			<form name="input" method="get">
 			<fieldset class="payment">
 				<legend>Payment Information</legend>
-				<input type="radio" name="pay-type" value="interac">Interac
-				<input type="radio" name="pay-type" value="ae">American Express
-				<input type="radio" name="pay-type" value="mastercard" checked="on">Mastercard
-				<input type="radio" name="pay-type" value="visa">Visa<br>
+				
+				<div class="grid">
+					<div class="col-1of4-radio"><input type="radio" name="pay-type" value="interac">Interac</div>
+					<div class="col-1of4-radio"><input type="radio" name="pay-type" value="ae">American Express</div>
+					<div class="col-1of4-radio"><input type="radio" name="pay-type" value="mastercard" checked="on">Mastercard</div>
+					<div class="col-1of4-radio"><input type="radio" name="pay-type" value="visa">Visa &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div>
+				</div>
 				
 				<label class="payment" form="phone">Card #:</label>
 				<input class="payment" type="text" name="card" value="1234-4321-9876-5789">
