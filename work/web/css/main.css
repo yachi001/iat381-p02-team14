@@ -12,6 +12,8 @@ img
 	height: auto;
 }
 
+
+
 section
 {
 	margin-top: 1rem;
@@ -54,15 +56,8 @@ section
 	text-align: center;
 }
 
-a:link
-{
-	text-decoration: none;
-}
 
-a:visited
-{
-	color: #000000;
-}
+
 
 /***********************************************
 
@@ -72,7 +67,7 @@ a:visited
 nav a
 {
 	font-family: Arial, sans-serif;
-	font-size: 1.5rem;
+	font-size: 1.3rem;
 	text-decoration: none;
 	background-color: #ecf4f7;
 	width: 100%;
@@ -82,9 +77,12 @@ nav a
 	border-radius: 0.25rem;
 	border-width: 0.1rem;
 	border-color: #449ec4;
+	padding: 0.3rem;
+	text-align: center;
 }
 
-nav a:visited
+
+nav a:visited, nav a:active
 {
 	color: #406ea1;
 }
@@ -96,8 +94,11 @@ nav a:visited
 
 .account-bar
 {
+	width: 100%;
 	float: right;
+	text-align: right;
 }
+
 
 /***********************************************
 
@@ -125,12 +126,39 @@ nav a:visited
 {
 	text-align: left;
 	list-style-type: none;
+	margin-left: -2.5rem;
 }
 
 .product-list-view
 {
-	display: inline;
+	display: block;
+	width: 100%;
+	padding-bottom: 10%;
+}
+
+.product-list-view > img
+{
+	width: 30%;
+	float: left;
+}
+
+.product-list-view > .info
+{
 	width: 50%;
+}
+
+.cart-item
+{
+	display: block;
+	padding-bottom: 1rem;
+	margin-bottom: 1rem;
+}
+
+.col-1of2text > .sub-heading, .col-1of2text-cart > .sub-heading
+{
+	text-align: left;
+	margin-top: 0rem;
+	margin-left: 0rem;
 }
 
 
@@ -220,6 +248,25 @@ a>img
 	width: 100%;
 }
 
+
+.btn-float-right
+{
+	width: 50%;
+}
+@media (max-width: 665px)
+{
+    .btn-float-right 
+    {
+        width: 100%;
+    }
+}
+
+
+#btn-submit
+{
+	width: 20%;
+}
+
 /**********************************************
 	
 		Default Gray Button
@@ -227,10 +274,10 @@ a>img
 ***********************************************/
 .default-btn
 {
-	max-width: 150px;
+	/*max-width: 175px;*/
 	width: 100%;
 	
-	font-size: 0.9rem;
+	font-size: 1rem;
 	text-align: center;
 	
 	border-radius: 0.25em;
@@ -239,6 +286,10 @@ a>img
 	border-width: 1px;
 	
 	background: linear-gradient(#EEE, #CCC);
+	
+	padding: 0.2rem;
+	margin: 1rem 0rem;
+	
 }
 
 .default-btn:hover
@@ -258,38 +309,6 @@ a>img
 	margin: 0px;
 }
 
-.default-btn-large
-{
-	max-width: 175px;
-	width: 100%;
-	
-	font-size: 0.9rem;
-	text-align: center;
-	
-	border-radius: 0.25em;
-	border-color: #000;
-	border-style: solid;
-	border-width: 1px;
-	
-	background: linear-gradient(#EEE, #CCC);
-}
-
-.default-btn-large:hover
-{
-	background: linear-gradient(#CCC, #EEE);
-	cursor: pointer;
-}
-
-.default-btn-large:active
-{
-	background: linear-gradient(#AAA, #CCC);
-}
-
-.default-btn-large>p
-{
-	padding: 0.2rem;
-	margin: 0px;
-}
 
 /**********************************************
 	
@@ -298,18 +317,19 @@ a>img
 ***********************************************/
 .purchase-btn
 {
-	max-width: 150px;
+	/*max-width: 175px;*/
 	width: 100%;
 	font-size: 1.1rem;
 	
+	
 	border-radius: 0.25em;	
 	border-color: #000;
-	border-style: solid;
 	border-width: 0.1em;
 	
 	background: linear-gradient(#FFF000, #FFC80F);
 	padding: 1em;
-	margin-bottom: 1.5em;
+	
+	margin-right: 20rem;
 	text-align: center;	
 }
 

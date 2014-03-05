@@ -63,44 +63,68 @@
 			<div class="grid">
 				<div class="col-1of2-left-main">
 						<div class="position">
-							<img src="img/book1.jpg" alt="Product Preview" width="150" height="200" class="product-img">
-							<h2 class="sub-heading">War and Peace</h2>
-							<ul class="no-bullet">
-								<li>Author: Lev Tolstoy</li>
-								<li>ISBN: 2588961135</li>
-								<li>Hardcover</li>
-								<li>Status: In Stock</li>
-								<li>Quantity: 1</li>
-								<li>$29.99</li>
-							</ul><br />
-							<img src="img/book2.jpg" alt="Product Preview" width="150" height="170" class="product-img">
-							<h2 class="sub-heading">The Prince</h2>
-							<ul class="no-bullet">
-								<li>Author: Niccolò Machiavelli</li>
-								<li>ISBN: 4629811859</li>
-								<li>Hardcover</li>
-								<li>Status: In Stock</li>
-								<li>Quantity: 1</li>
-								<li>$19.99</li>
-							</ul>
+						
+						    <div class="cart-item">
+						        <div class="col-1of2image-cart">
+								    <img src="img/book1.jpg" alt="Product Preview" width="150" height="200" class="product-img">
+								</div>
+								
+								<div class="col-1of2text-cart">
+									<h2 class="sub-heading">War and Peace</h2>
+									<ul class="no-bullet">
+										<li>Author: Lev Tolstoy</li>
+										<li>ISBN: 2588961135</li>
+										<li>Hardcover</li>
+										<li>Status: In Stock</li>
+										<li>Quantity: 1</li>
+										<li>$29.99</li>
+									</ul>
+								</div>
+							</div>
+
+
+                            
+							<div class="cart-item">
+								<div class="col-1of2image-cart">
+									<img src="img/book2.jpg" alt="Product Preview" width="150" height="170" class="product-img">
+								</div>
+								<div class="col-1of2text-cart">
+									<h2 class="sub-heading">The Prince</h2>
+									<ul class="no-bullet">
+										<li>Author: Niccolò Machiavelli</li>
+										<li>ISBN: 4629811859</li>
+										<li>Hardcover</li>
+										<li>Status: In Stock</li>
+										<li>Quantity: 1</li>
+										<li>$19.99</li>
+									</ul>    
+								</div>
+                            </div>
 						</div>
 				</div>
 				
 				<div class="col-1of2-left-fill">
 					<div class="position-purchase">	
+					
+					    <!-- Ordering Summary panel -->
 						<h2 class="sub-heading">Order Details</h2>
 						<p class="position">Subtotal: $49.98</p>
 						<p class="position">Taxes: $2.49</p>
 						<p class="position">Total: $52.47</p>
-						<div class="purchase-btn">
-							<a href="cart_payment.html">Checkout</a>
-						</div>
-						<div class="default-btn">
-							<p><a href="cart_payment.html">Reserve in Store</a></p>
-						</div>
+						
+						<!-- purchase button -->
+						<form action="cart_payment.html" method="get">
+                                <button class="purchase-btn">Checkout</button>
+                        </form>
+						
+						<!-- Reserve in store button -->
+						<form action="cart_payment.html" method="get" onclick="alert('Reserved')">
+                                <button class="default-btn">Reserve in Store</button>
+                        </form>
 					</div>
 				</div>
-			</div>
+				
+			</div><!-- end of grid -->
 		</section>
     </body>
 </html>

@@ -117,10 +117,13 @@
 			<form name="input" method="get">
 			<fieldset class="payment">
 				<legend>Payment Information</legend>
-				<input type="radio" name="pay-type" value="interac">Interac
-				<input type="radio" name="pay-type" value="ae">American Express
-				<input type="radio" name="pay-type" value="mastercard" checked="on">Mastercard
-				<input type="radio" name="pay-type" value="visa">Visa<br>
+				
+				<div class="grid">
+					<div class="col-1of4-radio"><input type="radio" name="pay-type" value="interac">Interac</div>
+					<div class="col-1of4-radio"><input type="radio" name="pay-type" value="ae">American Express</div>
+					<div class="col-1of4-radio"><input type="radio" name="pay-type" value="mastercard" checked="on">Mastercard</div>
+					<div class="col-1of4-radio"><input type="radio" name="pay-type" value="visa">Visa &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div>
+				</div>
 				
 				<label class="payment" form="phone">Card #:</label>
 				<input class="payment" type="text" name="card" value="1234-4321-9876-5789">
@@ -131,10 +134,14 @@
 				<label class="payment" form="phone">Pin Code:</label>
 				<input class="payment" type="text" name="pin" value="***">
 			</fieldset>
-				<p class="purchase-btn">
-					<a href="cart_confirmation.html">Proceed</a>
-				</p>
+				
 			</form>
+			
+			<div class="btn-float-right">
+				<form action="cart_confirmation.html" method="get">
+	                    <button class="purchase-btn">Proceed</button>
+	            </form>
+            </div>
 		</section>
 	</body>
 </html>
