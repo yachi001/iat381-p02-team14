@@ -243,8 +243,9 @@
 .col-1of2-right-fill 
 {
     width: 18%;
-	border-style: solid;
-	border-width: 1px;
+	height: auto;
+	border-style: none;
+	background-color: #ffffcc;
 	border-radius: 0.25rem;
 	padding-right: 0.5rem;
 }
