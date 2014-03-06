@@ -61,40 +61,46 @@
 			<h3 class="sub-heading">Order Summary</h3>
 			<p>Thanks for shopping with us. </p>
 			<p>Order ID: 5939222 </p>
-			<p>Your tracking ID for tracking the shipment of your items is: 25395332</p>
+			<p>Your tracking ID for this shipment is: 25395332</p>
 			
 			
 			<!-- 
 			     The book image sections
 			 -->
-			<div class="product-list-view">
-	            <img class="product-img" src="img/book1.jpg" alt="Product Preview" width="150" height="200" >
-		        <div class="info">
-		            <h2 class="sub-heading">War and Peace</h2>
-		            <ul class="no-bullet">
-		                <li>Author: Lev Tolstoy</li>
-		                <li>ISBN: 2588961135</li>
-		                <li>Hardcover</li>
-		                <li>$29.99</li>
-		            </ul>
-	            </div>
-	        </div>
+			<div class="cart-item">
+				<div class="col-1of2image-cart">
+					<img src="img/book1.jpg" alt="Product Preview" width="150" height="200" class="product-img">
+				</div>
+								
+				<div class="col-1of2text-cart">
+					<h2 class="sub-heading">War and Peace</h2>
+					<ul class="no-bullet">
+						<li>Author: Lev Tolstoy</li>
+						<li>ISBN: 2588961135</li>
+						<li>Hardcover</li>
+						<li>Quantity: 1</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="cart-item">
+				<div class="col-1of2image-cart">
+					<p><img src="img/book2.jpg" alt="Product Preview" width="150" height="200" class="product-img"></p>
+				</div>
+								
+				<div class="col-1of2text-cart">
+					<p></p>
+					<h2 class="sub-heading">The Prince</h2>
+					<ul class="no-bullet">
+						<li>Author: Niccolo Machiavelli</li>
+						<li>ISBN: 4629811859</li>
+						<li>Hardcover</li>
+						<li>Quantity: 1</li>
+					</ul>    
+				</div>
+			</div>
 	        
-	           
-	        <div class="product-list-view">
-	            <img class="product-img" src="img/book2.jpg" alt="Product Preview" width="150" height="170" >
-	            <div class="info">
-		            <h2 class="sub-heading">The Prince</h2>
-		            <ul class="no-bullet">
-		                <li>Author: Niccolò Machiavelli</li>
-		                <li>ISBN: 4629811859</li>
-		                <li>Hardcover</li>
-		                <li>$19.99</li>
-		            </ul> 
-	            </div>
-	        </div>
-	        
-	        <div class="btn-float-right">
+	        <div class="btn-confirm">
 				<form action="home.html" method="get">
 	                 <button class="default-btn">Confirm</button>
 	            </form>
@@ -102,7 +108,6 @@
 	                 <button class="default-btn">Keep Shopping</button>
 	            </form>
             </div>
-			
 		</section>
 	</body>
 </html>

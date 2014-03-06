@@ -67,18 +67,19 @@
 		    </header>
 		<!--  Header Section Ends  -->
 		
+		
 		<section>
 			<div class="grid">
-				<div class="col-1of2-left-main"><br />
+				<div class="col-1of2-left-main">
 					<div class="col-1of2image">
 						<div class="position">
-							<img src="img/book1_large.jpg" alt="Product Preview" width="260" height="346">
+							<p><img src="img/book1_large.jpg" alt="Product Preview" width="260" height="346"></p>
 						</div>
 					</div>
 					<div class="col-1of2text">
 						<div class="position">
 							<h2 class="sub-heading">War and Peace</h2>
-							<h3 class="sub-heading">Author: Lev Nikolayevich Tolstoy</h3>
+							<h3 class="sub-heading">Author: Lev Tolstoy</h3>
 							<h3 class="sub-heading">ISBN: 2588961135</h3>
 							<h3 class="sub-heading">1869 | Hardcover</h3>
 							<h3 class="sub-heading">About</h3>
@@ -103,28 +104,36 @@
                         </form>
 						
 						<p>Compare Prices</p>
-	                    <input class="products" type="checkbox" name="book-type" value="paperback">
-						<label class="products" form="paperback">Paperback</label>
+	                    <div>
+							<input type="checkbox" name="type" value="paperback">&nbsp; Paperback 
+						</div>
 						
-						<input class="products" type="checkbox" name="book-type" value="hardcover">
-						<label class="products" form="hardcover">Hardcover</label>
+						<div>
+							<input type="checkbox" name="type" value="hardcover">&nbsp; Hardcover 
+						</div>
 						
-						<input class="products" type="checkbox" name="book-type" value="ebook">
-						<label class="products" form="ebook">E-book</label>
+						<div>
+							<input type="checkbox" name="type" value="e-book">&nbsp; E-book 
+						</div>
 	                        
 						<p>Stores</p>
-						<input class="products" type="checkbox" name="store" value="amazon">
-						<label class="products" form="art">Amazon</label>
+						<div>
+							<input type="checkbox" name="store" value="amazon">&nbsp; Amazon 
+						</div>
 						
-                        <input class="products" type="checkbox" name="store" value="book-giant">
-						<label class="products" form="heatlh">Book Giant</label>
+						<div>
+							<input type="checkbox" name="store" value="bookgiant">&nbsp; Book Giant 
+						</div>
 						
-						<input class="products" type="checkbox" name="store" value="chapters">
-						<label class="products" form="history">Chapters</label><br />
-                        
-                        <form action="products.html" method="get">
-                                <button class="default-btn">Submit</button>
-                        </form>
+						<div>
+							<input type="checkbox" name="store" value="chapters">&nbsp; Chapters 
+						</div>
+						
+						<div>
+							<form action="products.html" method="get">
+									<button class="default-btn">Submit</button>
+							</form>
+						</div>
 					</div>
 				</div>	
 			
@@ -133,23 +142,30 @@
 				<div class="col-1of1">
 					<div class="position">
 						<h3 class="sub-heading">Reviews</h3>
-						<p id="post"></p>
+						<div>
+							<div>
+								Name: John Doe
+							</div>
+							<div>
+								Overall an interesting book. Good in depth analysis on the history.
+							</div>
+							<div>
+								June 30, 2013 20:46 
+							</div>
+						</div>
 						<form>
 							<p>Display Name: <input type="text" id="username"/></p>
 							<div>Your Comment:</div><textarea name="comment"  rows="5"></textarea>
 						</form>
 						
 						<div id="btn-submit">
-							<form action="products" method="get">
+							<form action="products.html" method="get">
 	                             <button class="default-btn">Submit</button>
 	                        </form>
 					    </div>
-					</div><!-- position -->
-				</div> <!-- col-1of1 -->		
-					
+					</div>
+				</div>			
 			</div>
 		</section>
-
-    
 	</body>
 </html>
