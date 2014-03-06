@@ -66,6 +66,7 @@ nav a
 	width: 100%;
 	margin-top: 0.5rem;
 	float: left;
+	clear: both;
 	border-style: solid;
 	border-radius: 0.25rem;
 	border-width: 0.1rem;
@@ -82,14 +83,17 @@ nav a:visited, nav a:active
 
 #top>a
 {
-	display: inline;
+	display: block;
 }
 
 .account-bar
 {
+	font-size: 0.9rem;
 	width: 100%;
 	float: right;
 	text-align: right;
+	margin-right: 0.6rem;
+	
 }
 
 

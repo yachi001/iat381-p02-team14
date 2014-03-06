@@ -26,6 +26,8 @@
 {
 	width: 20%;
 	text-align: left;
+	margin-bottom: 0.5rem;
+	margin-top: -1rem;
 }
 
 @media (max-width: 820px) 
@@ -34,6 +36,16 @@
 	{
         width: 100%;
 		text-align: left;
+    }
+}
+
+@media (max-width: 820px) 
+{
+    .col-1of3home 
+	{
+        width: 100%;
+		text-align: left;
+		margin-top: 0.5rem;
     }
 }
 
