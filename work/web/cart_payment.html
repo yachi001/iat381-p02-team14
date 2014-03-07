@@ -60,31 +60,38 @@
 		
 		<section>
 			<h3 class="sub-heading">Checkout</h3>
-			<form name="input" method="get">
-				<fieldset class="payment">
+			<p>
+				*indicates required field
+			</p>
+			
+				<fieldset>
 					<legend>Contact Information</legend>
+					<div>
+						*First Name:<input class="field" type="text" name="fname" value="John">
+					</div>
 					
-					<label class="payment" form="fname">First Name:</label>
-					<input class="payment" type="text" name="fname" value="John">
+					<p>
+						*Last Name:<input class="field" type="text" name="lname" value="Doe">
+					</p>
 					
-					<label class="payment" form="lname">Last Name:</label>
-					<input class="payment" type="text" name="lname" value="Doe">
+					<p>
+						*Address:<input class="field" type="text" name="address" value="1234 Main Street">
+					</p>
 					
-					<label class="payment" form="addr">Address:</label>
-					<input class="payment" type="text" name="addr" value="1234 Main Street">
+					<p>
+						*City:<input class="field" type="text" name="city" value="Vancouver">
+					</p>
 					
-					<label class="payment" form="city">City:</label>
-					<input class="payment" type="text" name="city" value="Vancouver">
-					
-					<label class="payment" form="province">Province:</label><br />
-					<form action="">
+					<!--adjust dropdown to be the same size as fields-->
+					<div>*Province:</div>
+					<form>
 						<select name="province">
 							<option value="bc">British Columbia</option>
 							<option value="ab">Alberta</option>
 							<option value="mb">Manitoba</option>
 							<option value="nb">New Brunswick</option>
 							<option value="nl">Newfoundland</option>
-							<option value="nt">Northwest Territories &nbsp;</option>
+							<option value="nt">Northwest Territories</option>
 							<option value="ns">Nova Scotia</option>
 							<option value="nv">Nunavut</option>
 							<option value="on">Ontario</option>
@@ -93,49 +100,59 @@
 							<option value="sk">Saskatchewan</option>
 							<option value="yt">Yukon</option>
 						</select>
-					</form><br />
-					
-					<label class="payment" form="country">Country:</label><br />
-					<form action="">
-						<select name="country">
-							<option value="ca">Canada</option>
-							<option value="us">United States &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</option>
-						<select>
 					</form>
 					
-					<label class="payment" form="post">Postal Code:</label>
-					<input class="payment" type="text" name="post" value="V6A 2W8">
+					<p></p>
+					<!--adjust dropdown to be the same size as fields-->
+					<div>*Country</div>
+					<form>
+						<select name="country">
+							<option value="ca">Canada</option>
+							<option value="us">United States</option>
+						</select>
+					</form>	
 					
-					<label class="payment" form="phone">Phone#:</label>
-					<input class="payment" type="text" name="phone" value="604-123-4567">
+					<!--convert to 2 fields-->
+					<div>
+						*Postal Code:<input class="field" type="text" name="postal" value="V6A 2W8">
+					</div>
+					
+					<!--convert to 3 fields-->
+					<p>
+						Phone #:<input class="field" type="text" name="city" value="604-123-4567">
+					</p>
 				</fieldset>
-			</form>
+			
 		</section>
 		
 		
 		<section>
-			<form name="input" method="get">
-			<fieldset class="payment">
+			
+			<fieldset>
 				<legend>Payment Information</legend>
-				
 				<div class="grid">
 					<div class="col-1of4-radio"><input type="radio" name="pay-type" value="interac">Interac</div>
 					<div class="col-1of4-radio"><input type="radio" name="pay-type" value="ae">American Express</div>
-					<div class="col-1of4-radio"><input type="radio" name="pay-type" value="mastercard" checked="on">Mastercard</div>
+					<div class="col-1of4-radio"><input type="radio" name="pay-type" value="mastercard" checked="checked">Mastercard</div>
 					<div class="col-1of4-radio"><input type="radio" name="pay-type" value="visa">Visa &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div>
 				</div>
 				
-				<label class="payment" form="phone">Card #:</label>
-				<input class="payment" type="text" name="card" value="1234-4321-9876-5789">
+				<!--convert to 4 fields-->
+				<p>
+					*Card #:<input class="field" type="text" name="card" value="1234-4321-9876-5789">
+				</p>
 				
-				<label class="payment" form="phone">Expiration Date:</label>
-				<input class="payment" type="text" name="exp" value="06/16">
+				<!--convert to dropdown with month (01-12) and year(2014-2022)-->
+				<p>
+					*Expiration Date:<input class="field" type="text" name="exp" value="06/16">
+				</p>
 				
-				<label class="payment" form="phone">Pin Code:</label>
-				<input class="payment" type="text" name="pin" value="***">
+				<p>
+					*Pin Code:<input class="field" type="password" name="pin" value="099">
+				</p>
 			</fieldset>
 				
-			</form>
+			
 			
 			<div class="btn-float-right">
 				<form action="cart_confirmation.html" method="get">

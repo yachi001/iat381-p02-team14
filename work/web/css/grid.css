@@ -93,8 +93,12 @@
 .col-1of5nav 
 {
     width: 20%;
-    padding-right: 1rem;
-    
+    padding-right: 0.5rem;
+}
+
+.col-1of5nav:last-of-type 
+{
+	padding-right: 0;   
 }
 
 .col-1of5nav a:hover
@@ -104,15 +108,18 @@
     transition: background-color 0.2s;
 }
 
-
-
 @media (max-width: 750px) 
 {
     .col-1of5nav 
-    {
-        width: 105%;
-        padding-right: 1rem;
+       {
+        width: 100%;
+        padding-right: 0.5rem;
     }
+	
+	.col-1of5nav:last-of-type 
+	{
+		padding-right: 0.5rem;
+	}
 }
 
 /***********************************************

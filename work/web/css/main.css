@@ -9,7 +9,6 @@ body
 	width: 80%;
 	margin: auto;
 	padding: 1rem;
-	overflow-x: hidden;
 }
 
 img
@@ -92,8 +91,7 @@ nav a:visited, nav a:active
 	width: 100%;
 	float: right;
 	text-align: right;
-	margin-right: 0.6rem;
-	
+	padding-right: 0.3rem;
 }
 
 
@@ -168,9 +166,10 @@ nav a:visited, nav a:active
     padding-bottom: 1rem;	
  }
  
- input.payment
+ input.field
  {
     display: block;
+	margin-top: 0.3rem;
  }
  
  .top-picks
