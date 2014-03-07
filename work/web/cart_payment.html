@@ -66,26 +66,26 @@
 			
 				<fieldset>
 					<legend>Contact Information</legend>
-					<div>
-						*First Name:<input class="field" type="text" name="fname" value="John">
+										
+					<div id="text-fields">
+					    <p>*First Name:</p>
+					    <input class="fieldbox-width" type="text" name="fname" value="John">
+					
+						<p>*Last Name:</p>
+						<input class="fieldbox-width" type="text" name="lname" value="Doe">
+						
+						<p>*Address:</p>
+					    <input class="fieldbox-width" type="text" name="address" value="1234 Main Street">
+					    
+					    <p>*City:</p>
+					    <input class="fieldbox-width" type="text" name="city" value="Vancouver">
+						
 					</div>
 					
-					<p>
-						*Last Name:<input class="field" type="text" name="lname" value="Doe">
-					</p>
-					
-					<p>
-						*Address:<input class="field" type="text" name="address" value="1234 Main Street">
-					</p>
-					
-					<p>
-						*City:<input class="field" type="text" name="city" value="Vancouver">
-					</p>
-					
 					<!--adjust dropdown to be the same size as fields-->
-					<div>*Province:</div>
-					<form>
-						<select name="province">
+					<div id="province-field">
+						<p>*Province:</p>
+						<select name="province" class="fieldbox-width">
 							<option value="bc">British Columbia</option>
 							<option value="ab">Alberta</option>
 							<option value="mb">Manitoba</option>
@@ -100,34 +100,34 @@
 							<option value="sk">Saskatchewan</option>
 							<option value="yt">Yukon</option>
 						</select>
-					</form>
+                    </div>
 					
-					<p></p>
-					<!--adjust dropdown to be the same size as fields-->
-					<div>*Country</div>
-					<form>
-						<select name="country">
+					<div id="country-field">
+						<p>*Country</p>
+						<select class="fieldbox-width" name="country" >
 							<option value="ca">Canada</option>
 							<option value="us">United States</option>
 						</select>
-					</form>	
-					
-					<!--convert to 2 fields-->
-					<div>
-						*Postal Code:<input class="field" type="text" name="postal" value="V6A 2W8">
 					</div>
 					
-					<!--convert to 3 fields-->
-					<p>
-						Phone #:<input class="field" type="text" name="city" value="604-123-4567">
-					</p>
+					<div id="postal-field">
+						<p>*Postal Code:</p>
+						<input type="text" name="postal" value="V6A" maxlength="3" size="3">
+						<input type="text" name="postal" value="2W8" maxlength="3" size="3">
+					</div>
+					
+					<div id="phone-field">
+					  <p>Phone #:</p>
+					  <input type="text" name="phone" value="604" maxlength="3" size="3">
+					  <input type="text" name="phone" value="123" maxlength="3" size="3">
+					  <input type="text" name="phone" value="4567" maxlength="4" size="4">
+					</div>
 				</fieldset>
 			
 		</section>
 		
 		
 		<section>
-			
 			<fieldset>
 				<legend>Payment Information</legend>
 				<div class="grid">
@@ -138,14 +138,44 @@
 				</div>
 				
 				<!--convert to 4 fields-->
-				<p>
-					*Card #:<input class="field" type="text" name="card" value="1234-4321-9876-5789">
-				</p>
+				<div id="card-field">
+					<p>*Card #:</p>
+					<input type="text" name="card" value="1234" maxlength="4" size="4">
+					<input type="text" name="card" value="4321" maxlength="4" size="4">
+					<input type="text" name="card" value="9876" maxlength="4" size="4">
+					<input type="text" name="card" value="5789" maxlength="4" size="4">
+				</div>
 				
-				<!--convert to dropdown with month (01-12) and year(2014-2022)-->
-				<p>
-					*Expiration Date:<input class="field" type="text" name="exp" value="06/16">
-				</p>
+				<!--convert to dropdown with month (01-12) and year(2014-2022)-->			
+				<div id="expiration-field">
+                    <p>*Expiration Date:</p>
+                    <select name="month" class="fieldbox-width">
+                        <option value="jan">01</option>
+                        <option value="feb">02</option>
+                        <option value="mar">03</option>
+                        <option value="apr">04</option>
+                        <option value="may">05</option>
+                        <option value="jun">06</option>
+                        <option value="jul">07</option>
+                        <option value="aug">08</option>
+                        <option value="sep">09</option>
+                        <option value="oct">10</option>
+                        <option value="nov">11</option>
+                        <option value="dec">12</option>
+                    </select>
+                    
+                    <select name="date" class="fieldbox-width">
+                        <option value="2014">2014</option>
+                        <option value="2015">2015</option>
+                        <option value="2016">2016</option>
+                        <option value="2017">2017</option>
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                    </select>
+                </div>
 				
 				<p>
 					*Pin Code:<input class="field" type="password" name="pin" value="099">
@@ -153,11 +183,12 @@
 			</fieldset>
 				
 			
-			
-			<div class="btn-float-right">
-				<form action="cart_confirmation.html" method="get">
-	                    <button class="purchase-btn">Proceed</button>
-	            </form>
+			<div class="cart_payment">
+				<div class="btn-float-right">
+					<form action="cart_confirmation.html" method="get">
+		                    <button class="purchase-btn">Proceed</button>
+		            </form>
+	            </div>
             </div>
 		</section>
 	</body>

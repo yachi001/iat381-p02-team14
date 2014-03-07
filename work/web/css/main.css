@@ -108,6 +108,66 @@ nav a:visited, nav a:active
 }
 
 
+
+/***********************************************
+
+        My Cart Page - cart_payment.html
+            
+***********************************************/
+#phone-field>p, #postal-field>p, #country-field>p, #province-field>p, #text-fields>p, #card-field>p, #expiration-field>p
+{
+	padding-bottom: 0;
+	margin-bottom: 0.1rem;
+	margin-top: 0.8rem;
+}
+
+#phone-field>input
+{
+	width: 3rem;
+	margin-right: 0.1rem;
+}
+
+#expiration-field>select, #postal-field>input
+{
+	width: 4.2rem;
+	margin-right: 1rem;
+}
+
+.fieldbox-width, .cart_payment>.btn-float-right
+{
+    width: 10rem;    
+}
+
+
+@media (max-width: 330px) 
+{
+    #phone-field>input
+    {
+        width: 25%;
+    }
+    
+    .fieldbox-width, .cart_payment>.btn-float-right
+	{
+	    width: 100%;    
+	}
+	
+	#expiration-field>select, #postal-field>input
+	{
+	    width: 40%;
+	    margin-right: 0;
+	}
+}
+
+@media (max-width: 430px)
+{
+	#card-field>input
+    {
+        width: 20%;
+        margin-right: 2%;
+    }
+}
+
+
 /***********************************************
 
         My Cart Page - cart.html
@@ -131,6 +191,8 @@ nav a:visited, nav a:active
 	display: block;
 	clear: both;
 }
+
+
 
 .col-1of2text > .sub-heading, .col-1of2text-cart > .sub-heading
 {
@@ -233,6 +295,24 @@ a>img
 {
 	width: 70%;
 }
+
+
+.btn-float-right
+{
+    width: 50%;
+}
+
+
+@media (max-width: 665px)
+{
+    .btn-float-right 
+    {
+        width: 100%;
+    }
+}
+
+
+
 
 
 /**********************************************
