@@ -220,6 +220,27 @@
     }
 }
 
+
+.btn-float-right
+{
+    width: 50%;
+}
+
+@media (max-width: 665px)
+{
+    .btn-float-right 
+    {
+        width: 100%;
+    }
+}
+
+
+#btn-submit
+{
+    width: 20%;
+}
+
+
 /***********************************************
 
        Uneven grid: left is the main
