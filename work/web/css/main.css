@@ -356,6 +356,20 @@ a>img
 	margin: 0px;
 }
 
+.default-btn>p>a:hover, .default-btn>p>a:link, .default-btn>p>a:visited
+{
+	text-decoration: none;
+	color: black;
+}
+
+/**********************************************
+        Existing account
+***********************************************/
+.existing-account>.default-btn
+{
+	width: 10rem;
+}
+
 
 /**********************************************
 	
