@@ -103,7 +103,7 @@
 	padding-right: 0;   
 }
 
-.col-1of5nav a:hover
+.col-1of5nav a:hover, #navToggle a:hover
 {
 	background-color: #449ec4;
 	color: #ecf4f7;

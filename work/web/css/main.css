@@ -58,7 +58,7 @@ section
         Header
             
 ***********************************************/
-nav a, #navToggle>a
+nav a, #navToggle a
 {
 	width: 100%;
 	font-family: Arial, sans-serif;
@@ -81,7 +81,7 @@ nav a, #navToggle>a
 	padding-right: 0.5rem;
 }
 
-nav a:visited, nav a:active,  #navToggle>a:visited , #navToggle>a:active
+nav a:visited, nav a:active,  #navToggle a:visited 
 {
 	color: #406ea1;
 }
