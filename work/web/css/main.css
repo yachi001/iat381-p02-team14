@@ -3,11 +3,6 @@
         General
             
 ***********************************************/
-html 
-{
-	overflow-x: hidden;
-}
-
 body
 {
 	width: 80%;
@@ -89,11 +84,6 @@ nav a:visited, nav a:active,  #navToggle a:visited
 #top>a
 {
 	display: block;
-}
-
-#searchbar, #searchbar-btn 
-{
-    font-size: 1rem;
 }
 
 .account-bar
