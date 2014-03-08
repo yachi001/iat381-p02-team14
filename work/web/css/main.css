@@ -58,7 +58,7 @@ section
         Header
             
 ***********************************************/
-nav a
+nav a, #navToggle>a
 {
 	width: 100%;
 	font-family: Arial, sans-serif;
@@ -76,7 +76,7 @@ nav a
 	margin-top: 0.5rem;
 }
 
-nav a:visited, nav a:active
+nav a:visited, nav a:active,  #navToggle>a:visited , #navToggle>a:active
 {
 	color: #406ea1;
 }
