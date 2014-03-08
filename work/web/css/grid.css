@@ -1,6 +1,6 @@
 /***********************************************
 
-        Header Components
+        Header
             
 ***********************************************/
 [class*="col-"] 
@@ -122,10 +122,11 @@
 	}
 }
 
+
 /***********************************************
 
-		Product Lists Display
-            780
+		Product List + Deals
+        
 ***********************************************/
 .col-1of5 
 {
@@ -164,9 +165,10 @@
     }
 }
 
+
 /***********************************************
 
-		Contact Page
+		Contact
             
 ***********************************************/
 .col-1of3map
@@ -196,14 +198,21 @@
     }
 }
 
+
+/***********************************************
+
+		Account Info
+            
+***********************************************/
 .col-1of3sub
 {
     width: 33.3333%;
 }
 
+
 /***********************************************
 
-		Account Related & Services Pages
+		Service + About Us + Account Info
             
 ***********************************************/
 .col-1of2
@@ -219,6 +228,7 @@
         margin-bottom: 0.5rem;
     }
 }
+
 
 /***********************************************
 
@@ -247,6 +257,7 @@
 	float: left;
 }
 
+
 /***********************************************
 
 		Uneven grid: inside product detail
@@ -271,22 +282,10 @@
     }
 }
 
-
-
 #searchbar, #searchbar-btn 
 {
     font-size: 1rem;
 }
-
-/* Need testing on this (uncomment if GO button goes off)
-@media (max-width: 410px) 
-{
-    #searchbar, #searchbar-btn 
-    {
-        font-size: 12px;
-    }
-}
-*/
 
 .col-1of2image-cart
 {

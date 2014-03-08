@@ -46,12 +46,6 @@ section
 	padding-left: 1.25rem;
 }
 
-.ad
-{
-	text-align: center;
-	margin-right: 0.5rem;
-}
-
 
 /***********************************************
 
@@ -95,10 +89,69 @@ nav a:visited, nav a:active
 	padding-right: 0.3rem;
 }
 
+.account-bar>a
+{
+	color: #000000;
+	text-decoration: none;
+}
+
+.account-bar>a:hover
+{
+	color: #000000;
+	text-decoration: underline;
+}
+
+.account-bar>a:visited
+{
+	color: #000000;
+	text-decoration: none;
+}
+
 
 /***********************************************
 
-        Product Grids
+        Home
+            
+***********************************************/
+.ad
+{
+	text-align: center;
+	margin-right: 0.5rem;
+}
+
+
+/***********************************************
+
+        Contact
+            
+***********************************************/
+.btn-directions
+{
+	width: 70%;
+}
+
+.mail-link>a
+{
+	color: #000000;
+	text-decoration: none;
+}
+
+.mail-link>a:hover
+{
+	color: #000000;
+	text-decoration: underline;
+}
+
+.mail-link>a:visited
+{
+	color: #000000;
+	text-decoration: none;
+}
+
+
+/***********************************************
+
+        Product List View + Deals
             
 ***********************************************/
 .position-text
@@ -108,13 +161,12 @@ nav a:visited, nav a:active
 }
 
 
-
 /***********************************************
 
-        My Cart Page - cart_payment.html
+        Cart Payment
             
 ***********************************************/
-#phone-field>p, #postal-field>p, #country-field>p, #province-field>p, #text-fields>p, #card-field>p, #expiration-field>p
+#phone-field>p, #postal-field>p, #country-field>p, #province-field>p, #text-fields>p, #card-field>p, #expiration-field>p, #pin-field>p
 {
 	padding-bottom: 0;
 	margin-bottom: 0.1rem;
@@ -137,7 +189,6 @@ nav a:visited, nav a:active
 {
     width: 10rem;    
 }
-
 
 @media (max-width: 330px) 
 {
@@ -191,8 +242,6 @@ nav a:visited, nav a:active
 	display: block;
 	clear: both;
 }
-
-
 
 .col-1of2text > .sub-heading, .col-1of2text-cart > .sub-heading
 {
@@ -283,7 +332,7 @@ a>img
 
 .btn-confirm
 {
-	width: 50%;
+	width: 33.3333%;
 }
 
 #btn-submit
@@ -291,17 +340,10 @@ a>img
 	width: 25%;
 }
 
-#btn-directions
-{
-	width: 70%;
-}
-
-
 .btn-float-right
 {
     width: 50%;
 }
-
 
 @media (max-width: 665px)
 {
@@ -310,9 +352,6 @@ a>img
         width: 100%;
     }
 }
-
-
-
 
 
 /**********************************************
@@ -362,14 +401,39 @@ a>img
 	color: black;
 }
 
+
 /**********************************************
-        Existing account
+	
+		Account Related
+
 ***********************************************/
-.existing-account>.default-btn
+.confirm-account>.default-btn
 {
-	width: 10rem;
+	width: 9rem;
 }
 
+.new-account>.default-btn
+{
+	width: 12rem;
+}
+
+.password-recover>a
+{
+	color: #000000;
+	text-decoration: none;
+}
+
+.password-recover>a:hover
+{
+	color: #000000;
+	text-decoration: underline;
+}
+
+.password-recover>a:visited
+{
+	color: #000000;
+	text-decoration: none;
+}
 
 /**********************************************
 	
@@ -380,7 +444,6 @@ a>img
 {
 	width: 100%;
 	font-size: 1.1rem;
-	
 	
 	border-radius: 0.25em;	
 	border-color: #000;

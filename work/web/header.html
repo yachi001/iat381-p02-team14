@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Product Details</title>
+		<title>Header</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="css/grid.css">
@@ -9,62 +9,63 @@
 	</head>
 
 	<body>
-	    <!--  Header Section Starts  -->
-	        <script src="js/jquery.js"></script>
-	        <script src="js/ui.js"></script>
-	        
-			<header id="top">
-		        <div class="account-bar">
-		            <a href="existing_account.html">my account</a> | 
-					<a href="order_status.html">order status</a> |
-					
-					<!--  Cart Image  -->
-					<a href="cart.html"><img src="img/checkout.png" width="25" height="20" alt="checkout"></a>
-		        </div>
+		<script src="js/jquery.js"></script>
+		<script src="js/ui.js"></script>
+	    
+		<!--  Header  -->
+		<header id="top">
+			<!--  Account Bar: my account + order status  -->
+			<div class="account-bar">
+				<a href="existing_account.html">my account</a> | 
+				<a href="order_status.html">order status</a> |			
+				<a href="cart.html"><img src="img/checkout.png" width="25" height="20" alt="checkout"></a>
+			</div>
+			<!--  End  -->
 		        
-		        
-		        <div class="grid">
-		            <!--  Book Image  -->
-					<div class="col-1of3home">
-						<a href="home.html"><img src="img/logo.png" width="107" height="80" alt="company-logo"></a>
-					</div>
+			<!--  Company Logo + Search Bar  -->
+			<div class="grid">
+				<div class="col-1of3home">
+					<a href="home.html"><img src="img/logo.png" width="107" height="80" alt="company-logo"></a>
+				</div>
 					
-					<!--  Search Bar  -->
-					<div class="col-1of3search">
-						<form method="post" action="#" id="search"> 
-							<label form="form-name"></label>
-							<input id="searchbar" type="text" placeholder="Search..." name="search">
-							<input id="searchbar-btn" type="submit" value="Go">
-						</form>
-					</div>
-					<div>
-						<a href="#top" id="navToggle"><img src="img/menu.jpg" alt="menu" width="30" height="30"></a>
-					</div>
-		        </div>
+				<div class="col-1of3search">
+					<form method="post" action="#" id="search"> 
+						<label form="form-name"></label>
+						<input id="searchbar" type="text" placeholder="Search..." name="search">
+						<input id="searchbar-btn" type="submit" value="Go">
+					</form>
+				</div>
+				
+				<div>
+					<a href="#top" id="navToggle"><img src="img/dropdown-menu.png" alt="dropdown-menu" width="248"></a>
+				</div>
+			</div>
+			<!--  End  -->
 		
-		        <!--  Navigational Bar  -->
-		        <nav class="grid">
-		            <div class="col-1of5nav">
-		                <a href="products.html">Products</a>
-		            </div>
+			<!--  Navigation Bar  -->
+			<nav class="grid">
+				<div class="col-1of5nav">
+					<a href="products.html">Products</a>
+				</div>
 		            
-		            <div class="col-1of5nav">
-		                <a href="deals.html">Deals</a>
-		            </div>
+				<div class="col-1of5nav">
+					<a href="deals.html">Deals</a>
+				</div>
 		            
-		            <div class="col-1of5nav">
-		                <a href="services.html">Services</a>
-		            </div>
+				<div class="col-1of5nav">
+					<a href="services.html">Services</a>
+				</div>
 		            
-		            <div class="col-1of5nav">
-		                <a href="about.html">About Us</a>
-		            </div>
+				<div class="col-1of5nav">
+					<a href="about.html">About Us</a>
+				</div>
 		            
-		            <div class="col-1of5nav">
-		                <a href="contact.html">Contact</a>
-		            </div>
-		        </nav>
+				<div class="col-1of5nav">
+					<a href="contact.html">Contact</a>
+				</div>
+			</nav>
+			<!--  End  -->
 		    </header>
-		<!--  Header Section Ends  -->
+		<!--  End of Header  -->
     </body>
 </html>

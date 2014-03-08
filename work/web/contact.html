@@ -1,83 +1,96 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Contact</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/header.css">
-        <link rel="stylesheet" href="css/grid.css">
-		<link rel="stylesheet" href="css/main.css">
-    </head>
-    <body>
-	    <header id="top">
-	        <div class="account-bar">
-	            <a href="new_account.html">create an account</a>
-				or <a href="existing_account.html">sign in</a> | 
-				<a href="account_info.html">my account</a> | 
-				<a href="order_status.html">check order status</a>
-	        </div>
-	        
-	        <div class="grid">
+	<head>
+		<title>Contact Us</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/grid.css">
+        <link rel="stylesheet" href="css/main.css">
+	</head>
+
+	<body>
+		<script src="js/jquery.js"></script>
+		<script src="js/ui.js"></script>
+	    
+		<!--  Header  -->
+		<header id="top">
+			<!--  Account Bar: my account + order status  -->
+			<div class="account-bar">
+				<a href="existing_account.html">my account</a> | 
+				<a href="order_status.html">order status</a> |			
+				<a href="cart.html"><img src="img/checkout.png" width="25" height="20" alt="checkout"></a>
+			</div>
+			<!--  End  -->
+		        
+			<!--  Company Logo + Search Bar  -->
+			<div class="grid">
 				<div class="col-1of3home">
-					<a href="home.html"><img src="img/logo.png" class="logo" width="107" height="80" alt="company-logo"></a>
+					<a href="home.html"><img src="img/logo.png" width="107" height="80" alt="company-logo"></a>
 				</div>
+					
 				<div class="col-1of3search">
 					<form method="post" action="#" id="search"> 
-					<label form="form-name"></label>
-					<input type="text" placeholder="Search.." name="fname">
-					<input type="submit" value="Go">
+						<label form="form-name"></label>
+						<input id="searchbar" type="text" placeholder="Search..." name="search">
+						<input id="searchbar-btn" type="submit" value="Go">
 					</form>
 				</div>
-				<div class="col-1of3checkout">
-					<a href="cart.html"><img src="img/checkout.png" width="50" height="40" alt="checkout"></a>
+				
+				<div>
+					<a href="#top" id="navToggle"><img src="img/dropdown-menu.png" alt="dropdown-menu" width="248"></a>
 				</div>
-	        </div>
-	
-	        <nav class="grid">
-	            <div class="col-1of5nav">
-	                <a href="products.html">Products</a>
-	            </div>
-	            
-	            <div class="col-1of5nav">
-	                <a href="deals.html">Deals</a>
-	            </div>
-	            
-	            <div class="col-1of5nav">
-	                <a href="services.html">Services</a>
-	            </div>
-	            
-	            <div class="col-1of5nav">
-	                <a href="about.html">About Us</a>
-	            </div>
-	            
-	            <div class="col-1of5nav">
-	                <a href="contact.html">Contact</a>
-	            </div>
-	        </nav>
-	    </header>
+			</div>
+			<!--  End  -->
+		
+			<!--  Navigation Bar  -->
+			<nav class="grid">
+				<div class="col-1of5nav">
+					<a href="products.html">Products</a>
+				</div>
+		            
+				<div class="col-1of5nav">
+					<a href="deals.html">Deals</a>
+				</div>
+		            
+				<div class="col-1of5nav">
+					<a href="services.html">Services</a>
+				</div>
+		            
+				<div class="col-1of5nav">
+					<a href="about.html">About Us</a>
+				</div>
+		            
+				<div class="col-1of5nav">
+					<a href="contact.html">Contact</a>
+				</div>
+			</nav>
+			<!--  End  -->
+		    </header>
+		<!--  End of Header  -->
 
 		
-
+		<!--  Content  -->
 		<section>
 			<h3 class="sub-heading">
 				Contact + Store Hours
 			</h3>
 			
-			<!-- Map Section -->
+			<!--  Map  -->
 			<div class="col-1of3map">
 				<div class="position">
 					<div>
 						<img src="img/map.png" width="250" height="150" alt="location-map">
 					</div>
-					<div id="btn-directions">
-						<form action="https://maps.google.ca/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=4321+Main+Street,+Vancouver,+BC&amp;aq=&amp;sll=49.261924,-123.100819&amp;sspn=0.008528,0.021136&amp;gl=ca&amp;ie=UTF8&amp;hq=&amp;hnear=4321+Main+St,+Vancouver,+British+Columbia+V5V&amp;t=m&amp;z=14&amp;ll=49.24686,-123.101209" method="get">
+					<div class="btn-directions">
+						<form action="maps.google.com" method="get">
 							<button class="default-btn">Get Directions</button>
 						</form>
 					</div>
 				</div>
 			</div>
+			<!--  End  -->
 			
-			<!-- Address Section -->
+			<!--  Address  -->
 			<div class="col-1of3">
 				<div class="position">
 					<div>
@@ -87,12 +100,13 @@
 						<div>V5V 3R1, Canada</div>
 						<div>Phone: (604) 123-4567</div>
 						<div>Fax: (604)123-4568</div>
-						<div>E-mail: <a href="mailto:info@books.com">info@books.com</a></div>
+						<div class="mail-link">E-mail: <a href="mailto:info@books.com">info@books.com</a></div>
 					</div>
 				</div>
 			</div>
+			<!--  End  -->
 			
-			<!-- Store Hours Section -->
+			<!--  Store Hours  -->
 			<div class="col-1of3">
 				<div class="position">
 					<div>
@@ -106,7 +120,9 @@
 						<p></p>
 					</div>
 				</div>
-			</div>		
+			</div>
+			<!--  End  -->
 		</section>
+		<!--  End of Content  -->
     </body>
 </html>
