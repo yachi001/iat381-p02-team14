@@ -91,6 +91,11 @@ nav a:visited, nav a:active,  #navToggle a:visited
 	display: block;
 }
 
+#searchbar, #searchbar-btn 
+{
+    font-size: 1rem;
+}
+
 .account-bar
 {
 	width: 100%;

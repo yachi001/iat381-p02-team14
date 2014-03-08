@@ -69,81 +69,78 @@
 		<!--  End of Header  -->
 		
 		
-		
+		<!--  Content  -->
 		<section>
 			<h3 class="sub-heading">Checkout</h3>
-			<p>
-				*indicates required field
-			</p>
+			<p>*indicates required field</p>
 			
-				<fieldset>
-					<legend>Contact Information</legend>
-										
-					<div id="text-fields">
-					    <p>*First Name:</p>
-					    <input class="fieldbox-width" type="text" name="fname" value="John">
+			<!--  Contact Information  -->
+			<fieldset>
+				<legend>Contact Information</legend>
+				<div id="text-fields">
+					<p>*First Name:</p>
+					<input class="fieldbox-width" type="text" name="fname" value="John">
 					
-						<p>*Last Name:</p>
-						<input class="fieldbox-width" type="text" name="lname" value="Doe">
+					<p>*Last Name:</p>
+					<input class="fieldbox-width" type="text" name="lname" value="Doe">
 						
-						<p>*Address:</p>
-					    <input class="fieldbox-width" type="text" name="address" value="1234 Main Street">
+					<p>*Address:</p>
+					<input class="fieldbox-width" type="text" name="address" value="1234 Main Street">
 					    
-					    <p>*City:</p>
-					    <input class="fieldbox-width" type="text" name="city" value="Vancouver">
-					</div>
+					<p>*City:</p>
+					<input class="fieldbox-width" type="text" name="city" value="Vancouver">
+				</div>
 					
-					<div id="province-field">
-						<p>*Province:</p>
-						<select name="province" class="fieldbox-width">
-							<option value="ab">Alberta</option>
-							<option value="bc" selected>British Columbia</option>
-							<option value="mb">Manitoba</option>
-							<option value="nb">New Brunswick</option>
-							<option value="nl">Newfoundland</option>
-							<option value="nt">Northwest Territories</option>
-							<option value="ns">Nova Scotia</option>
-							<option value="nv">Nunavut</option>
-							<option value="on">Ontario</option>
-							<option value="pei">Prince Edward Island</option>
-							<option value="qc">Quebec</option>
-							<option value="sk">Saskatchewan</option>
-							<option value="yt">Yukon</option>
-						</select>
-                    </div>
+				<div id="province-field">
+					<p>*Province:</p>
+					<select name="province" class="fieldbox-width">
+						<option value="ab">Alberta</option>
+						<option value="bc" selected>British Columbia</option>
+						<option value="mb">Manitoba</option>
+						<option value="nb">New Brunswick</option>
+						<option value="nl">Newfoundland</option>
+						<option value="nt">Northwest Territories</option>
+						<option value="ns">Nova Scotia</option>
+						<option value="nv">Nunavut</option>
+						<option value="on">Ontario</option>
+						<option value="pei">Prince Edward Island</option>
+						<option value="qc">Quebec</option>
+						<option value="sk">Saskatchewan</option>
+						<option value="yt">Yukon</option>
+					</select>
+				</div>
 					
-					<div id="country-field">
-						<p>*Country</p>
-						<select class="fieldbox-width" name="country" >
-							<option value="ca">Canada</option>
-							<option value="us">United States</option>
-						</select>
-					</div>
+				<div id="country-field">
+					<p>*Country</p>
+					<select class="fieldbox-width" name="country" >
+						<option value="ca">Canada</option>
+						<option value="us">United States</option>
+					</select>
+				</div>
 					
-					<div id="postal-field">
-						<p>*Postal Code:</p>
-						<input type="text" name="postal" value="V6A" maxlength="3" size="3">
-						<input type="text" name="postal" value="2W8" maxlength="3" size="3">
-					</div>
+				<div id="postal-field">
+					<p>*Postal Code:</p>
+					<input type="text" name="postal" value="V6A" maxlength="3" size="3">
+					<input type="text" name="postal" value="2W8" maxlength="3" size="3">
+				</div>
 					
-					<div id="phone-field">
-					  <p>Phone #:</p>
-					  <input type="text" name="phone" value="604" maxlength="3" size="3">
-					  <input type="text" name="phone" value="123" maxlength="3" size="3">
-					  <input type="text" name="phone" value="4567" maxlength="4" size="4">
-					</div>
-				</fieldset>
-		</section>
+				<div id="phone-field">
+					<p>Phone #:</p>
+					<input type="text" name="phone" value="604" maxlength="3" size="3">
+					<input type="text" name="phone" value="123" maxlength="3" size="3">
+					<input type="text" name="phone" value="4567" maxlength="4" size="4">
+				</div>
+			</fieldset>
+			<!--  End  -->
 		
-		
-		<section>
+			<!--  Payment Information  -->
 			<fieldset>
 				<legend>Payment Information</legend>
 				<div class="grid">
 					<div class="col-1of4-radio"><input type="radio" name="pay-type" value="interac">Interac</div>
 					<div class="col-1of4-radio"><input type="radio" name="pay-type" value="ae">American Express</div>
 					<div class="col-1of4-radio"><input type="radio" name="pay-type" value="mastercard" checked="checked">Mastercard</div>
-					<div class="col-1of4-radio"><input type="radio" name="pay-type" value="visa">Visa &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div>
+					<div class="col-1of4-radio"><input type="radio" name="pay-type" value="visa">Visa</div>
 				</div>
 				
 				<div id="card-field">
@@ -189,14 +186,18 @@
 					<input class="fieldbox-width" type="password" name="pin" value="099">
 				</div>
 			</fieldset>
-				
+			<!--  End  -->
+			
+			<!--  Submit Order Button  -->
 			<div class="cart_payment">
 				<div class="btn-float-right">
 					<form action="cart_confirmation.html" method="get">
-		                    <p><button class="purchase-btn">Proceed</button></p>
+						<p><button class="purchase-btn">Proceed</button></p>
 		            </form>
 	            </div>
             </div>
+			<!--  End  -->
 		</section>
+		<!--  End of Content  -->
 	</body>
 </html>

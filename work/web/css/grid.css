@@ -57,7 +57,6 @@
 	float: right;
 }
 
-
 .col-1of3search > a, .col-1of3search>img
 {
 	display: inline;
@@ -127,8 +126,72 @@
 
 /***********************************************
 
-		Product List + Deals
-        
+		Account Info
+            
+***********************************************/
+.col-1of3sub
+{
+    width: 33.3333%;
+}
+
+
+/***********************************************
+
+		About Us + Account Info + Services
+            
+***********************************************/
+.col-1of2
+{
+    width: 50%;
+}
+
+@media (max-width: 660px) 
+{
+    .col-1of2 
+    {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+}
+
+
+/***********************************************
+
+		Contact
+            
+***********************************************/
+.col-1of3map
+{
+	width: 33.3333%;
+}
+
+@media (max-width: 1000px)
+{
+    .col-1of3map 
+    {
+        width: 75%;
+		float: left;
+    }
+}
+
+.col-1of3
+{
+    width: 33.3333%;
+}
+
+@media (max-width: 1000px) 
+{
+    .col-1of3 
+    {
+        width: 100%;
+    }
+}
+
+
+/***********************************************
+
+        Product List View + Deals
+            
 ***********************************************/
 .col-1of5 
 {
@@ -170,141 +233,7 @@
 
 /***********************************************
 
-		Contact
-            
-***********************************************/
-.col-1of3map
-{
-	width: 33.3333%;
-}
-
-@media (max-width: 1000px)
-{
-    .col-1of3map 
-    {
-        width: 75%;
-		float: left;
-    }
-}
-
-.col-1of3
-{
-    width: 33.3333%;
-}
-
-@media (max-width: 1000px) 
-{
-    .col-1of3 
-    {
-        width: 100%;
-    }
-}
-
-
-/***********************************************
-
-		Account Info
-            
-***********************************************/
-.col-1of3sub
-{
-    width: 33.3333%;
-}
-
-
-/***********************************************
-
-		Service + About Us + Account Info
-            
-***********************************************/
-.col-1of2
-{
-    width: 50%;
-}
-
-@media (max-width: 660px) 
-{
-    .col-1of2 
-    {
-        width: 100%;
-        margin-bottom: 0.5rem;
-    }
-}
-
-
-/***********************************************
-
-       Uneven grid: left is the main
-       (this is for the product detail)
-            
-***********************************************/
-.col-1of2-left-main 
-{
-    width: 80%;
-}
-
-.col-1of2-left-fill 
-{
-    width: 20%;
-	float: right;
-    border-style: solid;
-	border-width: 1px;
-	border-radius: 0.25rem;
-    padding-right: 1rem;
-}
-
-.col-1of1
-{
-	width: 100%;
-	float: left;
-}
-
-
-/***********************************************
-
-		Uneven grid: inside product detail
-            
-***********************************************/
-.col-1of2image
-{
-    width: 40%;
-    padding-right: 1rem;
-}
-
-.col-1of2text
-{
-    width: 50%;
-}
-
-@media (max-width: 1024px) 
-{
-    .col-1of2text 
-    {
-        width: 100%;
-    }
-}
-
-#searchbar, #searchbar-btn 
-{
-    font-size: 1rem;
-}
-
-
-.col-1of2image-cart
-{
-    float: left;
-}
-
-.col-1of2text-cart
-{
-    width: 70%;
-}
-
-
-/***********************************************
-
-       Uneven grid: right is the main
-       (this is for product list)
+		Product List View with Filters
             
 ***********************************************/
 .col-1of2-right-main 
@@ -345,4 +274,66 @@
         width: 100%;
 		margin-top: 0.5rem;
     }
+}
+
+
+/***********************************************
+
+		Product Details
+            
+***********************************************/
+.col-1of2-left-main 
+{
+    width: 80%;
+}
+
+.col-1of2-left-fill 
+{
+    width: 20%;
+	float: right;
+    border-style: solid;
+	border-width: 1px;
+	border-radius: 0.25rem;
+    padding-right: 1rem;
+}
+
+.col-1of1
+{
+	width: 100%;
+	float: left;
+}
+
+
+/***********************************************
+
+		Product Details Content
+            
+***********************************************/
+.col-1of2image
+{
+    width: 40%;
+    padding-right: 1rem;
+}
+
+.col-1of2text
+{
+    width: 50%;
+}
+
+@media (max-width: 1024px) 
+{
+    .col-1of2text 
+    {
+        width: 100%;
+    }
+}
+
+.col-1of2image-cart
+{
+    float: left;
+}
+
+.col-1of2text-cart
+{
+    width: 70%;
 }
