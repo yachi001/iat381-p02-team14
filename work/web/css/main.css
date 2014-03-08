@@ -3,12 +3,17 @@
         General
             
 ***********************************************/
+html 
+{
+	overflow-x: hidden;
+}
+
 body
 {
-	font-family: Tahoma, sans-serif;
 	width: 80%;
-	margin: auto;
+	font-family: Tahoma, sans-serif;
 	padding: 1rem;
+	margin: auto;
 }
 
 img
@@ -22,10 +27,17 @@ section
 	margin-top: 1rem;
 }
 
-.sub-heading
+.btn-float-left
 {
-	font: Verdana, sans-serif;
-	font-size: 1.2rem;
+	width: 50%;
+}
+
+@media (max-width: 665px)
+{
+    .btn-float-left 
+	{
+		width: 100%;
+	}
 }
 
 .position
@@ -34,16 +46,10 @@ section
 	display: block;   
 }
 
-.position-filters
+.sub-heading
 {
-	text-align: left;
-	padding-left: 0.5rem;
-}
-
-.position-purchase
-{
-	text-align: left;
-	padding-left: 1.25rem;
+	font: Verdana, sans-serif;
+	font-size: 1.2rem;
 }
 
 
@@ -54,12 +60,12 @@ section
 ***********************************************/
 nav a
 {
+	width: 100%;
 	font-family: Arial, sans-serif;
 	font-size: 1.3rem;
 	text-decoration: none;
+	text-align: center;
 	background-color: #ecf4f7;
-	width: 100%;
-	margin-top: 0.5rem;
 	float: left;
 	clear: both;
 	border-style: solid;
@@ -67,7 +73,7 @@ nav a
 	border-width: 0.1rem;
 	border-color: #449ec4;
 	padding: 0.3rem;
-	text-align: center;
+	margin-top: 0.5rem;
 }
 
 nav a:visited, nav a:active
@@ -82,10 +88,10 @@ nav a:visited, nav a:active
 
 .account-bar
 {
-	font-size: 0.9rem;
 	width: 100%;
-	float: right;
+	font-size: 0.9rem;
 	text-align: right;
+	float: right;
 	padding-right: 0.3rem;
 }
 
@@ -122,35 +128,6 @@ nav a:visited, nav a:active
 
 /***********************************************
 
-        Contact
-            
-***********************************************/
-.btn-directions
-{
-	width: 70%;
-}
-
-.mail-link>a
-{
-	color: #000000;
-	text-decoration: none;
-}
-
-.mail-link>a:hover
-{
-	color: #000000;
-	text-decoration: underline;
-}
-
-.mail-link>a:visited
-{
-	color: #000000;
-	text-decoration: none;
-}
-
-
-/***********************************************
-
         Product List View + Deals
             
 ***********************************************/
@@ -158,6 +135,58 @@ nav a:visited, nav a:active
 {
 	text-align: center;
 	float: none;
+}
+
+.position-text-link>a
+{
+	color: #000000;
+	text-decoration: none;
+}
+
+.position-text-link>a:hover
+{
+	color: #000000;
+	text-decoration: underline;
+}
+
+.position-text-link>a:visited
+{
+	color: #000000;
+	text-decoration: none;
+}
+
+.position-filters
+{
+	text-align: left;
+	padding-left: 0.5rem;
+}
+
+
+/***********************************************
+
+        Product Details
+            
+***********************************************/
+a>img 
+{
+	float: none;	
+}
+
+textarea
+{
+	width: 100%;
+	resize: none;
+}
+
+.btn-submit
+{
+	width: 25%;
+}
+
+.position-purchase
+{
+	text-align: left;
+	padding-left: 1.25rem;
 }
 
 
@@ -187,54 +216,46 @@ nav a:visited, nav a:active
 
 .fieldbox-width, .cart_payment>.btn-float-right
 {
-    width: 10rem;    
+	width: 10rem;    
 }
 
 @media (max-width: 330px) 
 {
-    #phone-field>input
-    {
-        width: 25%;
+	#phone-field>input
+	{
+		width: 25%;
     }
     
     .fieldbox-width, .cart_payment>.btn-float-right
 	{
-	    width: 100%;    
+		width: 100%;    
 	}
 	
 	#expiration-field>select, #postal-field>input
 	{
-	    width: 40%;
-	    margin-right: 0;
+		width: 40%;
+		margin-right: 0;
 	}
 }
 
 @media (max-width: 430px)
 {
 	#card-field>input
-    {
-        width: 20%;
-        margin-right: 2%;
-    }
+	{
+		width: 20%;
+		margin-right: 2%;
+	}
 }
 
 
 /***********************************************
 
-        My Cart Page - cart.html
+        Cart Items + Cart Confirmation
             
 ***********************************************/
-.product-img
+.btn-confirm
 {
-	float: none;
-	padding-right: 1rem;
-}
-
-.no-bullet
-{
-	text-align: left;
-	list-style-type: none;
-	margin-left: -2.5rem;
+	width: 33.3333%;
 }
 
 .cart-item
@@ -250,162 +271,24 @@ nav a:visited, nav a:active
 	margin-left: 0rem;
 }
 
+.no-bullet
+{
+	text-align: left;
+	list-style-type: none;
+	margin-left: -2.5rem;
+}
 
-/***********************************
-    
-            Forms
-    
- ***********************************/
- input.products
- {
-    float: left;
- }
- 
- label.products, form[name="filter"]
-  {
-    display: block;
-    text-align: left;
- }
- 
- fieldset legend .subtitle 
- { 
-    
-    font-size: 80%; 
- }
- 
- form
- {
-    padding-bottom: 1rem;	
- }
- 
- input.field
- {
-    display: block;
-	margin-top: 0.3rem;
- }
- 
- .top-picks
- {
-    float: left;
-    display: block;
-    width: 100%;
- }
+.product-img
+{
+	float: none;
+	padding-right: 1rem;
+}
 
 
 /***********************************************
 
-        Product Details
+        Account Related
             
-***********************************************/
-textarea
-{
-	width: 100%;
-	resize: none;
-}
-
-a>img 
-{
-	float: none;	
-}
-
-.cover
-{
-	margin: 1rem;
-    width: 40%;
-    display: inline;
-    float: left;
-}
-
-.book-description
-{
-	margin-top: 1rem;
-	width: 50%;
-	display: inline;
-	float: left;
-}
-
-.info-block
-{
-	float: left;
-	width: 100%;
-}
-
-.btn-confirm
-{
-	width: 33.3333%;
-}
-
-#btn-submit
-{
-	width: 25%;
-}
-
-.btn-float-right
-{
-    width: 50%;
-}
-
-@media (max-width: 665px)
-{
-    .btn-float-right 
-    {
-        width: 100%;
-    }
-}
-
-
-/**********************************************
-	
-		Default Gray Button
-
-***********************************************/
-.default-btn
-{
-	/*max-width: 175px*/
-	width: 100%;
-	
-	font-size: 1rem;
-	text-align: center;
-	
-	border-radius: 0.25em;
-	border-color: #000;
-	border-style: solid;
-	border-width: 1px;
-	
-	background: linear-gradient(#EEE, #CCC);
-	
-	padding: 0.2rem;
-	margin: 1rem 0rem;
-}
-
-.default-btn:hover
-{
-	background: linear-gradient(#CCC, #EEE);
-	cursor: pointer;
-}
-
-.default-btn:active
-{
-	background: linear-gradient(#AAA, #CCC);
-}
-
-.default-btn>p
-{
-	padding: 0.2rem;
-	margin: 0px;
-}
-
-.default-btn>p>a:hover, .default-btn>p>a:link, .default-btn>p>a:visited
-{
-	text-decoration: none;
-	color: black;
-}
-
-
-/**********************************************
-	
-		Account Related
-
 ***********************************************/
 .confirm-account>.default-btn
 {
@@ -435,25 +318,151 @@ a>img
 	text-decoration: none;
 }
 
-/**********************************************
-	
-		Purchase Related Buttons (yellow)
 
+/***********************************************
+
+        Contact
+            
+***********************************************/
+.btn-directions
+{
+	width: 70%;
+}
+
+.mail-link>a
+{
+	color: #000000;
+	text-decoration: none;
+}
+
+.mail-link>a:hover
+{
+	color: #000000;
+	text-decoration: underline;
+}
+
+.mail-link>a:visited
+{
+	color: #000000;
+	text-decoration: none;
+}
+
+
+/***********************************************
+
+        Forms
+            
+***********************************************/
+fieldset legend .subtitle 
+{ 
+	font-size: 80%; 
+}
+ 
+form
+{
+	padding-bottom: 1rem;	
+}
+ 
+input.field
+{
+	display: block;
+	margin-top: 0.3rem;
+}
+ 
+input.products
+{	
+	float: left;
+}
+
+label.products, form[name="filter"]
+{
+	display: block;
+	text-align: left;
+}
+ 
+.top-picks
+{
+	width: 100%;
+	float: left;
+	display: block;
+}
+
+
+/***********************************************
+
+        Default Gray Button
+            
+***********************************************/
+.default-btn
+{
+	width: 100%;
+	font-size: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #00000;
+	border-radius: 0.25em;
+	border-color: #000;
+	border-style: solid;
+	border-width: 1px;
+	background: linear-gradient(#EEE, #CCC);
+	padding: 0.2rem;
+	margin: 1rem 0rem;
+}
+
+.default-btn:hover
+{
+	background: linear-gradient(#CCC, #EEE);
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.default-btn:active
+{
+	background: linear-gradient(#AAA, #CCC);
+	text-decoration: none;
+}
+
+.default-btn>a
+{
+	color: #000000;
+	text-decoration: none;
+}
+
+.default-btn>a:visited
+{
+	color: #000000;
+	text-decoration: none;
+}
+
+.default-btn>p
+{
+	padding: 0.2rem;
+	margin: 0px;
+}
+
+.default-btn>p>a:hover, .default-btn>p>a:link, .default-btn>p>a:visited
+{
+	color: #000000;
+	text-decoration: none;
+}
+
+
+/***********************************************
+
+        Purchase Related Buttons (Yellow)
+            
 ***********************************************/
 .purchase-btn
 {
 	width: 100%;
 	font-size: 1.1rem;
-	
+	text-align: center;	
 	border-radius: 0.25em;	
 	border-color: #000;
 	border-width: 0.1em;
-	
 	background: linear-gradient(#FFF000, #FFC80F);
 	padding: 1em;
-	
 	margin-right: 20rem;
-	text-align: center;	
 }
 
 .purchase-btn:hover
