@@ -76,6 +76,11 @@ nav a, #navToggle>a
 	margin-top: 0.5rem;
 }
 
+#navToggle
+{
+	padding-right: 0.5rem;
+}
+
 nav a:visited, nav a:active,  #navToggle>a:visited , #navToggle>a:active
 {
 	color: #406ea1;
