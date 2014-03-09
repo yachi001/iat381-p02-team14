@@ -70,7 +70,6 @@
         width: 100%;
 		margin-top: -1rem;
 		text-align: left;
-		
     }
 }
 
@@ -126,70 +125,6 @@
 
 /***********************************************
 
-		Account Info
-            
-***********************************************/
-.col-1of3sub
-{
-    width: 33.3333%;
-}
-
-
-/***********************************************
-
-		About Us + Account Info + Services
-            
-***********************************************/
-.col-1of2
-{
-    width: 50%;
-}
-
-@media (max-width: 660px) 
-{
-    .col-1of2 
-    {
-        width: 100%;
-        margin-bottom: 0.5rem;
-    }
-}
-
-
-/***********************************************
-
-		Contact
-            
-***********************************************/
-.col-1of3map
-{
-	width: 33.3333%;
-}
-
-@media (max-width: 1000px)
-{
-    .col-1of3map 
-    {
-        width: 75%;
-		float: left;
-    }
-}
-
-.col-1of3
-{
-    width: 33.3333%;
-}
-
-@media (max-width: 1000px) 
-{
-    .col-1of3 
-    {
-        width: 100%;
-    }
-}
-
-
-/***********************************************
-
         Product List View + Deals
             
 ***********************************************/
@@ -228,57 +163,6 @@
     {
         width: 100%;
     }
-}
-
-
-/***********************************************
-
-		Product List View with Filters
-            
-***********************************************/
-.col-1of2-right-main 
-{
-    width: 80%;
-    padding-left: 1rem;
-}
-
-.col-1of2-right-fill 
-{
-    width: 18%;
-	height: auto;
-	border-style: none;
-	background-color: #ffffcc;
-	border-radius: 0.25rem;
-	padding-right: 0.5rem;
-}
-
-@media (max-width: 900px)
-{
-    .col-1of2-left-main 
-    {
-       width: 100%
-    }
-    
-    .col-1of2-left-fill 
-    {
-        width: 100%;
-    }
-    
-    .col-1of2-right-main 
-    {
-        width: 100%;
-    }
-    
-    .col-1of2-right-fill 
-    {
-        width: 100%;
-		margin-top: 0.5rem;
-    }
-}
-
-#searchbar, #searchbar-btn 
-{
-    font-size: 1rem;
 }
 
 
@@ -333,6 +217,11 @@
     }
 }
 
+#searchbar, #searchbar-btn 
+{
+    font-size: 1rem;
+}
+
 .col-1of2image-cart
 {
     float: left;
@@ -341,4 +230,50 @@
 .col-1of2text-cart
 {
     width: 70%;
+}
+
+
+/***********************************************
+
+		Product List View with Filters
+            
+***********************************************/
+.col-1of2-right-main 
+{
+    width: 80%;
+    padding-left: 1rem;
+}
+
+.col-1of2-right-fill 
+{
+    width: 18%;
+	height: auto;
+	border-style: none;
+	background-color: #ffffcc;
+	border-radius: 0.25rem;
+	padding-right: 0.5rem;
+}
+
+@media (max-width: 900px)
+{
+    .col-1of2-left-main 
+    {
+       width: 100%
+    }
+    
+    .col-1of2-left-fill 
+    {
+        width: 100%;
+    }
+    
+    .col-1of2-right-main 
+    {
+        width: 100%;
+    }
+    
+    .col-1of2-right-fill 
+    {
+        width: 100%;
+		margin-top: 0.5rem;
+    }
 }
