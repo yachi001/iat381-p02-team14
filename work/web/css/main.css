@@ -290,12 +290,12 @@ textarea
         Account Related
             
 ***********************************************/
-.confirm-account>.default-btn
+.confirm-account
 {
 	width: 9rem;
 }
 
-.new-account>.default-btn
+.new-account
 {
 	width: 12rem;
 }
