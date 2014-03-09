@@ -167,7 +167,7 @@ textarea
 
 .btn-submit
 {
-	width: 25%;
+	width: 10rem;
 }
 
 .position-purchase
@@ -202,19 +202,6 @@ textarea
 {
 	width: 4.2rem;
 	margin-right: 1rem;
-}
-
-.payment-confirm-btn
-{
-	width: 50%;
-}
-
-@media (max-width: 665px)
-{
-    .payment-confirm-btn 
-	{
-		width: 100%;
-	}
 }
 
 .fieldbox-width, .payment-confirm-btn
@@ -256,7 +243,7 @@ textarea
         Cart Items + Cart Confirmation
             
 ***********************************************/
-.btn-confirm
+.confirm-btn
 {
 	width: 8.5rem;
 }
@@ -293,14 +280,14 @@ textarea
         Account Related
             
 ***********************************************/
-.confirm-account
+.account-btn
 {
-	width: 9rem;
+	width: 10rem;
 }
 
-.new-account
+.account-btn-large
 {
-	width: 12rem;
+	width: 15rem;
 }
 
 .password-recover>a
@@ -327,7 +314,7 @@ textarea
         Contact
             
 ***********************************************/
-.btn-directions
+.directions-btn
 {
 	width: 70%;
 }
