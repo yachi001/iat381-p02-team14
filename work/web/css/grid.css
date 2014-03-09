@@ -290,7 +290,8 @@
 {
 	.col-1of2-left-main 
 	{
-       width: 100%
+       width: 100%;
+	   clear: both;
     }
     
     .col-1of2-left-fill 

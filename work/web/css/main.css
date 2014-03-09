@@ -22,19 +22,6 @@ section
 	margin-top: 1rem;
 }
 
-.btn-float-left
-{
-	width: 50%;
-}
-
-@media (max-width: 665px)
-{
-    .btn-float-left 
-	{
-		width: 100%;
-	}
-}
-
 .position
 {
 	text-align: left;
@@ -131,6 +118,11 @@ nav a:visited, nav a:active,  #navToggle a:visited
         Product List View + Deals
             
 ***********************************************/
+a>img 
+{
+	float: none;	
+}
+
 .position-text
 {
 	text-align: center;
@@ -167,11 +159,6 @@ nav a:visited, nav a:active,  #navToggle a:visited
         Product Details
             
 ***********************************************/
-a>img 
-{
-	float: none;	
-}
-
 textarea
 {
 	width: 100%;
@@ -200,6 +187,9 @@ textarea
 	padding-bottom: 0;
 	margin-bottom: 0.1rem;
 	margin-top: 0.8rem;
+	margin-left: 0;
+	margin-right: 0;
+	
 }
 
 #phone-field>input
@@ -214,7 +204,20 @@ textarea
 	margin-right: 1rem;
 }
 
-.fieldbox-width, .cart_payment>.btn-float-right
+.payment-confirm-btn
+{
+	width: 50%;
+}
+
+@media (max-width: 665px)
+{
+    .payment-confirm-btn 
+	{
+		width: 100%;
+	}
+}
+
+.fieldbox-width, .payment-confirm-btn
 {
 	width: 10rem;    
 }
@@ -226,7 +229,7 @@ textarea
 		width: 25%;
     }
     
-    .fieldbox-width, .cart_payment>.btn-float-right
+    .fieldbox-width, .payment-confirm-btn
 	{
 		width: 100%;    
 	}
@@ -255,7 +258,7 @@ textarea
 ***********************************************/
 .btn-confirm
 {
-	width: 33.3333%;
+	width: 8.5rem;
 }
 
 .cart-item
