@@ -40,7 +40,7 @@ section
         Header
             
 ***********************************************/
-nav a, #navToggle a
+nav a, #navToggle>a
 {
 	width: 100%;
 	font-family: Arial, sans-serif;
@@ -48,13 +48,14 @@ nav a, #navToggle a
 	text-decoration: none;
 	text-align: center;
 	background-color: #ecf4f7;
+	color: #406ea1;
 	float: left;
 	clear: both;
 	border-style: solid;
 	border-radius: 0.25rem;
 	border-width: 0.1rem;
 	border-color: #449ec4;
-	padding: 0.3rem;
+	padding: 0.5rem;
 	margin-top: 0.5rem;
 }
 
@@ -63,7 +64,7 @@ nav a, #navToggle a
 	padding-right: 0.5rem;
 }
 
-nav a:visited, nav a:active,  #navToggle a:visited 
+nav a:visited, nav a:active, #navToggle>a:active ,#navToggle>a:visited 
 {
 	color: #406ea1;
 }
@@ -76,10 +77,18 @@ nav a:visited, nav a:active,  #navToggle a:visited
 .account-bar
 {
 	width: 100%;
-	font-size: 0.9rem;
+	font-size: 1rem;
 	text-align: right;
 	float: right;
 	padding-right: 0.3rem;
+}
+
+@media (max-width: 765px)
+{
+	.account-bar
+	{
+	   padding-right: 0.5rem;
+    }
 }
 
 .account-bar>a
@@ -100,7 +109,6 @@ nav a:visited, nav a:active,  #navToggle a:visited
 	text-decoration: none;
 }
 
-
 /***********************************************
 
         Home
@@ -108,8 +116,16 @@ nav a:visited, nav a:active,  #navToggle a:visited
 ***********************************************/
 .ad
 {
+	width: 100%;
 	text-align: center;
-	margin-right: 0.5rem;
+}
+
+@media (max-width: 765px)
+{
+	.ad 
+	{
+	   padding-right: 0.5rem;
+    }
 }
 
 
@@ -126,7 +142,6 @@ a>img
 .position-text
 {
 	text-align: center;
-	float: none;
 }
 
 .position-text-link>a
@@ -165,7 +180,7 @@ textarea
 	resize: none;
 }
 
-.btn-submit
+.submit-btn
 {
 	width: 10rem;
 }
@@ -204,7 +219,7 @@ textarea
 	margin-right: 1rem;
 }
 
-.fieldbox-width, .payment-confirm-btn
+.fieldbox-width
 {
 	width: 10rem;    
 }
@@ -248,6 +263,11 @@ textarea
 	width: 8.5rem;
 }
 
+.confirm-btn-large
+{
+	width: 10rem;
+}
+
 .cart-item
 {
 	display: block;
@@ -287,7 +307,7 @@ textarea
 
 .account-btn-large
 {
-	width: 15rem;
+	width: 12rem;
 }
 
 .password-recover>a
@@ -316,7 +336,7 @@ textarea
 ***********************************************/
 .directions-btn
 {
-	width: 70%;
+	width: 10rem;
 }
 
 .mail-link>a
@@ -347,7 +367,7 @@ fieldset legend .subtitle
 { 
 	font-size: 80%; 
 }
- 
+
 form
 {
 	padding-bottom: 1rem;	

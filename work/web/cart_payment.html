@@ -75,124 +75,134 @@
 			<p>*indicates required field</p>
 			
 			<!--  Contact Information  -->
-			<fieldset>
-				<legend>Contact Information</legend>
-				<div id="text-fields">
-					<p>*First Name:</p>
-					<input class="fieldbox-width" type="text" name="fname" value="John">
-					
-					<p>*Last Name:</p>
-					<input class="fieldbox-width" type="text" name="lname" value="Doe">
-						
-					<p>*Address:</p>
-					<input class="fieldbox-width" type="text" name="address" value="1234 Main Street">
-					    
-					<p>*City:</p>
-					<input class="fieldbox-width" type="text" name="city" value="Vancouver">
+			<div class="col-1of1">
+				<div class="position">
+					<fieldset>
+						<legend>Contact Information</legend>
+						<div id="text-fields">
+							<p>*First Name:</p>
+							<input class="fieldbox-width" type="text" name="fname" value="John">
+							
+							<p>*Last Name:</p>
+							<input class="fieldbox-width" type="text" name="lname" value="Doe">
+								
+							<p>*Address:</p>
+							<input class="fieldbox-width" type="text" name="address" value="1234 Main Street">
+								
+							<p>*City:</p>
+							<input class="fieldbox-width" type="text" name="city" value="Vancouver">
+						</div>
+							
+						<div id="province-field">
+							<p>*Province:</p>
+							<select name="province" class="fieldbox-width">
+								<option value="ab">Alberta</option>
+								<option value="bc" selected>British Columbia</option>
+								<option value="mb">Manitoba</option>
+								<option value="nb">New Brunswick</option>
+								<option value="nl">Newfoundland</option>
+								<option value="nt">Northwest Territories</option>
+								<option value="ns">Nova Scotia</option>
+								<option value="nv">Nunavut</option>
+								<option value="on">Ontario</option>
+								<option value="pei">Prince Edward Island</option>
+								<option value="qc">Quebec</option>
+								<option value="sk">Saskatchewan</option>
+								<option value="yt">Yukon</option>
+							</select>
+						</div>
+							
+						<div id="country-field">
+							<p>*Country</p>
+							<select class="fieldbox-width" name="country" >
+								<option value="ca">Canada</option>
+								<option value="us">United States</option>
+							</select>
+						</div>
+							
+						<div id="postal-field">
+							<p>*Postal Code:</p>
+							<input type="text" name="postal" value="V6A" maxlength="3" size="3">
+							<input type="text" name="postal" value="2W8" maxlength="3" size="3">
+						</div>
+							
+						<div id="phone-field">
+							<p>Phone #:</p>
+							<input type="text" name="phone" value="604" maxlength="3" size="3">
+							<input type="text" name="phone" value="123" maxlength="3" size="3">
+							<input type="text" name="phone" value="4567" maxlength="4" size="4">
+						</div>
+					</fieldset>
 				</div>
-					
-				<div id="province-field">
-					<p>*Province:</p>
-					<select name="province" class="fieldbox-width">
-						<option value="ab">Alberta</option>
-						<option value="bc" selected>British Columbia</option>
-						<option value="mb">Manitoba</option>
-						<option value="nb">New Brunswick</option>
-						<option value="nl">Newfoundland</option>
-						<option value="nt">Northwest Territories</option>
-						<option value="ns">Nova Scotia</option>
-						<option value="nv">Nunavut</option>
-						<option value="on">Ontario</option>
-						<option value="pei">Prince Edward Island</option>
-						<option value="qc">Quebec</option>
-						<option value="sk">Saskatchewan</option>
-						<option value="yt">Yukon</option>
-					</select>
-				</div>
-					
-				<div id="country-field">
-					<p>*Country</p>
-					<select class="fieldbox-width" name="country" >
-						<option value="ca">Canada</option>
-						<option value="us">United States</option>
-					</select>
-				</div>
-					
-				<div id="postal-field">
-					<p>*Postal Code:</p>
-					<input type="text" name="postal" value="V6A" maxlength="3" size="3">
-					<input type="text" name="postal" value="2W8" maxlength="3" size="3">
-				</div>
-					
-				<div id="phone-field">
-					<p>Phone #:</p>
-					<input type="text" name="phone" value="604" maxlength="3" size="3">
-					<input type="text" name="phone" value="123" maxlength="3" size="3">
-					<input type="text" name="phone" value="4567" maxlength="4" size="4">
-				</div>
-			</fieldset>
+			</div>
 			<!--  End  -->
 		
 			<!--  Payment Information  -->
-			<fieldset>
-				<legend>Payment Information</legend>
-				<div class="grid">
-					<div class="col-1of4-radio"><input type="radio" name="pay-type" value="interac">Interac</div>
-					<div class="col-1of4-radio"><input type="radio" name="pay-type" value="ae">American Express</div>
-					<div class="col-1of4-radio"><input type="radio" name="pay-type" value="mastercard" checked="checked">Mastercard</div>
-					<div class="col-1of4-radio"><input type="radio" name="pay-type" value="visa">Visa</div>
-				</div>
-				
-				<div id="card-field">
-					<p>*Card #:</p>
-					<input type="text" name="card" value="1234" maxlength="4" size="4">
-					<input type="text" name="card" value="4321" maxlength="4" size="4">
-					<input type="text" name="card" value="9876" maxlength="4" size="4">
-					<input type="text" name="card" value="5789" maxlength="4" size="4">
-				</div>
+			<div class="col-1of1">
+				<div class="position">
+					<p></p>
+					<fieldset>
+						<legend>Payment Information</legend>
+						<div class="grid">
+							<div class="col-1of4-radio"><input type="radio" name="pay-type" value="interac">Interac</div>
+							<div class="col-1of4-radio"><input type="radio" name="pay-type" value="ae">American Express</div>
+							<div class="col-1of4-radio"><input type="radio" name="pay-type" value="mastercard" checked="checked">Mastercard</div>
+							<div class="col-1of4-radio"><input type="radio" name="pay-type" value="visa">Visa</div>
+						</div>
+						
+						<div id="card-field">
+							<p>*Card #:</p>
+							<input type="text" name="card" value="1234" maxlength="4" size="4">
+							<input type="text" name="card" value="4321" maxlength="4" size="4">
+							<input type="text" name="card" value="9876" maxlength="4" size="4">
+							<input type="text" name="card" value="5789" maxlength="4" size="4">
+						</div>
+									
+						<div id="expiration-field">
+							<p>*Expiration Date:</p>
+							<select name="month" class="fieldbox-width">
+								<option value="jan">01</option>
+								<option value="feb">02</option>
+								<option value="mar">03</option>
+								<option value="apr">04</option>
+								<option value="may">05</option>
+								<option value="jun" selected>06</option>
+								<option value="jul">07</option>
+								<option value="aug">08</option>
+								<option value="sep">09</option>
+								<option value="oct">10</option>
+								<option value="nov">11</option>
+								<option value="dec">12</option>
+							</select>
 							
-				<div id="expiration-field">
-                    <p>*Expiration Date:</p>
-                    <select name="month" class="fieldbox-width">
-                        <option value="jan">01</option>
-                        <option value="feb">02</option>
-                        <option value="mar">03</option>
-                        <option value="apr">04</option>
-                        <option value="may">05</option>
-                        <option value="jun" selected>06</option>
-                        <option value="jul">07</option>
-                        <option value="aug">08</option>
-                        <option value="sep">09</option>
-                        <option value="oct">10</option>
-                        <option value="nov">11</option>
-                        <option value="dec">12</option>
-                    </select>
-                    
-                    <select name="date" class="fieldbox-width">
-                        <option value="2014">2014</option>
-                        <option value="2015">2015</option>
-                        <option value="2016" selected>2016</option>
-                        <option value="2017">2017</option>
-                        <option value="2018">2018</option>
-                        <option value="2019">2019</option>
-                        <option value="2020">2020</option>
-                        <option value="2021">2021</option>
-                        <option value="2022">2022</option>
-                    </select>
-                </div>
-				
-				<div id="pin-field">
-					<p>*Pin Code:</p>
-					<input class="fieldbox-width" type="password" name="pin" value="099">
+							<select name="date" class="fieldbox-width">
+								<option value="2014">2014</option>
+								<option value="2015">2015</option>
+								<option value="2016" selected>2016</option>
+								<option value="2017">2017</option>
+								<option value="2018">2018</option>
+								<option value="2019">2019</option>
+								<option value="2020">2020</option>
+								<option value="2021">2021</option>
+								<option value="2022">2022</option>
+							</select>
+						</div>
+						
+						<div id="pin-field">
+							<p>*Pin Code:</p>
+							<input class="fieldbox-width" type="password" name="pin" value="099">
+						</div>
+						
+						<div class="confirm-btn-large">
+							<p class="purchase-btn"><a href="cart_confirmation.html">Proceed</a></p>
+						</div>
+					</fieldset>
 				</div>
-			</fieldset>
-			<!--  End  -->
-			
-			<!--  Submit Order Button  -->
-			<div class="payment-confirm-btn">
-				<p class="purchase-btn"><a href="cart_confirmation.html">Proceed</a></p>
 			</div>
 			<!--  End  -->
+			<div class="col-1of1">
+				<p></p>
+			</div>
 		</section>
 		<!--  End of Content  -->
 	</body>
