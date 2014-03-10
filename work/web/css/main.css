@@ -93,19 +93,19 @@ nav a:visited, nav a:active, #navToggle>a:active ,#navToggle>a:visited
 
 .account-bar>a
 {
-	color: #000000;
+	color: #000;
 	text-decoration: none;
 }
 
 .account-bar>a:hover
 {
-	color: #000000;
+	color: #000;
 	text-decoration: underline;
 }
 
 .account-bar>a:visited
 {
-	color: #000000;
+	color: #000;
 	text-decoration: none;
 }
 
@@ -146,19 +146,19 @@ a>img
 
 .position-text-link>a
 {
-	color: #000000;
+	color: #000;
 	text-decoration: none;
 }
 
 .position-text-link>a:hover
 {
-	color: #000000;
+	color: #000;
 	text-decoration: underline;
 }
 
 .position-text-link>a:visited
 {
-	color: #000000;
+	color: #000;
 	text-decoration: none;
 }
 
@@ -312,19 +312,19 @@ textarea
 
 .password-recover>a
 {
-	color: #000000;
+	color: #000;
 	text-decoration: none;
 }
 
 .password-recover>a:hover
 {
-	color: #000000;
+	color: #000;
 	text-decoration: underline;
 }
 
 .password-recover>a:visited
 {
-	color: #000000;
+	color: #000;
 	text-decoration: none;
 }
 
@@ -341,19 +341,19 @@ textarea
 
 .mail-link>a
 {
-	color: #000000;
+	color: #000;
 	text-decoration: none;
 }
 
 .mail-link>a:hover
 {
-	color: #000000;
+	color: #000;
 	text-decoration: underline;
 }
 
 .mail-link>a:visited
 {
-	color: #000000;
+	color: #000;
 	text-decoration: none;
 }
 
@@ -409,7 +409,7 @@ label.products, form[name="filter"]
 	font-size: 1rem;
 	text-align: center;
 	text-decoration: none;
-	color: #00000;
+	color: #000;
 	border-radius: 0.25em;
 	border-color: #000;
 	border-style: solid;
@@ -434,13 +434,13 @@ label.products, form[name="filter"]
 
 .default-btn>a
 {
-	color: #000000;
+	color: #000;
 	text-decoration: none;
 }
 
 .default-btn>a:visited
 {
-	color: #000000;
+	color: #000;
 	text-decoration: none;
 }
 
@@ -453,7 +453,7 @@ label.products, form[name="filter"]
 .default-btn>p>a:hover, .default-btn>p>a:link, .default-btn>p>a:visited,
 .purchase-btn>a:hover, .purchase-btn>a:link, .purchase-btn>a:visited
 {
-    color: #000000;
+    color: #000;
     text-decoration: none;
     text-align: center;
 }
