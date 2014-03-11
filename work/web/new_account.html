@@ -83,41 +83,40 @@
 			<!--  End  -->
 			
 			<!--  New Account Form  -->
-			<div>
+			 <form action="home.html">
 				<fieldset>
 					<legend>Create an Account</legend>
 					<div>
-						*First Name:<input class="field" type="text" name="fname">
+						*First Name:<input class="field" type="text" name="fname" required>
 					</div>
 					
 					<p>
-						*Last Name:<input class="field" type="text" name="lname">
+						*Last Name:<input class="field" type="text" name="lname" required>
 					</p>
 					
 					<p>
-						*E-mail Address:<input class="field" type="text" name="email1">
+						*E-mail Address:<input class="field" type="text" name="email1" required>
 					</p>
 					
 					<p>
-						*Confirm E-mail Address:<input class="field" type="text" name="email2">
+						*Confirm E-mail Address:<input class="field" type="text" name="email2" required>
 					</p>
 					
 					<p>
-						*Password:<input class="field" type="password" name="password1">
+						*Password:<input class="field" type="password" name="password1" required>
 					</p>
 					
 					<p>
-						*Confirm Password:<input class="field" type="password" name="password2">
+						*Confirm Password:<input class="field" type="password" name="password2" required>
 					</p>
 					
 					<div class="account-btn">
-						<div class="default-btn">
-							<p><a href="home.html">Submit</a></p>
-						</div>
+						<input class="default-btn" type="submit">
 					</div>
 				</fieldset>
-			</div>
-			<!--  End  -->
+			</form>
+			<!--  End Form  -->
+			
 		</section>
 		<!--  End of Content  -->
     </body>

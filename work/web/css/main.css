@@ -409,7 +409,7 @@ label.products, form[name="filter"]
         Default Gray Button
             
 ***********************************************/
-.default-btn
+.default-btn, input.default-btn
 {
 	width: 100%;
 	font-size: 1rem;
@@ -463,6 +463,13 @@ label.products, form[name="filter"]
     text-decoration: none;
     text-align: center;
 }
+
+input.default-btn
+{
+	padding: 0.4rem;
+	margin: 0px;
+}
+
 
 
 /***********************************************
