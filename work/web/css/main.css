@@ -258,16 +258,6 @@ textarea
         Cart Items + Cart Confirmation
             
 ***********************************************/
-.confirm-btn
-{
-	width: 8.5rem;
-}
-
-.confirm-btn-large
-{
-	width: 10rem;
-}
-
 .cart-item
 {
 	display: block;
@@ -279,6 +269,16 @@ textarea
 	text-align: left;
 	margin-top: 0rem;
 	margin-left: 0rem;
+}
+
+.confirm-btn
+{
+	width: 8.5rem;
+}
+
+.confirm-btn-large
+{
+	width: 10rem;
 }
 
 .no-bullet
@@ -326,6 +326,11 @@ textarea
 {
 	color: #000;
 	text-decoration: none;
+}
+
+.spacing
+{
+	padding-top: 0.3rem;
 }
 
 
