@@ -296,10 +296,9 @@
 {
     width: 20%;
 	float: right;
-	border-style: solid;
-	border-width: 1px;
-	border-radius: 0.25rem;
+	
     padding-right: 1rem;
+    background-color: #ffc;
 }
 
 @media (max-width: 930px)

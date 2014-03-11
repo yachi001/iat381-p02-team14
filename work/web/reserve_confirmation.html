@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Cart Confirmation</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/grid.css">
+        <link rel="stylesheet" href="css/main.css">
+	</head>
+
+	<body>
+		<script src="js/jquery.js"></script>
+		<script src="js/ui.js"></script>
+	    
+		<!--  Header  -->
+		<header id="top">
+			<!--  Account Bar: my account + order status  -->
+			<div class="account-bar">
+				<a href="existing_account.html">my account</a> | 
+				<a href="order_status.html">order status</a> |			
+				<a href="cart.html"><img src="img/checkout.png" width="25" height="20" alt="checkout"></a>
+			</div>
+			<!--  End  -->
+		        
+			<!--  Company Logo + Search Bar  -->
+			<div class="grid">
+				<div class="col-1of3home">
+					<a href="home.html"><img src="img/logo2.png" width="379" height="80" alt="company-logo"></a>
+				</div>
+					
+				<div class="col-1of3search">
+					<form method="post" action="products_go_result.html" id="search"> 
+						<label form="form-name"></label>
+						<input id="searchbar" type="text" placeholder="Search..." name="search">
+						<input id="searchbar-btn" type="submit" value="Go">
+					</form>
+				</div>
+				
+				<div id="navToggle">
+					<a href="#top">▼ MENU</a>
+				</div>
+			</div>
+			<!--  End  -->
+		
+			<!--  Navigation Bar  -->
+			<nav class="grid">
+				<div class="col-1of5nav">
+					<a href="products.html">Products</a>
+				</div>
+		            
+				<div class="col-1of5nav">
+					<a href="deals.html">Deals</a>
+				</div>
+		            
+				<div class="col-1of5nav">
+					<a href="services.html">Services</a>
+				</div>
+		            
+				<div class="col-1of5nav">
+					<a href="about.html">About Us</a>
+				</div>
+		            
+				<div class="col-1of5nav">
+					<a href="contact.html">Contact</a>
+				</div>
+			</nav>
+			<!--  End  -->
+		</header>
+		<!--  End of Header  --> 
+
+		
+		<!--  Content  -->
+		<section>
+			<h3 class="sub-heading">Order Summary</h3>
+			<p>Thanks for shopping with us.</p>
+			<p>Items are reserved</p>
+			
+			<!--  Order Details  -->
+			<div class="grid">
+				<div class="cart-item">
+					<div class="col-1of2image-cart">
+						<img src="img/book1.jpg" alt="Product Preview" width="150" height="200" class="product-img">
+					</div>
+									
+					<div class="col-1of2text-cart">
+						<h2 class="sub-heading">War and Peace</h2>
+						<ul class="no-bullet">
+							<li>Author: Lev Tolstoy</li>
+							<li>ISBN: 2588961135</li>
+							<li>Hardcover</li>
+							<li>Quantity: 1</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<p></p>
+			<div class="grid">
+				<div class="cart-item">
+					<div class="col-1of2image-cart">
+						<img src="img/book2.jpg" alt="Product Preview" width="150" height="200" class="product-img">
+					</div>
+						
+					<div class="col-1of2text-cart">
+						<h2 class="sub-heading">The Prince</h2>
+						<ul class="no-bullet">
+							<li>Author: Niccolo Machiavelli</li>
+							<li>ISBN: 4629811859</li>
+							<li>Hardcover</li>
+							<li>Quantity: 1</li>
+						</ul>    
+					</div>
+				</div>
+			</div>
+			<!--  End  -->
+	        
+			<!--  Confirmation Button  -->
+	        <div class="confirm-btn">
+				<div class="default-btn">
+					<p><a href="home.html">Confirm</a></p>
+				</div>
+            </div>
+			<!--  End  -->
+		</section>
+		<!--  End of Content  -->
+	</body>
+</html>
