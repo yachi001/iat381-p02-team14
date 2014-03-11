@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Cart Payment</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/grid.css">
+        <link rel="stylesheet" href="css/main.css">
+	</head>
+
+	<body>
+		<script src="js/jquery.js"></script>
+		<script src="js/ui.js"></script>
+	    
+		<!--  Header  -->
+		<header id="top">
+			<!--  Account Bar: my account + order status  -->
+			<div class="account-bar">
+				<a href="existing_account.html">my account</a> | 
+				<a href="order_status.html">order status</a> |			
+				<a href="cart.html"><img src="img/checkout.png" width="25" height="20" alt="checkout"></a>
+			</div>
+			<!--  End  -->
+		        
+			<!--  Company Logo + Search Bar  -->
+			<div class="grid">
+				<div class="col-1of3home">
+					<a href="home.html"><img src="img/logo2.png" width="379" height="80" alt="company-logo"></a>
+				</div>
+					
+				<div class="col-1of3search">
+					<form method="post" action="products_go_result.html" id="search"> 
+						<label form="form-name"></label>
+						<input id="searchbar" type="text" placeholder="Search..." name="search">
+						<input id="searchbar-btn" type="submit" value="Go">
+					</form>
+				</div>
+				
+				<div id="navToggle">
+					<a href="#top">▼ MENU</a>
+				</div>
+			</div>
+			<!--  End  -->
+		
+			<!--  Navigation Bar  -->
+			<nav class="grid">
+				<div class="col-1of5nav">
+					<a href="products.html">Products</a>
+				</div>
+		            
+				<div class="col-1of5nav">
+					<a href="deals.html">Deals</a>
+				</div>
+		            
+				<div class="col-1of5nav">
+					<a href="services.html">Services</a>
+				</div>
+		            
+				<div class="col-1of5nav">
+					<a href="about.html">About Us</a>
+				</div>
+		            
+				<div class="col-1of5nav">
+					<a href="contact.html">Contact</a>
+				</div>
+			</nav>
+			<!--  End  -->
+		</header>
+		<!--  End of Header  -->
+		
+		
+		<!--  Content  -->
+		<section>
+			<h3 class="sub-heading">Reserve</h3>
+			<p>*all fields are required</p>
+			
+			<!--  Contact Information  -->
+			<div class="col-1of1">
+				<div class="position">
+				    <form action="reserve_confirmation.html">
+						<fieldset>
+							<legend>Contact Information</legend>
+							<div id="text-fields">
+								<p>First Name:</p>
+								<input class="fieldbox-width" type="text" name="fname" value="John" required>
+								
+								<p>Last Name:</p>
+								<input class="fieldbox-width" type="text" name="lname" value="Doe" required>
+									
+								<p>Email Address:</p>
+								<input class="fieldbox-width" type="text" name="address" value="1234 Main Street" required >
+							</div>
+	
+							<div id="phone-field">
+								<p>Phone #:</p>
+								<input type="text" name="phone" value="604" maxlength="3" size="3" required>
+								<input type="text" name="phone" value="123" maxlength="3" size="3" required>
+								<input type="text" name="phone" value="4567" maxlength="4" size="4" required>
+							</div>
+							
+							<div class="confirm-btn-large">
+	                            <input class="purchase-btn" type="submit" value="Reserve Now">
+	                        </div>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+			<!--  End  -->
+		
+			
+			
+		</section>
+		<!--  End of Content  -->
+	</body>
+</html>
