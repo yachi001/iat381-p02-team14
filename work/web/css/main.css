@@ -30,9 +30,9 @@ section
 
 .sub-heading
 {
-	font: Verdana, sans-serif;
+	font-family: Verdana, sans-serif;
 	font-size: 1.2rem;
-	color: #0aa;
+	color: #00a2e8;
 }
 
 .spacing
@@ -183,6 +183,7 @@ a>img
 ***********************************************/
 textarea
 {
+	font-family: Tahoma, sans-serif;
 	width: 100%;
 	resize: none;
 }
@@ -201,6 +202,24 @@ textarea
 #book-title
 {
 	color: #037;
+}
+
+.sub-nav>a
+{
+	color: #000;
+	text-decoration: none;
+}
+
+.sub-nav>a:hover
+{
+	color: #000;
+	text-decoration: underline;
+}
+
+.sub-nav>a:visited
+{
+	color: #000;
+	text-decoration: none;
 }
 
 
