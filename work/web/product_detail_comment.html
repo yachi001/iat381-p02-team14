@@ -81,10 +81,13 @@
 					</div>
 					<div class="col-1of2text">
 						<div class="position">
-							<h2 class="sub-heading">War and Peace</h2>
-							<h3 class="sub-heading">Author: Lev Tolstoy</h3>
-							<h3 class="sub-heading">ISBN: 2588961135</h3>
-							<h3 class="sub-heading">1869 | Hardcover</h3>
+						    <h2 id="book-title">War and Peace</h2>
+						    <ul class="no-bullet">
+						       <li>Author: Lev Tolstoy</li>
+						       <li>ISBN: 2588961135</li>
+						       <li>1869 | Hardcover</li>
+						    </ul>
+
 							<h3 class="sub-heading">About</h3>
 							<p> 
 								War and Peace tells the story of Russian society during the Napoleonic Era. It offers a new kind of fiction, with a great many characters caught up in a plot that covered nothing less than the grand subjects, combined with the equally large topics of youth, marriage, age, and death.
@@ -143,27 +146,43 @@
 				<div class="col-1of1">
 					<div class="position">
 						<h3 class="sub-heading">Reviews</h3>
-						<div>
-							<div>
-								Name: John Doe
-							</div>
-							<div>
-								Overall an interesting book. Good in depth analysis on the history.
-							</div>
-							<div>
-								June 30, 2013 20:46 
-							</div>
-						</div>
-						<form>
-							<p>Display Name: <input type="text" id="username"/></p>
-							<div>Your Comment:</div><textarea name="comment"  rows="5"></textarea>
-						</form>
 						
-					    <div class="submit-btn">
-							<div class="default-btn">
-								<p><a href="products.html">Submit</a></p>
-							</div>
-                        </div>
+						<section class="comment">
+                            <div class="comment">
+                                <p class="display-name">
+                                    Name: John Doe
+                                </p>
+                                <p class="comment">
+                                    Overall an interesting book. Good in depth analysis on the history.
+                                </p>
+                                <p class="date">
+                                    June 30, 2013 20:46 
+                                </p>
+                            </div>
+                        
+                            <div class="comment">
+                                <p class="display-name">
+                                    Name: Mary Moo
+                                </p>
+                                <p class="comment">
+                                    History is not very exciting.
+                                </p>
+                                <p class="date">
+                                    April 3, 2012 20:46 
+                                </p>
+                            </div>
+                        </section>
+						
+						<form action="product_detail_comment.html">
+                            <p>Display Name: <input type="text" id="username" /></p>
+                            <div>Your Comment:</div><textarea name="comment"  rows="5" ></textarea>
+                            <div class="submit-btn">
+                                 <input class="default-btn" type="submit">
+                            </div>
+                        </form>
+						
+						
+						
 					</div>
 				</div>
 				<!--  End  -->				

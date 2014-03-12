@@ -80,17 +80,20 @@
 						</div>
 					</div>
 					<div class="col-1of2text">
-						<div class="position">
-							<h2 class="sub-heading">War and Peace</h2>
-							<h3 class="sub-heading">Author: Lev Tolstoy</h3>
-							<h3 class="sub-heading">ISBN: 2588961135</h3>
-							<h3 class="sub-heading">1869 | Hardcover</h3>
-							<h3 class="sub-heading">About</h3>
-							<p> 
-								War and Peace tells the story of Russian society during the Napoleonic Era. It offers a new kind of fiction, with a great many characters caught up in a plot that covered nothing less than the grand subjects, combined with the equally large topics of youth, marriage, age, and death.
-							</p>
-						</div>
-					</div>
+                        <div class="position">
+                            <h2 id="book-title">War and Peace</h2>
+                            <ul class="no-bullet">
+                               <li>Author: Lev Tolstoy</li>
+                               <li>ISBN: 2588961135</li>
+                               <li>1869 | Hardcover</li>
+                            </ul>
+
+                            <h3 class="sub-heading">About</h3>
+                            <p> 
+                                War and Peace tells the story of Russian society during the Napoleonic Era. It offers a new kind of fiction, with a great many characters caught up in a plot that covered nothing less than the grand subjects, combined with the equally large topics of youth, marriage, age, and death.
+                            </p>
+                        </div>
+                    </div>
 				</div>
 				<!--  End  -->
 				
@@ -144,16 +147,15 @@
 					<div class="position">
 						<h3 class="sub-heading">Reviews</h3>
 						
-						<form>
-							<p>Display Name: <input type="text" id="username"/></p>
-							<div>Your Comment:</div><textarea name="comment"  rows="5"></textarea>
-						</form>
+						<form action="product_detail_comment.html">
+                            <p>Display Name: <input type="text" id="username" placeholder="John Doe"/></p>
+                            <div>Your Comment:</div><textarea name="comment"  rows="5" placeholder="Overall an intersting book. Good in depth analysis on history"></textarea>
+                            <div class="submit-btn">
+                                 <input class="default-btn" type="submit">
+                            </div>
+                        </form>
 						
-					    <div class="submit-btn">
-							<div class="default-btn">
-								<p><a href="product_detail_comment.html">Submit</a></p>
-							</div>
-                        </div>
+					  
 					</div>
 				</div>
 				<!--  End  -->				
