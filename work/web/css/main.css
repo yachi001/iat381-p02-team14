@@ -35,6 +35,11 @@ section
 	color: #0aa;
 }
 
+.spacing
+{
+	padding-top: 1rem;
+}
+
 
 /***********************************************
 
@@ -109,7 +114,6 @@ nav a:visited, nav a:active, #navToggle>a:active ,#navToggle>a:visited
 	color: #000;
 	text-decoration: none;
 }
-
 
 
 /***********************************************
@@ -199,6 +203,7 @@ textarea
 	color: #037;
 }
 
+
 /***********************************************
 
         Product Comment
@@ -221,6 +226,7 @@ div.comment
 {
 	font-weight:bold;
 }
+
 
 /***********************************************
 
@@ -319,12 +325,6 @@ div.comment
 	margin-left: -2.5rem;
 }
 
-.no-bullet>li
-{
-	padding-bottom: 1rem;
-	font-size: 1.2rem;
-}
-
 .product-img
 {
 	float: none;
@@ -339,7 +339,7 @@ div.comment
 ***********************************************/
 .account-btn
 {
-	width: 10rem;
+	width: 9rem;
 }
 
 .account-btn-large
@@ -365,7 +365,7 @@ div.comment
 	text-decoration: none;
 }
 
-.spacing
+.spacing-account
 {
 	padding-top: 0.3rem;
 }
@@ -505,7 +505,6 @@ input.default-btn
 	padding: 0.4rem;
 	margin: 0px;
 }
-
 
 
 /***********************************************
