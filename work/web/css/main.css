@@ -30,9 +30,14 @@ section
 
 .sub-heading
 {
-	font: Verdana, sans-serif;
+	font-family: Verdana, sans-serif;
 	font-size: 1.2rem;
-	color: #0aa;
+	color: #00a2e8;
+}
+
+.spacing
+{
+	padding-top: 1rem;
 }
 
 
@@ -111,7 +116,6 @@ nav a:visited, nav a:active, #navToggle>a:active ,#navToggle>a:visited
 }
 
 
-
 /***********************************************
 
         Home
@@ -179,6 +183,7 @@ a>img
 ***********************************************/
 textarea
 {
+	font-family: Tahoma, sans-serif;
 	width: 100%;
 	resize: none;
 }
@@ -198,6 +203,25 @@ textarea
 {
 	color: #037;
 }
+
+.sub-nav>a
+{
+	color: #000;
+	text-decoration: none;
+}
+
+.sub-nav>a:hover
+{
+	color: #000;
+	text-decoration: underline;
+}
+
+.sub-nav>a:visited
+{
+	color: #000;
+	text-decoration: none;
+}
+
 
 /***********************************************
 
@@ -221,6 +245,7 @@ div.comment
 {
 	font-weight:bold;
 }
+
 
 /***********************************************
 
@@ -319,12 +344,6 @@ div.comment
 	margin-left: -2.5rem;
 }
 
-.no-bullet>li
-{
-	padding-bottom: 1rem;
-	font-size: 1.2rem;
-}
-
 .product-img
 {
 	float: none;
@@ -339,7 +358,7 @@ div.comment
 ***********************************************/
 .account-btn
 {
-	width: 10rem;
+	width: 9rem;
 }
 
 .account-btn-large
@@ -365,7 +384,7 @@ div.comment
 	text-decoration: none;
 }
 
-.spacing
+.spacing-account
 {
 	padding-top: 0.3rem;
 }
@@ -505,7 +524,6 @@ input.default-btn
 	padding: 0.4rem;
 	margin: 0px;
 }
-
 
 
 /***********************************************

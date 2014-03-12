@@ -271,6 +271,7 @@
     .col-1of2-right-main 
 	{
         width: 100%;
+		margin-top: 1rem;
     }
     
     .col-1of2-right-fill 

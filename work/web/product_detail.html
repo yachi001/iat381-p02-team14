@@ -45,7 +45,7 @@
 			<!--  Navigation Bar  -->
 			<nav class="grid">
 				<div class="col-1of5nav">
-					<a href="products.html">Products</a>
+					<a href="products.html">Books</a>
 				</div>
 		            
 				<div class="col-1of5nav">
@@ -71,6 +71,7 @@
 		
 		<!--  Content  -->
 		<section>
+			<p class="sub-nav"><a href="home.html">home</a> > <a href="products.html">books</a> > <a href="product_detail.html">history</a></p>
 			<div class="grid">
 				<!--  Product Details  -->
 				<div class="col-1of2-left-main">
@@ -82,13 +83,10 @@
 					<div class="col-1of2text">
                         <div class="position">
                             <h2 id="book-title">War and Peace</h2>
-                            <ul class="no-bullet">
-                               <li>Author: Lev Tolstoy</li>
-                               <li>ISBN: 2588961135</li>
-                               <li>1869 | Hardcover</li>
-                            </ul>
-
-                            <h3 class="sub-heading">About</h3>
+							<p>Author: Lev Tolstoy</p>
+							<p>ISBN: 2588961135</p>
+							<p>1869 | Hardcover</p>
+                            <h3>About</h3>
                             <p> 
                                 War and Peace tells the story of Russian society during the Napoleonic Era. It offers a new kind of fiction, with a great many characters caught up in a plot that covered nothing less than the grand subjects, combined with the equally large topics of youth, marriage, age, and death.
                             </p>
@@ -134,9 +132,9 @@
 						</div>
 						
 						<div>
-							<form action="products.html" method="get">
-									<button class="default-btn">Submit</button>
-							</form>
+							<div class="default-btn">
+								<p><a href="products.html">Submit</a></p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -145,14 +143,14 @@
 			    <!--  Reviews Section  -->
 				<div class="col-1of1">
 					<div class="position">
-						<h3 class="sub-heading">Reviews</h3>
-						<form action="product_detail_comment.html">
-                            <p>Display Name: <input type="text" id="username" placeholder="John Doe"/></p>
-                            <div>Your Comment:</div><textarea name="comment"  rows="5" placeholder="Overall an intersting book. Good in depth analysis on history"></textarea>
-                            <div class="submit-btn">
-                                 <input class="default-btn" type="submit">
-                            </div>
-                        </form>
+						<h1 class="sub-heading">Reviews</h1>
+						<p>Display Name: <input type="text" id="username" value="John Doe"/></p>
+						<div>Your Comment:</div><textarea name="comment" rows="5">Overall an interesting book. Good in depth analysis on history.</textarea>
+						<div class="submit-btn">
+							<div class="default-btn">
+								<p><a href="product_detail_comment.html">Submit </a></p>
+							</div>
+						</div>
 					</div>
 				</div>
 				<!--  End  -->				
