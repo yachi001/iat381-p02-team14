@@ -111,23 +111,6 @@ nav a:visited, nav a:active, #navToggle>a:active ,#navToggle>a:visited
 }
 
 
-/***********************************************
-
-        footer
-            
-***********************************************/
-footer
-{
-	margin-top: 5rem;
-	text-align: center;
-}
-footer>p
-{
-	padding: 0;
-	margin: 0;
-	font-size: 0.8em;
-}
-
 
 /***********************************************
 
