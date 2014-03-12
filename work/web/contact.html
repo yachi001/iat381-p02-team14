@@ -30,7 +30,6 @@
 					
 				<div class="col-1of3search">
 					<form method="post" action="products_go_result.html" id="search"> 
-						<label form="form-name"></label>
 						<input id="searchbar" type="text" placeholder="Search..." name="search">
 						<input id="searchbar-btn" type="submit" value="Go">
 					</form>
@@ -76,14 +75,17 @@
 			<!--  Map  -->
 			<div class="col-1of3map">
 				<div class="position">
+				    <noscript>
 					<div class="direction-image">
 						<img src="img/map.png" width="250" height="150" alt="location-map">
 					</div>
-					<div class="directions-btn">
-						<div class="default-btn">
-							<p><a href="http://maps.google.com">Get Directions</a></p>
+					
+						<div class="directions-btn">
+							<div class="default-btn">
+								<p><a href="http://maps.google.com">Get Directions</a></p>
+							</div>
 						</div>
-					</div>
+                    </noscript>
 				</div>
 			</div>
 			<!--  End  -->
@@ -120,6 +122,9 @@
 				</div>
 			</div>
 			<!--  End  -->
+			
+			<!-- Google Map -->
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5209.167680969208!2d-123.10224911082263!3d49.24637887679981!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548673f7a6f1efbd%3A0xb4aff19609f940fa!2sVancouver%2C+BC+V5V+3R1!5e0!3m2!1sen!2sca!4v1394654906062" width="600" height="450" frameborder="0" style="border:0"></iframe>
 		</section>
 		<!--  End of Content  -->
     </body>
