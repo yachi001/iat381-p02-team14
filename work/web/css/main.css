@@ -68,6 +68,7 @@ nav a, #navToggle>a
 #navToggle
 {
 	padding-right: 0.5rem;
+	display: none;
 }
 
 nav a:visited, nav a:active, #navToggle>a:active ,#navToggle>a:visited 
