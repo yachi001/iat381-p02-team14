@@ -3,7 +3,7 @@ $(document).ready( function() {
 	var debugText = "It works!";
 	var windowWidth = $(window).width();
 
-	if( windowWidth<750 ) {
+	if( windowWidth<765 ) {
 		$("#navToggle").css("display", "block");
 		$("nav").hide();
 	}
@@ -18,7 +18,7 @@ $(document).ready( function() {
 	
 	$(window).resize( function() {
 		var windowWidth = $(window).width();
-		if (windowWidth>750) {
+		if (windowWidth>765) {
 			$("#navToggle").css("display", "none");
 			$("nav").show();
 		} else{

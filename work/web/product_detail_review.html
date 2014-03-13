@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Product Details</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/grid.css">
+        <link rel="stylesheet" href="css/main.css">
+	</head>
+
+	<body>
+		<script src="js/jquery.js"></script>
+		<script src="js/ui.js"></script>
+	    
+		<!--  Header  -->
+		<header id="top">
+			<!--  Account Bar: my account + order status  -->
+			<div class="account-bar">
+				<a href="existing_account.html">my account</a> | 
+				<a href="order_status.html">order status</a> |			
+				<a href="cart.html"><img src="img/checkout.png" width="25" height="20" alt="checkout"></a>
+			</div>
+			<!--  End  -->
+		        
+			<!--  Company Logo + Search Bar  -->
+			<div class="grid">
+				<div class="col-1of3home">
+					<a href="home.html"><img src="img/logo2.png" width="379" height="80" alt="company-logo"></a>
+				</div>
+					
+				<div class="col-1of3search">
+					<form method="post" action="products_go_result.html" id="search"> 
+						<label form="form-name"></label>
+						<input id="searchbar" type="text" placeholder="Search..." name="search">
+						<input id="searchbar-btn" type="submit" value="Go">
+					</form>
+				</div>
+				
+				<div id="navToggle">
+					<a href="#top">▼ MENU</a>
+				</div>
+			</div>
+			<!--  End  -->
+		
+			<!--  Navigation Bar  -->
+			<nav class="grid">
+				<div class="col-1of5nav">
+					<a href="products.html">Books</a>
+				</div>
+		            
+				<div class="col-1of5nav">
+					<a href="deals.html">Deals</a>
+				</div>
+		            
+				<div class="col-1of5nav">
+					<a href="services.html">Services</a>
+				</div>
+		            
+				<div class="col-1of5nav">
+					<a href="about.html">About Us</a>
+				</div>
+		            
+				<div class="col-1of5nav">
+					<a href="contact.html">Contact</a>
+				</div>
+			</nav>
+			<!--  End  -->
+		</header>
+		<!--  End of Header  -->
+		
+		
+		<!--  Content  -->
+		<section>
+			<p class="sub-nav"><a href="home.html">home</a>&gt; <a href="products.html">books</a> &gt; <a href="product_detail.html">history</a></p>
+			
+			<div class="grid">
+				<!--  Product Details  -->
+				<div class="col-1of2-left-main">
+					<div class="col-1of2image">
+						<div class="position">
+							<p><img src="img/book1_large.jpg" width="260" height="346" alt="Product Preview"></p>
+						</div>
+					</div>
+					<div class="col-1of2text">
+						<div class="position">
+						    <h1>War and Peace</h1>
+							<ul class="no-bullet">
+								<li>by Lev Tolstoy</li>
+								<li>Feedbooks Publishing</li>
+								<li>ISBN: 2588961135</li>
+								<li>1869 | Hardcover</li>
+                            </ul>
+							<h3>About</h3>
+                            <p> 
+                                War and Peace tells the story of Russian society during the Napoleonic Era. It offers a new kind of fiction, with a great many characters caught up in a plot that covered nothing less than the grand subjects, combined with the equally large topics of youth, marriage, age, and death.
+                            </p>
+						</div>
+					</div>
+				</div>
+				<!--  End  -->
+				
+				<!--  Add to Cart Sidebar  -->
+				<div class="col-1of2-left-fill">
+					<div class="position-purchase">	
+						<p>IN STOCK</p>
+						<p>$29.99</p>
+					
+                        <div class="purchase-btn">
+							<a href="cart.html">Add to Cart</a>
+						</div>
+ 	
+						<p>Compare Prices</p>
+	                    <div>
+							<input type="checkbox" name="type" value="paperback">&nbsp; Paperback 
+						</div>
+						
+						<div>
+							<input type="checkbox" name="type" value="hardcover">&nbsp; Hardcover 
+						</div>
+						
+						<div>
+							<input type="checkbox" name="type" value="e-book">&nbsp; E-book 
+						</div>
+	                        
+						<p>Stores</p>
+						<div>
+							<input type="checkbox" name="store" value="amazon">&nbsp; Amazon 
+						</div>
+						
+						<div>
+							<input type="checkbox" name="store" value="chapters">&nbsp; Chapters 
+						</div>
+						
+						<div>
+							<input type="checkbox" name="store" value="bookgiant">&nbsp; Kijiji 
+						</div>
+						
+						<div>
+							<div class="default-btn">
+								<p><a href="products.html">Submit</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--  End  -->
+			
+			    <!--  Review Section  -->
+				<div class="col-1of1">
+					<div class="position">
+						<h1>Reviews</h1>
+						
+						<div class="comment">
+							<p>
+								Name: John Doe
+							</p>
+							<p class="comment">
+								Overall an interesting book. Good in depth analysis on the history.
+							</p>
+							<p class="date">
+								June 30, 2013 20:46 
+							</p>
+						</div>
+                        
+						<p>Display Name: <input type="text" id="username"/></p>
+						<div>Your Comment:</div><textarea name="comment" rows="5"></textarea>
+						<div class="submit-btn">
+							<div class="default-btn">
+								<p><a href="product_detail_review.html">Submit </a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--  End  -->				
+			</div>
+		</section>
+		<!--  End of Content  -->
+	</body>
+</html>
